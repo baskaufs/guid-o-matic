@@ -16,7 +16,7 @@ Because I already had the cute squid picture and "RDF Generator" doesn't rhyme w
 ## Why did you write this script in Xquery and not something like Python or PHP?
 I am not a very good Python programmer and I don't know PHP.  Once you understand what Guid-O-Matic does, you can write your own (better) code to do the same thing.
 
-I used Xquery because I'm in a working group that includes a lot of Digital Humanists, and they love XML.  Also, the awesome Xquery processor, BaseX, is free and easily downloaded and installed.  So anybody can easily run the Guid-O-Matic scripts.  Also, BaseX can run as a web server, so in theory, one could call the RDF-generating functions in response to a HTTP request and actually use the scripts to provide RDF online.
+I used Xquery because I'm in a working group that includes a lot of Digital Humanists, and they love XML.  Also, the awesome Xquery processor, BaseX, is free and easily downloaded and installed.  So anybody can easily run the Guid-O-Matic scripts.  In addition, BaseX can run as a web server, so in theory, one could call the RDF-generating functions in response to a HTTP request and actually use the scripts to provide RDF online.
 
 ## What did Guid-O-Matic 1.1 do?
 I wrote Guid-O-Matic 1 in about 2010.  Version 1.1 had a very limited scope:
@@ -26,7 +26,7 @@ I wrote Guid-O-Matic 1 in about 2010.  Version 1.1 had a very limited scope:
 - it was hard-coded to use a specific version of the [Darwin Core](http://rs.tdwg.org/dwc/terms/) and [Darwin-SW](https://github.com/darwin-sw/dsw) vocabularies
 - other stuff that I can't remember
 
-Version 1.1 also was written in an old version of Visual Basic, which had the advantage that it could run as an executable, but had the disadvantage that you couldn't hack it unless you had a copy of Visual Basic and knew how to use it.  Even I don't have a functioning copy of that version of Visual Basic, so I can't look at the source code any more.  But it doesn't really matter because I don't advise that anyone try to mess with it anyway.  I'm only posting it here for historical reasons (and so that you can try running it to see the great squid graphic on the UI!).
+Version 1.1 also was written in an old version of Visual Basic, which had the advantage that it could run as an executable, but had the disadvantage that you couldn't hack it unless you had a copy of Visual Basic and knew how to use it.  Even I don't have a functioning copy of that version of Visual Basic any more, so I can't even look at the source code now.  But it doesn't really matter because I don't advise that anyone try to mess with version 1.1 anyway.  I'm only posting it here for historical reasons (and so that you can try running it to see the great squid graphic on the UI!).
 
 ## What does Guid-O-Matic 2 do?
 Version 2 is intended to be as general as is practical considering that the source data are being pulled from a CSV file.  It:
@@ -47,9 +47,9 @@ In addition to the main script that generates the RDF, there is an additional sc
 
 ## Can I try it?
 Yes, please do!  If all you want to do is see what happens, do the following:
-- fork the Guid-O-Matic GitHub repo to your local drive.  Where you clone it on your hard drive has implications for the software finding the necessary files.  Read below before you actually do the cloning.
-- install BaseX (if you haven't already)
-- navigate to the downloaded folder for the repo and load the query test-serialize.xq into BaseX.
+- fork the Guid-O-Matic GitHub repo (https://github.com/baskaufs/guid-o-matic) to your local drive.  Where you clone it on your hard drive has implications for the software finding the necessary files.  Read below before you actually do the cloning.
+- install [BaseX](http://basex.org/products/download/all-downloads/) (if you haven't already)
+- use the Open (file folder) button in BaseX to navigate to the downloaded folder for the repo and load the query test-serialize.xq into BaseX.
 - if you downloaded the repo to the default location and are using a Mac (and probably any Linux system), you shouldn't have to do anything for the script to find the necessary files.  If you are running a PC, or if you are using a non-PC with the files located at some non-default location, you need to set the path to the guid-o-matic repo directory as the fourth parameter of the function.  The default repo-cloning location on PCs is in some horrible place inside the default user directory. However, when cloning the repo, you can specify some simpler location for the repo.  I use c:\github\, which is the default given in the function as it is downloaded.
 - Click the "Run Query" ("play" triangle) button.
 
