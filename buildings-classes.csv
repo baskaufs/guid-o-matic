@@ -1,0 +1,8 @@
+id,class
+$root,schema:LandmarksOrHistoricalBuildings
+_:2,dcterms:PeriodOfTime
+_:3,schema:GeoCoordinates
+_:4,time:Instant
+_:5,time:Instant
+_:6,time:GeneralDateTimeDescription
+_:7,time:GeneralDateTimeDescription

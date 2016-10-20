@@ -27,3 +27,20 @@ I wrote Guid-O-Matic 1 in about 2010.  Version 1.1 had a very limited scope:
 - other stuff that I can't remember
 
 Version 1.1 also was written in an old version of Visual Basic, which had the advantage that it could run as an executable, but had the disadvantage that you couldn't hack it unless you had a copy of Visual Basic and knew how to use it.  Even I don't have a functioning copy of that version of Visual Basic, so I can't look at the source code any more.  But it doesn't really matter because I don't advise that anyone try to mess with it anyway.  I'm only posting it here for historical reasons (and so that you can try running it to see the great squid graphic on the UI!).
+
+## What does Guid-O-Matic 2 do?
+Version 2 is intended to be as general as is practical considering that the source data are being pulled from a CSV file.  It:
+- provides RDF output in XML, Turtle, or JSON-LD
+- allows the focal resource to be of any class
+- allows the use of any RDF vocabularies
+- accepts input from any "flat" delimited text file (i.e. a CSV file)
+- allows the user to set up all of the defaults and CSV-to-RDF mappings via CSV files that can be edited in Excel or any other typical spreadsheet application.
+- allows linking of any number of classes whose instances have a one-to-one relationship with the focal class.
+- allows linking of any number of classes whose instances have a many-to-one relationship with the focal class (i.e. a "star schema"). This includes [Darwin Core Archive (DwCa)](http://www.gbif.org/resource/80636) files.
+- output can be onscreen or to a file.
+- output can be a single record or a dump of the entire database.
+- the main script is included in an Xquery module so that it could potentially be called from the [BaseX Web Application](http://docs.basex.org/wiki/Web_Application) and therefore be used to actually dereference IRIs.  (In that case, the code would probably be hacked to pull the data from an XML database rather than from the CSV files.)
+
+Version 2 is written in [Xquery (a W3C Recommendation)](https://www.w3.org/TR/xquery/).  It can be run using [BaseX](http://basex.org/), a free Xquery processor.  Instructions for setting everything up are elsewhere.
+
+In addition to the main script that generates the RDF, there is an additional script that processes a Darwin Core Archive so that it can be used as source data.  It pulls information from the meta.xml file to generate hackable mappings from the CSV files to the RDF.  
