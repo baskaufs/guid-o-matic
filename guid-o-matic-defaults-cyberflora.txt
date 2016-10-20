@@ -1,0 +1,12 @@
+cyberfloralouisiana.com
+University of Louisiana at Monroe Herbarium (NLU)
+http://biocol.org/urn:lsid:biocol.org:col:15539
+CyberFlora Louisiana
+http://cyberfloralouisiana.com
+ 4 
+en
+http://cyberfloralouisiana.com/images/CyberFlora252pixtall.png
+http://cyberfloralouisiana.com/index.html
+(c) 2010 University of Louisiana at Monroe Herbarium
+University of Louisiana at Monroe Herbarium http://www.ulm.edu/herbarium/
+c:\bioimages-new\rdf\examples\
