@@ -3,7 +3,7 @@
 "You can write better software than this..."
 
 # guid-o-matic
-Software to convert fielded text (CSV) files to RDF serialized as XML, Turtle, and JSON-LD
+Software to convert fielded text (CSV) files to RDF serialized as XML, Turtle, or JSON-LD
 
 ## What is the purpose of Guid-O-Matic ?
 Best Practices in the biodiversity informatics community, as embodied in the [TDWG GUID Applicability Statement](https://github.com/tdwg/guid-as) dictate that globally unique identifiers (GUIDs, rhymes with "squids") should be resolvable (i.e. dereferenceable, Recommendation R7) and that the default metadata response format should be RDF serialized as XML (Recommendation R10).  In practice, machine-readable metadata is rarely provided when the requested content-type is some flavor of RDF. I think the reason is because people think it is "too hard" to generate the necessary RDF.  
@@ -44,3 +44,15 @@ Version 2 is intended to be as general as is practical considering that the sour
 Version 2 is written in [Xquery (a W3C Recommendation)](https://www.w3.org/TR/xquery/).  It can be run using [BaseX](http://basex.org/), a free Xquery processor.  Instructions for setting everything up are elsewhere.
 
 In addition to the main script that generates the RDF, there is an additional script that processes a Darwin Core Archive so that it can be used as source data.  It pulls information from the meta.xml file to generate hackable mappings from the CSV files to the RDF.  
+
+## Can I try it?
+Yes, please do!  If all you want to do is see what happens, do the following:
+- fork the Guid-O-Matic GitHub repo to your local drive.  Where you clone it on your hard drive has implications for the software finding the necessary files.  Read below before you actually do the cloning.
+- install BaseX (if you haven't already)
+- navigate to the downloaded folder for the repo and load the query test-serialize.xq into BaseX.
+- if you downloaded the repo to the default location and are using a Mac (and probably any Linux system), you shouldn't have to do anything for the script to find the necessary files.  If you are running a PC, or if you are using a non-PC with the files located at some non-default location, you need to set the path to the guid-o-matic repo directory as the fourth parameter of the function.  The default repo-cloning location on PCs is in some horrible place inside the default user directory. However, when cloning the repo, you can specify some simpler location for the repo.  I use c:\github\, which is the default given in the function as it is downloaded.
+- Click the "Run Query" ("play" triangle) button.
+
+You can play around with changing the identifier for the focal resource (the first parameter of the function) and the serialization (the second parameter).  Suggestions are given in the comments above the function.
+
+If you want to try more complicated things like changing the properties or graph model, you will need to read more detailed instructions.  To take it a step further and try using a Darwin Core archive as input also requires reading more instructions.
