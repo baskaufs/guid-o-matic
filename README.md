@@ -2,13 +2,13 @@
 
 [jump to the Darwin Core translator page](dwca-converter.md)
 
+# Guid-O-Matic
+Software to convert fielded text (CSV) files to RDF serialized as XML, Turtle, or JSON-LD
+
 ![](https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/squid.bmp)
 ![](https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/images/translation.png)
 
 "You can write better software than this..."
-
-# guid-o-matic
-Software to convert fielded text (CSV) files to RDF serialized as XML, Turtle, or JSON-LD
 
 ## What is the purpose of Guid-O-Matic ?
 Best Practices in the biodiversity informatics community, as embodied in the [TDWG GUID Applicability Statement](https://github.com/tdwg/guid-as) dictate that globally unique identifiers (GUIDs, rhymes with "squids") should be resolvable (i.e. dereferenceable, Recommendation R7) and that the default metadata response format should be RDF serialized as XML (Recommendation R10).  In practice, machine-readable metadata is rarely provided when the requested content-type is some flavor of RDF. I think the reason is because people think it is "too hard" to generate the necessary RDF.  
