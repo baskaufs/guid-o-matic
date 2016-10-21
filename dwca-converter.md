@@ -10,8 +10,10 @@
 
 If you are asking this question, there is a high probability that you don't really need to be reading this page.  If you want to know about DwC-A (or already know), read on.
 
-Darwin Core archives are used as an efficient way to transmit biodiversity data as fielded text documents (e.g. CSV files).  They are the most common way that natural history museums, herbaria, and citizen-science projects like eBird and iNaturalist send species occurrence records to the [Global Biodiversity Information Facility (GBIF)](http://www.gbif.org/), the international organization that aggregates biodiversity data from around the world. Darwin Core archives use the standardized vocabulary of [Darwin Core](http://rs.tdwg.org/dwc/terms/), an international metadata standard developed by [TDWG](http://www.tdwg.org/). For the details of how a Darwin Core archive is structured, see the [GBIF Darwin Core Archive How-to Guide](http://www.gbif.org/resource/80636).  
+Darwin Core archives are used as an efficient way to transmit biodiversity data as fielded text documents (e.g. CSV files).  They are the most common way that natural history museums, herbaria, and citizen-science projects like eBird and iNaturalist send species occurrence records to the [Global Biodiversity Information Facility (GBIF)](http://www.gbif.org/), the international organization that aggregates biodiversity data from around the world. Darwin Core archives use the standardized vocabulary of [Darwin Core](http://rs.tdwg.org/dwc/terms/), an international metadata standard developed by [TDWG](http://www.tdwg.org/). For the details of how a Darwin Core archive is structured, see the [GBIF Darwin Core Archive How-to Guide](http://www.gbif.org/resource/80636).
+ 
 ![](images/dwc-archives-diagram.png)
+
 Diagram from the [Darwin Core Text Guide](http://rs.tdwg.org/dwc/terms/guides/text/)
 
 A Darwin Core archive may consist of a single fielded text file consisting of records about a single kind of resource (e.g. occurrences), or several related (extension) text files that are linked to a core text file in a "star schema" pattern.  An XML formatted file (meta.xml) describes the relationships among the core and extension files, including the mapping of columns to Darwin Core properties.
