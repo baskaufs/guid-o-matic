@@ -1,3 +1,9 @@
+[back to landing page](README.md)
+
+![](https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/squid.bmp)
+
+"You can write better software than this..."
+
 # Setting up Guid-O-Matic for use
 
 The overall purpose of Guid-O-Matic is to allow existing delimited text files (referred to generically as "CSV" files) to be mapped to RDF graphs, then to output the data in one of the common RDF serialization formats (XML, Turtle, or JSON-LD).  So you need to start with a CSV file that you want to convert to RDF.  The instructions below first describe the relationship between parts of the metadata tables and RDF graphs.  They then describe various other CSV files that must be created (or hacked from the examples) in order to make the software work.
@@ -127,3 +133,5 @@ The file constants.csv contains strings that may vary from user to user.  They a
 7. The "creator" value is used as the value for the dc:creator property of the RDF document.  It is expected to be a literal.
 8. "outputDirectory" is used to specify the directory where the output can be saved as a file.  If the directory doesn't exist, it will be created if the Xquery is run with the file argument set to "true"
 9. "outFileNameAfter" provides the delimiter within the root resource identifier (IRI or local name) after which constitutes the file name.  For example, if the resource identifier is "http://example.org/myThing" and the outFileNameAfter value is "/" then "myThing" would be used as the file name (with extension to be determined by the serialization). If the entire identifier is to be used, leave this empty. This setting is only relevant when output is to a file.
+
+[back to landing page](README.md)
