@@ -1,2 +1,2 @@
-domainRoot,coreClassFilePrefix,documentClass,creator,outputDirectory,outFileNameAfter,separator,baseIriColumn,modifiedColumn
-http://lod.vanderbilt.edu/historyart/site/,site,foaf:Document,Vanderbilt Department of History of Art,c:\test\output\,,",",iri_local_name,modified
+domainRoot,coreClassFile,documentClass,creator,outputDirectory,outFileNameAfter,separator,baseIriColumn,modifiedColumn
+http://lod.vanderbilt.edu/historyart/site/,site.csv,foaf:Document,Vanderbilt Department of History of Art,c:\test\output\,,",",iri_local_name,modified

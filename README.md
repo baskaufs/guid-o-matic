@@ -1,3 +1,5 @@
+[jump to a detailed explanation](use.md)
+
 ![](https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/squid.bmp)
 
 "You can write better software than this..."
@@ -55,4 +57,4 @@ Yes, please do!  If all you want to do is see what happens, do the following:
 
 You can play around with changing the identifier for the focal resource (the first parameter of the function) and the serialization (the second parameter).  Suggestions are given in the comments above the function.
 
-If you want to try more complicated things like changing the properties or graph model, you will need to read more detailed instructions.  To take it a step further and try using a Darwin Core archive as input also requires reading more instructions.
+If you want to try more complicated things like changing the properties or graph model, or if you want to set up mappings for your own data, you will need to read [more detailed instructions](use.md).  To take it a step further and try using a Darwin Core archive as input also requires reading more instructions.
