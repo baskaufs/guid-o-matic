@@ -3,7 +3,7 @@
 [jump to the Darwin Core translator page](dwca-converter.md)
 
 ![](https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/squid.bmp)
-![](https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/images/translation.bmp)
+![](https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/images/translation.png)
 
 "You can write better software than this..."
 
