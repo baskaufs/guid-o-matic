@@ -59,4 +59,4 @@ You can play around with changing the identifier for the focal resource (the fir
 
 If you want to try more complicated things like changing the properties or graph model, or if you want to set up mappings for your own data, you will need to read [more detailed instructions](use.md).  To take it a step further and try using a Darwin Core archive as input also requires reading more instructions.
 
-* Tang-Song temple data provided by [Dr. Tracy Miller](http://as.vanderbilt.edu/historyart/people/miller.php) of the Vanderbilt University Department of History of Art, who graciously let us use her data as a guinea pig in our Semantic Web working group.  Please contact her for more information about the data.
+\* Tang-Song temple data provided by [Dr. Tracy Miller](http://as.vanderbilt.edu/historyart/people/miller.php) of the Vanderbilt University Department of History of Art, who graciously let us use her data as a guinea pig in our Semantic Web working group.  Please contact her for more information about the data.
