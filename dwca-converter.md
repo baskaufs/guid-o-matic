@@ -4,7 +4,7 @@
 
 "You can write better software than this..."
 
-# Converting a Darwin Core Archive to RDF
+# Translating a Darwin Core Archive to RDF
 
 ## What is a Darwin Core Archive (DwC-A)?
 
