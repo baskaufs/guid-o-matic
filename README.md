@@ -53,8 +53,10 @@ Yes, please do!  If all you want to do is see what happens, do the following:
 - install [BaseX](http://basex.org/products/download/all-downloads/) (if you haven't already)
 - use the Open (file folder) button in BaseX to navigate to the downloaded folder for the repo and load the query test-serialize.xq into BaseX.
 - if you downloaded the repo to the default location and are using a Mac (and probably any Linux system), you shouldn't have to do anything for the script to find the necessary files.  If you are running a PC, or if you are using a non-PC with the files located at some non-default location, you need to set the path to the guid-o-matic repo directory as the fourth parameter of the function.  The default repo-cloning location on PCs is in some horrible place inside the default user directory. However, when cloning the repo, you can specify some simpler location for the repo.  I use c:\github\, which is the default given in the function as it is downloaded.
-- Click the "Run Query" ("play" triangle) button.
+- Click the "Run Query" ("play" triangle) button.  The example data are Chinese religious site and buildings.*  You can see the [graph model here](graph-model.md).
 
-You can play around with changing the identifier for the focal resource (the first parameter of the function) and the serialization (the second parameter).  Suggestions are given in the comments above the function.
+You can play around with changing the identifier for the focal resource (the first parameter of the function) to generate RDF for other temple sites, and the serialization (the second parameter).  Suggested values are given in the comments above the function.   
 
 If you want to try more complicated things like changing the properties or graph model, or if you want to set up mappings for your own data, you will need to read [more detailed instructions](use.md).  To take it a step further and try using a Darwin Core archive as input also requires reading more instructions.
+
+* Tang-Song temple data provided by [Dr. Tracy Miller](http://as.vanderbilt.edu/historyart/people/miller.php) of the Vanderbilt University Department of History of Art, who graciously let us use her data as a guinea pig in our Semantic Web working group.  Please contact her for more information about the data.
