@@ -110,7 +110,7 @@ return (
 csv:serialize(<csv>{
    <record><domainRoot>{"domainRoot"}</domainRoot><coreClassFilePrefix>{"coreClassFile"}</coreClassFilePrefix><documentClass>{"documentClass"}</documentClass><creator>{"creator"}</creator><outputDirectory>{"outputDirectory"}</outputDirectory><outFileNameAfter>{"outFileNameAfter"}</outFileNameAfter><separator>{"separator"}</separator><baseIriColumn>{"baseIriColumn"}</baseIriColumn><modifiedColumn>{"modifiedColumn"}</modifiedColumn></record>,
    
-      <record><domainRoot></domainRoot><coreClassFilePrefix>{$coreDoc}</coreClassFilePrefix><documentClass>{"foaf:Document"}</documentClass><creator></creator><outputDirectory></outputDirectory><outFileNameAfter></outFileNameAfter><separator>{$metadataSeparatorOut}</separator><baseIriColumn>{$coreIdColumnHeader}</baseIriColumn><modifiedColumn>{$modifiedColumnHeader}</modifiedColumn></record>
+      <record><domainRoot>{"http://example.org/"}</domainRoot><coreClassFilePrefix>{$coreDoc}</coreClassFilePrefix><documentClass>{"foaf:Document"}</documentClass><creator></creator><outputDirectory></outputDirectory><outFileNameAfter></outFileNameAfter><separator>{$metadataSeparatorOut}</separator><baseIriColumn>{$coreIdColumnHeader}</baseIriColumn><modifiedColumn>{$modifiedColumnHeader}</modifiedColumn></record>
 
    }</csv>)
    
