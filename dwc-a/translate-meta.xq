@@ -60,7 +60,7 @@ let $metadataSeparator :=
                           else $tempSeparator
 let $metadataSeparatorOut := 
                           if ($tempSeparator="\t")
-                          then ``[&#9;]``
+                          then "&#9;"
                           else $tempSeparator
 let $coreDoc := $metaDoc/dwctext:archive/dwctext:core/dwctext:files/dwctext:location/text()
 let $coreClass := local:collapse-iri(data($metaDoc/dwctext:archive/dwctext:core/@rowType),$namespaces)
@@ -192,8 +192,13 @@ let $extIdColumnHeader :=
                         where $columnHeader/index/text()=data($extension/dwctext:coreid/@index)+1
                         return $columnHeader/header/text()
 
-return <record><link_column>{$extIdColumnHeader}</link_column><link_property>{"dcterms:relation"}</link_property><suffix1>{"_:"}</suffix1><link_characters></link_characters><suffix2></suffix2><class>{$extClass}</class><filename>{$extDoc}</filename></record>
-
+return 
+    if ($extIdColumnHeader)
+    then
+    <record><link_column>{$extIdColumnHeader}</link_column><link_property>{"dcterms:relation"}</link_property><suffix1>{"_:"}</suffix1><link_characters></link_characters><suffix2></suffix2><class>{$extClass}</class><filename>{$extDoc}</filename></record>
+    else
+    <record/>
+    
                            }</csv>)
              
                          )

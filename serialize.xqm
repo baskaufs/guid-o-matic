@@ -208,7 +208,7 @@ declare function serialize:describe-document($baseIRI,$modified,$serialization,$
     
     propvalue:iri("dcterms:references",$baseIRI,$serialization,$namespaces),
     if ($modified)
-    then propvalue:datatyped-literal("dcterms:modified",$modified,"http://www.w3.org/2001/XMLSchema#dateTime",$serialization,$namespaces)
+    then propvalue:datatyped-literal("dcterms:modified",$modified,"xsd:dateTime",$serialization,$namespaces)
     else "",
     propvalue:type($type,$serialization,$namespaces)
   )  
