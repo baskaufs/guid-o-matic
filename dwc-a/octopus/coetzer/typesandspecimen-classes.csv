@@ -1,0 +1,7 @@
+"id","class"
+"$root","gbifterms:TypesAndSpecimen"
+"_:1","dwc:Identification"
+"_:2","dwc:Organism"
+"_:3","dwc:Event"
+"_:4","dcterms:Location"
+"_:5","dwc:Occurrence"

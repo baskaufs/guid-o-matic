@@ -1,0 +1,6 @@
+id,class
+$root,dwc:Occurrence
+_:1,dwc:Event
+_:2,dcterms:Location
+_:3,dwc:Organism
+_:4,dwc:Identification

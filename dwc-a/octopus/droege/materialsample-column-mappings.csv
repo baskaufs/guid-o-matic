@@ -1,0 +1,7 @@
+header,predicate,type,value,attribute,subject_id
+materialSampleType,ggbn:materialSampleType,plain,,,$root
+concentration,ggbn:concentration,plain,,,$root
+concentrationUnit,ggbn:concentrationUnit,plain,,,$root
+ratioOfAbsorbance260_230,ggbn:ratioOfAbsorbance260_230,plain,,,$root
+ratioOfAbsorbance260_280,ggbn:ratioOfAbsorbance260_280,plain,,,$root
+$constant,rdf:type,iri,dwc:MaterialSample,,$root

@@ -1,0 +1,8 @@
+"header","predicate","type","value","attribute","subject_id"
+"amplificationDate","ggbn:amplificationDate","plain",,,"$root"
+"marker","ggbn:marker","plain",,,"$root"
+"geneticAccessionNumber","ggbn:geneticAccessionNumber","plain",,,"$root"
+"BOLDProcessID","ggbn:BOLDProcessID","plain",,,"$root"
+"geneticAccessionURI","ggbn:geneticAccessionURI","plain",,,"$root"
+"geneticAccessionURI","dsw:hasDerivative","iri",,,"$root"
+"geneticAccessionNumber","rdfs:label","plain",,,"$root"

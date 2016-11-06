@@ -1,0 +1,138 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+         packageId="http://collections.nmnh.si.edu/ipt/resource?id=nmnh_materialsample_test/v1.8" system="http://gbif.org" scope="system"
+         xml:lang="eng">
+
+<dataset>
+  <alternateIdentifier>http://collections.nmnh.si.edu/ipt/resource?r=nmnh_materialsample_test</alternateIdentifier>
+  <title xml:lang="eng">nmnh_materialsample_test</title>
+      <creator>
+    <individualName>
+        <givenName>Thomas</givenName>
+      <surName>Orrell</surName>
+    </individualName>
+    <organizationName>National Museum of Natural History, Smithsonian Institution</organizationName>
+    <positionName>Branch Chief, NMNH Informatics</positionName>
+    <address>
+        <deliveryPoint>P.O. Box 37012, MRC 136</deliveryPoint>
+        <city>Washington</city>
+        <administrativeArea>DC</administrativeArea>
+        <postalCode>20013-7012</postalCode>
+        <country>US</country>
+    </address>
+    <phone>202-633-2151</phone>
+    <electronicMailAddress>orrellt@si.edu</electronicMailAddress>
+    <onlineUrl>http://collections.mnh.si.edu</onlineUrl>
+      </creator>
+      <metadataProvider>
+    <individualName>
+        <givenName>Tom</givenName>
+      <surName>Hollowell</surName>
+    </individualName>
+    <organizationName>Informatics Branch, NMNH, Smithsonian Institution</organizationName>
+    <positionName>Information Technology Specialist</positionName>
+    <address>
+        <deliveryPoint>P.O. Box 37012, MRC 136</deliveryPoint>
+        <city>Washington</city>
+        <administrativeArea>DC</administrativeArea>
+        <postalCode>20013-7012</postalCode>
+        <country>US</country>
+    </address>
+    <phone>202-633-0849</phone>
+    <electronicMailAddress>hollowellt@si.edu</electronicMailAddress>
+    <onlineUrl>http://collections.nmnh.si.edu</onlineUrl>
+      </metadataProvider>
+  <pubDate>
+      2016-08-31
+  </pubDate>
+  <language>eng</language>
+  <abstract>
+    <para>A testing area for NMNH resources, including Genetic Sample data for GGBN and other users.</para>
+  </abstract>
+      <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keyword>Material Sample</keyword>
+        <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+      </keywordSet>
+  <additionalInfo>
+    <para>While every effort is made to provide accurate information, use of these databases is entirely at your own risk. The National Museum of Natural History makes no warranty, either express or implied, regarding the completeness, accuracy, or currency of the information in the databases or its suitability for any particular purpose. Where the use of this data is critical to scientific investigation, scholarly publication, or policy decisions, the user is responsible for verifying identities and provenance against specimens and other primary data sources.</para>
+  </additionalInfo>
+  <intellectualRights>
+    <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+  </intellectualRights>
+  <distribution scope="document">
+    <online>
+      <url function="information">http://collections.nmnh.si.edu</url>
+    </online>
+  </distribution>
+  <coverage>
+      <geographicCoverage>
+          <geographicDescription>Global collections, National Museum of Natural History (USNM), Smithsonian Institution</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-180</westBoundingCoordinate>
+          <eastBoundingCoordinate>180</eastBoundingCoordinate>
+          <northBoundingCoordinate>90</northBoundingCoordinate>
+          <southBoundingCoordinate>-90</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+          <taxonomicCoverage>
+              <generalTaxonomicCoverage>Across all Phyla of Animals, Plants, and selected groups in other Kingdoms.</generalTaxonomicCoverage>
+              <taxonomicClassification>
+                  <taxonRankName>kingdom</taxonRankName>
+                <taxonRankValue>Animalia</taxonRankValue>
+                  <commonName>Animals</commonName>
+              </taxonomicClassification>
+              <taxonomicClassification>
+                  <taxonRankName>kingdom</taxonRankName>
+                <taxonRankValue>Plantae</taxonRankValue>
+                  <commonName>Plants</commonName>
+              </taxonomicClassification>
+          </taxonomicCoverage>
+  </coverage>
+  <maintenance>
+    <description>
+      <para></para>
+    </description>
+    <maintenanceUpdateFrequency>asNeeded</maintenanceUpdateFrequency>
+  </maintenance>
+
+      <contact>
+    <individualName>
+        <givenName>Thomas</givenName>
+      <surName>Orrell</surName>
+    </individualName>
+    <organizationName>National Museum of Natural History, Smithsonian Institution</organizationName>
+    <positionName>Branch Chief, NMNH Informatics</positionName>
+    <address>
+        <deliveryPoint>P.O. Box 37012, MRC 136</deliveryPoint>
+        <city>Washington</city>
+        <administrativeArea>DC</administrativeArea>
+        <postalCode>20013-7012</postalCode>
+        <country>US</country>
+    </address>
+    <phone>202-633-2151</phone>
+    <electronicMailAddress>orrellt@si.edu</electronicMailAddress>
+    <onlineUrl>http://collections.mnh.si.edu</onlineUrl>
+      </contact>
+  <methods>
+        <methodStep>
+          <description>
+            <para></para>
+          </description>
+        </methodStep>
+  </methods>
+</dataset>
+  <additionalMetadata>
+    <metadata>
+      <gbif>
+          <dateStamp>2016-01-21T09:12:42.437-05:00</dateStamp>
+          <hierarchyLevel>dataset</hierarchyLevel>
+          <resourceLogoUrl>http://logo.si.edu/wp-content/uploads/2014/08/NMNH.png</resourceLogoUrl>
+            <formationPeriod>19th Century to Present</formationPeriod>
+          <dc:replaces>http://collections.nmnh.si.edu/ipt/resource?id=nmnh_materialsample_test/v1.8.xml</dc:replaces>
+      </gbif>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

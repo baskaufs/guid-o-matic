@@ -1,0 +1,8 @@
+"header","predicate","type","value","attribute","subject_id"
+"$link","tc:hasName","iri","_:1",,"$root"
+"taxonID","dcterms:identifier","plain",,,"$root"
+"scientificName","tc:nameString","plain",,,"$root"
+"parentNameUsageID","dwc:parentNameUsageID","iri","http://eol.org/traitbank/",,"$root"
+"taxonRank","tn:rank","plain",,,"_:1"
+"taxonomicStatus","dwc:taxonomicStatus","plain",,,"_:1"
+"scientificName","rdfs:label","plain",,,"$root"

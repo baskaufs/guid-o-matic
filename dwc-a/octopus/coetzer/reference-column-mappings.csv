@@ -1,0 +1,6 @@
+"header","predicate","type","value","attribute","subject_id"
+"bibliographicCitation","dcterms:bibliographicCitation","plain",,,"$root"
+"title","dcterms:title","plain",,,"$root"
+"date","dcterms:date","plain",,,"$root"
+"subject","dc:subject","plain",,,"$root"
+"title","rdfs:label","plain",,,

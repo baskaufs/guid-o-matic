@@ -1,0 +1,281 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+         packageId="5d784d06-fa1d-4f00-8cdc-663d04d26061/v1.6" system="http://gbif.org" scope="system"
+         xml:lang="eng">
+
+<dataset>
+  <alternateIdentifier>5d784d06-fa1d-4f00-8cdc-663d04d26061</alternateIdentifier>
+  <alternateIdentifier>http://apm-ipt.br.fgov.be:8080/ipt-2.3.2/resource?r=commonplantssurveyofvascularplantsnortheastengland</alternateIdentifier>
+  <title xml:lang="eng">A common plants survey of vascular plants in South Northumberland and Durham, United Kingdom</title>
+      <creator>
+    <individualName>
+        <givenName>Quentin</givenName>
+      <surName>Groom</surName>
+    </individualName>
+    <organizationName>Botanic Garden Meise</organizationName>
+    <positionName>Researcher</positionName>
+    <address>
+        <deliveryPoint>Nieuwelaan 38</deliveryPoint>
+        <city>Meise</city>
+        <administrativeArea>Vlaams Brabant</administrativeArea>
+        <postalCode>1860</postalCode>
+        <country>BE</country>
+    </address>
+    <electronicMailAddress>quentin.groom@plantentuinmeise.be</electronicMailAddress>
+          <userId directory="http://orcid.org/">0000-0002-0596-5376</userId>
+      </creator>
+      <metadataProvider>
+    <individualName>
+        <givenName>Quentin</givenName>
+      <surName>Groom</surName>
+    </individualName>
+    <organizationName>Botanic Garden Meise</organizationName>
+    <address>
+        <deliveryPoint>Nieuwelaan 38</deliveryPoint>
+        <city>Meise</city>
+        <administrativeArea>Vlaams Brabant</administrativeArea>
+        <postalCode>1860</postalCode>
+        <country>BE</country>
+    </address>
+    <electronicMailAddress>quentin.groom@plantentuinmeise.be</electronicMailAddress>
+          <userId directory="http://orcid.org/">0000-0002-0596-5376</userId>
+      </metadataProvider>
+      <associatedParty>
+    <individualName>
+        <givenName>John</givenName>
+      <surName>Durkin</surName>
+    </individualName>
+    <organizationName>John Durkin Ecology</organizationName>
+    <address>
+        <city>Blaydon</city>
+        <administrativeArea>Tyne and Wear</administrativeArea>
+        <country>GB</country>
+    </address>
+    <electronicMailAddress>durkinjl@aol.com</electronicMailAddress>
+    <onlineUrl>http://www.durhamnature.co.uk/</onlineUrl>
+    <role>contentProvider</role>
+      </associatedParty>
+      <associatedParty>
+    <individualName>
+        <givenName>John</givenName>
+      <surName>O&apos;Reilly</surName>
+    </individualName>
+    <organizationName>Ptyxis Ecology</organizationName>
+    <address>
+        <deliveryPoint>3 Station Cottages</deliveryPoint>
+        <city>Lambley</city>
+        <postalCode>CA8 7LL</postalCode>
+        <country>GB</country>
+    </address>
+    <phone>01434 321199</phone>
+    <electronicMailAddress>enquiries@ptyxis.com</electronicMailAddress>
+    <onlineUrl>http://www.ptyxis.com/</onlineUrl>
+    <role>author</role>
+      </associatedParty>
+      <associatedParty>
+    <individualName>
+        <givenName>Andy</givenName>
+      <surName>McLay</surName>
+    </individualName>
+    <organizationName>c/o Botanical Society of Britain and Ireland</organizationName>
+    <address>
+        <country>GB</country>
+    </address>
+    <role>contentProvider</role>
+      </associatedParty>
+      <associatedParty>
+    <individualName>
+        <givenName>A. John</givenName>
+      <surName>Richards</surName>
+    </individualName>
+    <organizationName>c/o Botanical Society of Britain and Ireland</organizationName>
+    <address>
+        <country>GB</country>
+    </address>
+    <role>contentProvider</role>
+      </associatedParty>
+      <associatedParty>
+    <individualName>
+        <givenName>Janet</givenName>
+      <surName>Angel</surName>
+    </individualName>
+    <organizationName>c/o The Natural History Society of Northumbria</organizationName>
+    <address>
+        <city>Newcastle-upon-Tyne</city>
+        <country>GB</country>
+    </address>
+    <onlineUrl>http://www.nhsn.ncl.ac.uk/</onlineUrl>
+    <role>contentProvider</role>
+      </associatedParty>
+      <associatedParty>
+    <individualName>
+        <givenName>Angela</givenName>
+      <surName>Horsley</surName>
+    </individualName>
+    <organizationName>c/o The Natural History Society of Northumbria</organizationName>
+    <address>
+        <city>Newcastle-upon-Tyne</city>
+        <country>GB</country>
+    </address>
+    <onlineUrl>http://www.nhsn.ncl.ac.uk/</onlineUrl>
+    <role>contentProvider</role>
+      </associatedParty>
+      <associatedParty>
+    <individualName>
+        <givenName>Megs</givenName>
+      <surName>Rogers</surName>
+    </individualName>
+    <organizationName>c/o The Natural History Society of Northumbria</organizationName>
+    <address>
+        <city>Newcastle-upon-Tyne</city>
+        <country>GB</country>
+    </address>
+    <onlineUrl>http://www.nhsn.ncl.ac.uk/</onlineUrl>
+    <role>contentProvider</role>
+      </associatedParty>
+      <associatedParty>
+    <individualName>
+        <givenName>Gordon</givenName>
+      <surName>Young</surName>
+    </individualName>
+    <organizationName>c/o The Natural History Society of Northumbria</organizationName>
+    <address>
+        <city>Newcastle-upon-Tyne</city>
+        <country>GB</country>
+    </address>
+    <onlineUrl>http://www.nhsn.ncl.ac.uk/</onlineUrl>
+    <role>contentProvider</role>
+      </associatedParty>
+  <pubDate>
+      2016-01-03
+  </pubDate>
+  <language>eng</language>
+  <abstract>
+    <para>A vascular plant survey of the vice counties of South Northumberland and Durham, United Kingdom.</para>
+  </abstract>
+      <keywordSet>
+            <keyword>Samplingevent</keyword>
+            <keyword>plants</keyword>
+            <keyword>Northumberland</keyword>
+            <keyword>Durham</keyword>
+            <keyword>randomised survey</keyword>
+        <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+      </keywordSet>
+  <intellectualRights>
+    <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+  </intellectualRights>
+  <distribution scope="document">
+    <online>
+      <url function="information">http://botanicalkeys.co.uk/northumbria/index.asp</url>
+    </online>
+  </distribution>
+  <coverage>
+      <geographicCoverage>
+          <geographicDescription>The Vice Counties of South Northumberland and Durham, in the north-east of England, United Kingdom</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-2.69</westBoundingCoordinate>
+          <eastBoundingCoordinate>-1.154</eastBoundingCoordinate>
+          <northBoundingCoordinate>55.368</northBoundingCoordinate>
+          <southBoundingCoordinate>54.451</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+          <temporalCoverage>
+              <rangeOfDates>
+                  <beginDate>
+                    <calendarDate>1998-01-01</calendarDate>
+                  </beginDate>
+                <endDate>
+                  <calendarDate>2013-12-30</calendarDate>
+                </endDate>
+              </rangeOfDates>
+          </temporalCoverage>
+          <taxonomicCoverage>
+              <generalTaxonomicCoverage>Vascular plants and charophytes</generalTaxonomicCoverage>
+              <taxonomicClassification>
+                  <taxonRankName>phylum</taxonRankName>
+                <taxonRankValue>Anthophyta</taxonRankValue>
+              </taxonomicClassification>
+              <taxonomicClassification>
+                  <taxonRankName>phylum</taxonRankName>
+                <taxonRankValue>Coniferophyta</taxonRankValue>
+              </taxonomicClassification>
+              <taxonomicClassification>
+                  <taxonRankName>phylum</taxonRankName>
+                <taxonRankValue>Pterophyta</taxonRankValue>
+              </taxonomicClassification>
+              <taxonomicClassification>
+                  <taxonRankName>phylum</taxonRankName>
+                <taxonRankValue>Lycophyta</taxonRankValue>
+              </taxonomicClassification>
+              <taxonomicClassification>
+                  <taxonRankName>phylum</taxonRankName>
+                <taxonRankValue>Charophyta</taxonRankValue>
+              </taxonomicClassification>
+          </taxonomicCoverage>
+  </coverage>
+  <maintenance>
+    <description>
+      <para></para>
+    </description>
+    <maintenanceUpdateFrequency>irregular</maintenanceUpdateFrequency>
+  </maintenance>
+
+      <contact>
+    <individualName>
+        <givenName>Quentin</givenName>
+      <surName>Groom</surName>
+    </individualName>
+    <organizationName>Botanic Garden Meise</organizationName>
+    <positionName>Researcher</positionName>
+    <address>
+        <deliveryPoint>Nieuwelaan 38</deliveryPoint>
+        <city>Meise</city>
+        <administrativeArea>Vlaams Brabant</administrativeArea>
+        <postalCode>1860</postalCode>
+        <country>BE</country>
+    </address>
+    <electronicMailAddress>quentin.groom@plantentuinmeise.be</electronicMailAddress>
+    <onlineUrl>http://www.botanicalkeys.co.uk/northumbria/</onlineUrl>
+          <userId directory="http://orcid.org/">0000-0002-0596-5376</userId>
+      </contact>
+  <methods>
+        <methodStep>
+          <description>
+            <para>Observations were digitised using Mapmate (http://www.mapmate.co.uk/).</para>
+          </description>
+        </methodStep>
+      <sampling>
+        <studyExtent>
+          <description>
+            <para>The idea is to subsample about 3% of the land area of South Northumberland and Durham in 1km × 1km Ordnance Survey squares over three years.</para>
+          </description>
+        </studyExtent>
+        <samplingDescription>
+          <para>The volunteer observers were asked to...
+1. Record all the species that they could identify confidently.
+2. Include, planted or sown plants where they are an important feature of the landscape, but to note when they are planted.
+3. To try to visit the full range of habitats within the grid square.
+4. When they had finished surveying the square, they were asked to assign a DAFOR letter to each species you found. The DAFOR scale is D = Dominant; A = Abundant, F = Frequent, O = Occasional, R = Rare.</para>
+        </samplingDescription>
+      </sampling>
+      <qualityControl>
+        <description>
+          <para>Observations were digitised and reviewed by John Durkin, John O&apos;Reily and Quentin Groom. Any obvious mistakes where deleted at this point.</para>
+        </description>
+      </qualityControl>
+  </methods>
+</dataset>
+  <additionalMetadata>
+    <metadata>
+      <gbif>
+          <dateStamp>2015-11-11T04:48:23.097+01:00</dateStamp>
+          <hierarchyLevel>dataset</hierarchyLevel>
+            <citation identifier="10.3897/BDJ.3.e7318">Groom Q, Durkin J, O&apos;Reilly J, Mclay A, Richards A, Angel J, Horsley A, Rogers M, Young G (2015) A benchmark survey of the common plants of South Northumberland and Durham, United Kingdom. Biodiversity Data Journal 3: e7318. doi: 10.3897/BDJ.3.e7318</citation>
+          <resourceLogoUrl>http://apm-ipt.br.fgov.be:8080/ipt-2.3.2/logo.do?r=commonplantssurveyofvascularplantsnortheastengland</resourceLogoUrl>
+          <dc:replaces>5d784d06-fa1d-4f00-8cdc-663d04d26061/v1.6.xml</dc:replaces>
+      </gbif>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

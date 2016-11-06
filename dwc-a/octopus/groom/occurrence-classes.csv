@@ -1,0 +1,7 @@
+"id","class"
+"$root","dwc:Occurrence"
+"_:1","dwc:Organism"
+"_:2","dwc:Identification"
+"_:3","dcterms:RightsStatement"
+"_:4","dwc:Taxon"
+"_:5","dcmitype:Dataset"

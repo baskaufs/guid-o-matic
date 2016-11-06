@@ -1,0 +1,5 @@
+"header","predicate","type","value","attribute","subject_id"
+"countryCode","rdfs:label","plain",,,"$root"
+"countryCode","dwc:countryCode","plain",,,"$root"
+"establishmentMeans","dwc:establishmentMeans","plain",,,"$root"
+"source","dc:source","plain",,,"$root"

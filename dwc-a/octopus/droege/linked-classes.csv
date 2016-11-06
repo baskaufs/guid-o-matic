@@ -1,0 +1,8 @@
+link_column,link_property,suffix1,link_characters,suffix2,class,filename
+id,dcterms:relation,_:,,,ggbn:Loan,loan.txt
+id,dsw:derivedFrom,_:,,,ggbn:Preparation,preparation.txt
+id,dsw:derivedFrom,_:,,,ggbn:MaterialSample,materialsample.txt
+id,dcterms:relation,_:,,,ggbn:Permit,permit.txt
+id,dcterms:relation,_:,,,ggbn:Preservation,preservation.txt
+id,dcterms:relation,_:,,,dwc:ResourceRelationship,resourcerelationship.txt
+id,dsw:derivedFrom,_:,,,ggbn:Amplification,amplification.txt

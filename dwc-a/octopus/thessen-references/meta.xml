@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<archive xmlns="http://rs.tdwg.org/dwc/text/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.tdwg.org/dwc/text/  http://services.eol.org/schema/dwca/tdwg_dwc_text.xsd">
+  <core encoding="UTF-8" fieldsTerminatedBy="\t" linesTerminatedBy="\n" ignoreHeaderLines="0" rowType="http://eol.org/schema/reference/Reference">
+    <files>
+      <location>references.csv</location>
+    </files>
+    <id index="0" />
+    <field index="0" term="http://purl.org/dc/terms/identifier"/>
+    <field index="1" term="http://eol.org/schema/reference/full_reference"/>
+  </core>
+  </archive>

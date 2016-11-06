@@ -1,0 +1,8 @@
+"id","class"
+"$root","dwc:Identification"
+"_:1","dwc:Organism"
+"_:2","dwc:Occurrence"
+"_:3","dwc:Event"
+"_:4","dcterms:Location"
+"_:5","dwc:PreservedSpecimen"
+"_:6","dcmitype:Dataset"

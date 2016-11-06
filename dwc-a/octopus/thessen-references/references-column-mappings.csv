@@ -1,0 +1,5 @@
+header,predicate,type,value,attribute,subject_id
+dcterms_identifier,dcterms:identifier,plain,,,$root
+full_reference,eolrefer:full_reference,plain,,,$root
+full_reference,dcterms:bibliographicCitation,plain,,,$root
+$constant,rdf:type,iri,dcterms:BibliographicResource,,$root

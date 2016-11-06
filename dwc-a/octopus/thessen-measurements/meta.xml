@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<archive xmlns="http://rs.tdwg.org/dwc/text/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.tdwg.org/dwc/text/  http://services.eol.org/schema/dwca/tdwg_dwc_text.xsd">
+  <core encoding="UTF-8" fieldsTerminatedBy="\t" linesTerminatedBy="\n" ignoreHeaderLines="0" rowType="http://rs.tdwg.org/dwc/terms/MeasurementOrFact">
+    <files>
+      <location>measurements.csv</location>
+    </files>
+    <id index="0" />
+    <field index="0" term="http://rs.tdwg.org/dwc/terms/measurementID"/>
+    <field index="1" term="http://rs.tdwg.org/dwc/terms/occurrenceID"/>
+    <field index="2" term="http://eol.org/schema/parentMeasurementID"/>
+    <field index="3" term="http://eol.org/schema/measurementOfTaxon"/>
+    <field index="4" term="http://rs.tdwg.org/dwc/terms/measurementType"/>
+    <field index="5" term="http://rs.tdwg.org/dwc/terms/measurementValue"/>
+    <field index="6" term="http://rs.tdwg.org/dwc/terms/measurementUnit"/>
+    <field index="7" term="http://eol.org/schema/terms/statisticalMethod"/>
+    <field index="8" term="http://rs.tdwg.org/dwc/terms/measurementRemarks"/>
+    <field index="9" term="http://purl.org/dc/terms/contributor"/>
+    <field index="10" term="http://eol.org/schema/reference/referenceID"/>
+  </core>
+  </archive>

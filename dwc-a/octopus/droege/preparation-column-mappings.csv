@@ -1,0 +1,7 @@
+"header","predicate","type","value","attribute","subject_id"
+"preparationType","ggbn:preparationType","plain",,,"$root"
+"preparationMaterials","ggbn:preparationMaterials","plain",,,"$root"
+"preparedBy","ggbn:preparedBy","plain",,,"$root"
+"preparationDate","ggbn:preparationDate","datatype",,"xsd:date","$root"
+"$constant","rdf:type","iri","dwc:MaterialSample",,"$root"
+"preparationType","rdfs:label","plain",,,"$root"

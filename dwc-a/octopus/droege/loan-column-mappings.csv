@@ -1,0 +1,6 @@
+header,predicate,type,value,attribute,subject_id
+blockedUntil,ggbn:blockedUntil,plain,,,$root
+blocked,ggbn:blocked,plain,,,$root
+loanConditions,ggbn:loanConditions,plain,,,$root
+disposition,dcterms:disposition,plain,,,$root
+$constant,rdf:type,iri,dcterms:RightsStatement,,$root

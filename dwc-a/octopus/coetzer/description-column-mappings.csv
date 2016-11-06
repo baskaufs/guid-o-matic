@@ -1,0 +1,3 @@
+"header","predicate","type","value","attribute","subject_id"
+"description","dcterms:description","language",,"en","$root"
+"type","dc:type","plain",,,"$root"

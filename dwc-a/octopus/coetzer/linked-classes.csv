@@ -1,0 +1,6 @@
+"link_column","link_property","suffix1","link_characters","suffix2","class","filename"
+"id","dwciri:toTaxon","_:",,,"dwc:Occurrence","occurrence.txt"
+"id","tc:INVcircumscribedBy","_:",,,"gbifterms:TypesAndSpecimen","typesandspecimen.txt"
+"id","dcterms:relation","_:",,,"gbifterms:Distribution","distribution.txt"
+"id","dcterms:references","_:",,,"gbifterms:Reference","reference.txt"
+"id","dwc:INVtaxonRemarks","_:",,,"gbifterms:Description","description.txt"

@@ -1,0 +1,12 @@
+header,predicate,type,value,attribute,subject_id
+Measurement_ID,dcterms:identifier,plain,,,$root
+Occurrence_ID,dcterms:relation,iri,http://eol.org/traitbank/,,$root
+MeasurementParent,eol:parentMeasurementID,iri,http://eol.org/traitbank/,,$root
+MeasurementOfTaxon,eol:measurementOfTaxon,datatype,,xsd:boolean,$root
+Measurement_Type,dwciri:measurementType,iri,,,$root
+Measurement_Value,dwc:measurementValue,plain,,,$root
+Unit,dwc:measurementUnit,plain,,,$root
+Statistical_Method,eolterms:statisticalMethod,plain,,,$root
+Remarks,dwc:measurementRemarks,plain,,,$root
+Contributor,dc:contributor,plain,,,$root
+ReferenceID,dcterms:references,iri,http://eol.org/traitbank/,,$root
