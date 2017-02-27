@@ -28,13 +28,13 @@ declare function serialize:main($id,$serialization,$repoPath,$pcRepoLocation,$si
 
 (: This is an attempt to allow the necessary CSV files to load on any platform without hard-coding any paths here.  I know it works for PCs, but am not sure how consistently it works on non-PCs :)
 let $localFilesFolderUnix := 
-  if (fn:substring(file:current-dir(),1,2) = "C:") 
-  then 
+(:  if (fn:substring(file:current-dir(),1,2) = "C:") 
+  then :)
     (: the computer is a PC with a C: drive, the path specified in the function arguments are substituted :)
     "file:///"||$pcRepoLocation||$repoPath
-  else
-    (: it's a Mac with the query running from a repo located at the default under the user directory :)
-    file:current-dir() || "/Repositories/"||$repoPath
+(:  else
+     it's a Mac with the query running from a repo located at the default under the user directory
+    file:current-dir() || "/Repositories/"||$repoPath :)
 
 let $constantsDoc := file:read-text(concat($localFilesFolderUnix, 'constants.csv'))
 let $xmlConstants := csv:parse($constantsDoc, map { 'header' : true(),'separator' : "," })
