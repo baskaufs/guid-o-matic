@@ -1,0 +1,10 @@
+<base-classes>
+  <record>
+    <id>$root</id>
+    <class>geo:SpatialThing</class>
+  </record>
+  <record>
+    <id>_:1</id>
+    <class>dcterms:PeriodOfTime</class>
+  </record>
+</base-classes>
