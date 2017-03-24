@@ -23,6 +23,46 @@ declare function serialize:substring-after-last
  } ;
 (:--------------------------------------------------------------------------------------------------:)
 
+declare function serialize:main-db($id,$serialization,$singleOrDump,$outputToFile)
+{
+let $db := "tang-song"
+
+let $constants := fn:collection($db)//constants/record
+let $domainRoot := $constants//domainRoot/text()
+let $outputDirectory := $constants//outputDirectory/text()
+let $baseIriColumn := $constants//baseIriColumn/text()
+let $modifiedColumn := $constants//modifiedColumn/text()
+let $outFileNameAfter := $constants//outFileNameAfter/text()
+
+let $columnInfo := fn:collection($db)//column-index/record
+let $namespaces := fn:collection($db)//namespaces/record
+let $classes := fn:collection($db)//base-classes/record
+let $linkedClasses := fn:collection($db)//linked-classes/record
+let $metadata := fn:collection($db)//metadata/record
+let $linkedMetadata := fn:collection($db)//file
+  
+(: The main function returns a single string formed by concatenating all of the assembled pieces of the document :)
+return 
+  if ($outputToFile="true")
+  then
+    (: Creates the output directory specified in the constants.csv file if it doesn't already exist.  Then writes into a file having the name passed via the $id parameter concatenated with an appropriate file extension. uses default UTF-8 encoding :)
+    (file:create-dir($outputDirectory),
+    
+    (: If the $id is a full IRI or long string, use only the part after the delimiter in $outFileNameAfter as the file name.  Otherwise, use the entire value of $id as the file name:) 
+    if ($outFileNameAfter) 
+    then file:write-text($outputDirectory||serialize:substring-after-last($id, $outFileNameAfter)||propvalue:extension($serialization),serialize:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
+    else file:write-text($outputDirectory||$id||propvalue:extension($serialization),serialize:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
+    ,
+    
+    (: put this in the Result window so that the user can tell that something happened :)
+    "Completed file write of "||$id||propvalue:extension($serialization)||" at "||fn:current-dateTime()
+    )
+  else
+    (: simply output the string to the Result window :)
+    serialize:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
+};
+(:--------------------------------------------------------------------------------------------------:)
+
 declare function serialize:main($id,$serialization,$repoPath,$pcRepoLocation,$singleOrDump,$outputToFile)
 {
 
@@ -67,6 +107,7 @@ let $linkedClasses := $xmlLinkedClasses/csv/record
 
 let $metadataDoc := file:read-text($localFilesFolderUnix ||$coreDoc)
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+let $metadata := $xmlMetadata/csv/record
 
 let $linkedMetadata :=
       for $class in $linkedClasses
@@ -109,8 +150,8 @@ return
     
     (: If the $id is a full IRI or long string, use only the part after the delimiter in $outFileNameAfter as the file name.  Otherwise, use the entire value of $id as the file name:) 
     if ($outFileNameAfter) 
-    then file:write-text($outputDirectory||serialize:substring-after-last($id, $outFileNameAfter)||propvalue:extension($serialization),serialize:generate-entire-document($id,$linkedMetadata,$xmlMetadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
-    else file:write-text($outputDirectory||$id||propvalue:extension($serialization),serialize:generate-entire-document($id,$linkedMetadata,$xmlMetadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
+    then file:write-text($outputDirectory||serialize:substring-after-last($id, $outFileNameAfter)||propvalue:extension($serialization),serialize:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
+    else file:write-text($outputDirectory||$id||propvalue:extension($serialization),serialize:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
     ,
     
     (: put this in the Result window so that the user can tell that something happened :)
@@ -118,7 +159,7 @@ return
     )
   else
     (: simply output the string to the Result window :)
-    serialize:generate-entire-document($id,$linkedMetadata,$xmlMetadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
+    serialize:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
 };
 (:--------------------------------------------------------------------------------------------------:)
 
@@ -166,6 +207,7 @@ let $linkedClasses := $xmlLinkedClasses/csv/record
 
 let $metadataDoc := file:read-text($localFilesFolderUnix ||$coreDoc)
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+let $metadata := $xmlMetadata/csv/record
 
 let $linkedMetadata :=
       for $class in $linkedClasses
@@ -201,12 +243,31 @@ let $linkedMetadata :=
   
 return 
       (: each record in the database must be checked for a match to the requested URI :)
-      for $record in $xmlMetadata/csv/record
+      for $record in $metadata
       where $record/*[local-name()=$baseIriColumn]/text()=$id
       return true()      
 };
 
-declare function serialize:generate-entire-document($id,$linkedMetadata,$xmlMetadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
+(:--------------------------------------------------------------------------------------------------:)
+
+declare function serialize:find-db($id)
+{
+
+let $db := "tang-song"
+
+let $constants := fn:collection($db)//constants/record
+let $baseIriColumn := $constants//baseIriColumn/text()
+
+let $metadata := fn:collection($db)//metadata/record
+  
+return 
+      (: each record in the database must be checked for a match to the requested URI :)
+      for $record in $metadata
+      where $record/*[local-name()=$baseIriColumn]/text()=$id
+      return true()      
+};
+
+declare function serialize:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
 {
 concat( 
   (: the namespace abbreviations only needs to be generated once for the entire document :)
@@ -215,13 +276,13 @@ concat(
     if ($singleOrDump = "dump")
     then
       (: this case outputs every record in the database :)
-      for $record in $xmlMetadata/csv/record
+      for $record in $metadata
       let $baseIRI := $domainRoot||$record/*[local-name()=$baseIriColumn]/text()
       let $modified := $record/*[local-name()=$modifiedColumn]/text()
       return serialize:generate-a-record($record,$linkedMetadata,$baseIRI,$domainRoot,$modified,$classes,$columnInfo,$serialization,$namespaces,$constants)
     else
       (: for a single record, each record in the database must be checked for a match to the requested URI :)
-      for $record in $xmlMetadata/csv/record
+      for $record in $metadata
       where $record/*[local-name()=$baseIriColumn]/text()=$id
       let $baseIRI := $domainRoot||$record/*[local-name()=$baseIriColumn]/text()
       let $modified := $record/*[local-name()=$modifiedColumn]/text()

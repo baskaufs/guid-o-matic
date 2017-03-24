@@ -18,8 +18,6 @@ let $gitRepoWin := file:parent(file:base-dir())
 (: If it's a Windows file system, replace backslashes with forward slashes.  Otherwise, nothing happens. :)
 let $gitRepo := fn:replace($gitRepoWin,"\\","/")
 
-return if(serialize:find("Longxingsi","guid-o-matic/",$gitRepo))
-then "true"
-else "false"
+return serialize:main-db("Longxingsi","turtle","guid-o-matic/",$gitRepo,"single","false")
 
 
