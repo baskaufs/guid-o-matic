@@ -3,7 +3,131 @@
 (: to test, send an HTTP GET to localhost:8984/Longxingsi using cURL, Postman, etc. :)
 
 module namespace page = 'http://basex.org/modules/web-page';
-import module namespace serialize = 'http://bioimages.vanderbilt.edu/xqm/serialize' at 'c:/github/guid-o-matic/serialize.xqm';
+import module namespace serialize = 'http://bioimages.vanderbilt.edu/xqm/serialize' at 'https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/serialize.xqm';
+
+(:----------------------------------------------------------------------------------------------:)
+(: Main functions for handling URI patterns :)
+
+(: This is a temporary function for testing the kind of Accept header sent by the client :)
+declare
+  %rest:path("/header")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:web($acceptHeader)
+  {
+  <p>{$acceptHeader}</p>
+  };
+
+(: This is a hacked function to provice an option to dump the entire dataset :)
+declare
+  %rest:path("/dump")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dump($acceptHeader)
+  {
+  let $ext := page:determine-extension($acceptHeader)
+  let $extension := 
+      if ($ext = "htm")
+      then 
+          (: If the client is a browser, return Turtle :)
+          "ttl"
+      else
+          (: Otherwise, return the requested media type :)
+          $ext    
+  let $response-media-type := page:determine-media-type($extension)
+  let $flag := page:determine-type-flag($extension)
+
+  return
+      (
+      <rest:response>
+        <output:serialization-parameters>
+          <output:media-type value='{$response-media-type}'/>
+        </output:serialization-parameters>
+      </rest:response>,
+      serialize:main-db("",$flag,"dump","false")
+      )
+  };
+
+(: This is the main handler function :)
+declare
+  %rest:path("/{$full-local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:content-negotiation($acceptHeader,$full-local-id)
+  {
+  if (contains($full-local-id,"."))
+  then page:handle-repesentation($acceptHeader,$full-local-id)
+  else page:see-also($acceptHeader,$full-local-id)
+  };
+
+(:----------------------------------------------------------------------------------------------:)
+(: Second-level functions :)
+
+(: Handle request for specific representation when requested with file extension :)
+declare function page:handle-repesentation($acceptHeader,$full-local-id)
+{
+  let $local-id := substring-before($full-local-id,".")
+  return
+      if(serialize:find-db($local-id))  (: check whether the resource is in the database :)
+      then
+          let $extension := substring-after($full-local-id,".")
+          (: When a specific file extension is requested, override the requested content type. :)
+          let $response-media-type := page:determine-media-type($extension)
+          let $flag := page:determine-type-flag($extension)
+          return page:return-representation($response-media-type,$local-id,$flag)
+      else
+          page:not-found()  (: respond with 404 if not in database :)
+};
+
+(: Function to return a representation of a resource or all resources :)
+declare function page:return-representation($response-media-type,$local-id,$flag)
+{
+  <rest:response>
+    <output:serialization-parameters>
+      <output:media-type value='{$response-media-type}'/>
+    </output:serialization-parameters>
+  </rest:response>,
+  if ($flag = "html")
+  then page:handle-html($local-id)
+  else serialize:main-db($local-id,$flag,"single","false")
+};
+
+(: Placeholder function to return a web page :)
+declare function page:handle-html($local-id)
+{
+<html>
+    <body>
+        <p>Placeholder web page for: {$local-id}</p>
+    </body>
+</html>  
+};
+
+(: 303 See Also redirect to specific representation having file exension, based on requested media type :)
+declare function page:see-also($acceptHeader,$full-local-id)
+{
+  if(serialize:find-db($full-local-id))  (: check whether the resource is in the database :)
+  then
+      let $extension := page:determine-extension($acceptHeader)
+      return
+          <rest:response>
+            <http:response status="303">
+              <http:header name="location" value="{ concat($full-local-id,".",$extension) }"/>
+            </http:response>
+          </rest:response> 
+  else
+      page:not-found()  (: respond with 404 if not in database :)
+};
+
+(: Function to generate a 404 Not found response :)
+declare function page:not-found()
+{
+  <rest:response>
+    <http:response status="404" message="Not found.">
+      <http:header name="Content-Language" value="en"/>
+      <http:header name="Content-Type" value="text/html; charset=utf-8"/>
+    </http:response>
+  </rest:response>
+};
+
+(:----------------------------------------------------------------------------------------------:)
+(: Utility functions to set media type-dependent values :)
 
 (: Functions used to set media type-specific values :)
 declare function page:determine-extension($header)
@@ -37,88 +161,3 @@ declare function page:determine-type-flag($extension)
     default return "html"
 };
 
-(: Function to return a representation of a resource or all resources :)
-declare function page:return-representation($response-media-type,$local-id,$flag,$outtype)
-{
-if(serialize:find-db($local-id))
-then 
-  (
-  <rest:response>
-    <output:serialization-parameters>
-      <output:media-type value='{$response-media-type}'/>
-    </output:serialization-parameters>
-  </rest:response>,
-  if ($flag = "html")
-  then page:handle-html($local-id)
-  else serialize:main-db($local-id,$flag,$outtype,"false")
-  )
-else
-  <rest:response>
-    <http:response status="404" message="Not found.">
-      <http:header name="Content-Language" value="en"/>
-      <http:header name="Content-Type" value="text/html; charset=utf-8"/>
-    </http:response>
-  </rest:response>
-};
-
-(: Placeholder function to return a web page :)
-declare function page:handle-html($local-id)
-{
-<html>
-    <body>
-        <p>Placeholder web page for: {$local-id}</p>
-    </body>
-</html>  
-};
-
-(: Main functions for handling URI patterns :)
-
-(: This is a temporary function for testing the kind of Accept header sent by the client :)
-declare
-  %rest:path("/header")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:web($acceptHeader)
-  {
-  <p>{$acceptHeader}</p>
-  };
-
-(: This is the main handler function :)
-declare
-  %rest:path("/{$full-local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:content-negotiation($acceptHeader,$full-local-id)
-  {
-    
-  let $extension := page:determine-extension($acceptHeader)
-  let $response-media-type := page:determine-media-type($extension)
-  let $flag := page:determine-type-flag($extension)
-  let $outtype := 
-      if ($full-local-id = "dump")
-      then "dump"
-      else "single"
-
-  return
-
-  if ($outtype="dump")
-  then 
-      (: Handle option to dump the entire dataset.  Doesn't work if text/html is requested. :)
-      page:return-representation($response-media-type,$full-local-id,$flag,$outtype)
-  else
-      (: Handle a request for a single resource :)
-      if (contains($full-local-id,"."))
-      then
-          (: Handle request for specific representation when requested with file extension :)
-          let $local-id := substring-before($full-local-id,".")
-          let $new-extension := substring-after($full-local-id,".")
-          (: When a specific file extension is requested, override the requested content type. :)
-          let $new-response-media-type := page:determine-media-type($new-extension)
-          let $new-flag := page:determine-type-flag($new-extension)
-          return page:return-representation($new-response-media-type,$local-id,$new-flag,$outtype)
-      else
-          (: Perform "see also" redirect based on requested media type to a specific representation having a file exension :)
-          <rest:response>
-            <http:response status="303">
-              <http:header name="location" value="{ concat($full-local-id,".",$extension) }"/>
-            </http:response>
-          </rest:response>
-  };
