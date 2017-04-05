@@ -1,6 +1,10 @@
 xquery version "3.1";
 (: part of Guid-O-Matic 2.0 https://github.com/baskaufs/guid-o-matic . You are welcome to reuse or hack in any way :)
 
+(: Note: output of the XML files is to the directory specified in the constants.csv file in the input directory :)
+
+(: It is important that the column headers in linked CSV data files are unique. :)
+
 (: In order to avoid hard-coding file locations, the propvalue module is imported from GitHub.  It is unlikely that you will need to modify any of the functions it contains, but if you do, you will need to substitute after the "at" keyword the path to the local directory where you put the propvalue.xqm file :)
 import module namespace propvalue = 'http://bioimages.vanderbilt.edu/xqm/propvalue' at 'https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/propvalue.xqm'; 
 
@@ -42,8 +46,8 @@ let $constants := $xmlConstants/csv/record
 let $domainRoot := $constants//domainRoot/text()
 let $coreDoc := $constants//coreClassFile/text()
 let $coreClassPrefix := substring-before($coreDoc,".")
-let $outputDirectory := "c:/test/output/xml/"
-(: let $outputDirectory := $constants//outputDirectory/text() :)
+(: let $outputDirectory := "c:/test/output/xml/"  :)
+let $outputDirectory := $constants//outputDirectory/text()
 let $metadataSeparator := $constants//separator/text()
 let $baseIriColumn := $constants//baseIriColumn/text()
 let $modifiedColumn := $constants//modifiedColumn/text()
@@ -115,7 +119,7 @@ return
     file:write($outputDirectory||"classes.xml",<base-classes>{$classes}</base-classes>),
     file:write($outputDirectory||"linked-classes.xml",<linked-classes>{$linkedClasses}</linked-classes>),
     file:write($outputDirectory||"metadata.xml",<metadata>{$metadata}</metadata>),
-    file:write($outputDirectory||"linked-metadata.xml",$linkedMetadata),
+    file:write($outputDirectory||"linked-metadata.xml",<linked-metadata>{$linkedMetadata}</linked-metadata>),
     
     (: put this in the Result window so that the user can tell that something happened :)
     "Completed file write of XML files at "||fn:current-dateTime()
