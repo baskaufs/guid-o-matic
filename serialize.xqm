@@ -254,10 +254,9 @@ return
 
 (:--------------------------------------------------------------------------------------------------:)
 
-declare function serialize:find-db($id)
+declare function serialize:find-db($id,$db)
 {
-
-let $db := "tang-song"
+(: let $db := "tang-song" :)
 
 let $constants := fn:collection($db)//constants/record
 let $baseIriColumn := $constants//baseIriColumn/text()
