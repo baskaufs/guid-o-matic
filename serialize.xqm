@@ -23,9 +23,13 @@ declare function serialize:substring-after-last
  } ;
 (:--------------------------------------------------------------------------------------------------:)
 
-declare function serialize:main-db($id,$serialization,$singleOrDump,$outputToFile)
+declare function serialize:main-db($id,$serialization,$singleOrDump,$db)
 {
-let $db := "tang-song"
+(: This database version is intended to be used with the restxq-db web service.  So output to a file is always
+disabled.  Instead of using the last parameter to pass the save file path, in this function, it's used to specify
+the database to be used in the function call. :)
+(: let $db := "tang-song" :)
+let $outputToFile := "false"
 
 let $constants := fn:collection($db)//constants/record
 let $domainRoot := $constants//domainRoot/text()
