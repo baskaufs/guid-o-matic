@@ -19,10 +19,11 @@ declare
 
 (: This is a hacked function to provice an option to dump the entire dataset :)
 declare
-  %rest:path("/dump")
+  %rest:path("/dump/{$db}")
   %rest:header-param("Accept","{$acceptHeader}")
-  function page:dump($acceptHeader)
+  function page:dump($acceptHeader,$db)
   {
+    (: $db is the BaseX XML database to be dumped as RDF :)
   let $ext := page:determine-extension($acceptHeader)
   let $extension := 
       if ($ext = "htm")
@@ -42,42 +43,57 @@ declare
           <output:media-type value='{$response-media-type}'/>
         </output:serialization-parameters>
       </rest:response>,
-      serialize:main-db("",$flag,"dump","false")
+      serialize:main-db("",$flag,"dump",$db)
       )
   };
 
-(: This is the main handler function :)
+(: This is the main handler function for URI patterns with local names directly after the domain name :)
 declare
   %rest:path("/{$full-local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
   function page:content-negotiation($acceptHeader,$full-local-id)
   {
-  if (contains($full-local-id,"."))
-  then page:handle-repesentation($acceptHeader,$full-local-id)
-  else page:see-also($acceptHeader,$full-local-id)
+  let $db := "built-works" (: in this pattern-matching instance, the type of resource is described in the tang-song BaseX database.  :)
+  return
+    if (contains($full-local-id,"."))
+    then page:handle-repesentation($acceptHeader,$full-local-id,$db)
+    else page:see-also($acceptHeader,$full-local-id,$db)
+  };
+
+(: This is the main handler function for URI patterns where the local name follows the "image" subpath :)
+declare
+  %rest:path("/image/{$full-local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:content-negotiation-image($acceptHeader,$full-local-id)
+  {
+  let $db := "temple-images" (: in this pattern-matching instance, the type of resource is described in the temple-images BaseX database.  :)
+  return
+    if (contains($full-local-id,"."))
+    then page:handle-repesentation($acceptHeader,$full-local-id,$db)
+    else page:see-also($acceptHeader,$full-local-id,$db)
   };
 
 (:----------------------------------------------------------------------------------------------:)
 (: Second-level functions :)
 
 (: Handle request for specific representation when requested with file extension :)
-declare function page:handle-repesentation($acceptHeader,$full-local-id)
+declare function page:handle-repesentation($acceptHeader,$full-local-id,$db)
 {
   let $local-id := substring-before($full-local-id,".")
   return
-      if(serialize:find-db($local-id))  (: check whether the resource is in the database :)
+      if(serialize:find-db($local-id,$db))  (: check whether the resource is in the database :)
       then
           let $extension := substring-after($full-local-id,".")
           (: When a specific file extension is requested, override the requested content type. :)
           let $response-media-type := page:determine-media-type($extension)
           let $flag := page:determine-type-flag($extension)
-          return page:return-representation($response-media-type,$local-id,$flag)
+          return page:return-representation($response-media-type,$local-id,$flag,$db)
       else
           page:not-found()  (: respond with 404 if not in database :)
 };
 
 (: Function to return a representation of a resource or all resources :)
-declare function page:return-representation($response-media-type,$local-id,$flag)
+declare function page:return-representation($response-media-type,$local-id,$flag,$db)
 {
   <rest:response>
     <output:serialization-parameters>
@@ -86,7 +102,7 @@ declare function page:return-representation($response-media-type,$local-id,$flag
   </rest:response>,
   if ($flag = "html")
   then page:handle-html($local-id)
-  else serialize:main-db($local-id,$flag,"single","false")
+  else serialize:main-db($local-id,$flag,"single",$db)
 };
 
 (: Placeholder function to return a web page :)
@@ -100,9 +116,9 @@ declare function page:handle-html($local-id)
 };
 
 (: 303 See Also redirect to specific representation having file exension, based on requested media type :)
-declare function page:see-also($acceptHeader,$full-local-id)
+declare function page:see-also($acceptHeader,$full-local-id,$db)
 {
-  if(serialize:find-db($full-local-id))  (: check whether the resource is in the database :)
+  if(serialize:find-db($full-local-id,$db))  (: check whether the resource is in the database :)
   then
       let $extension := page:determine-extension($acceptHeader)
       return

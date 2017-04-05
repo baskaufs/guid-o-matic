@@ -1,0 +1,13 @@
+<constants>
+  <record>
+    <domainRoot>http://tcadrt.app.vanderbilt.edu/image/</domainRoot>
+    <coreClassFile>images.csv</coreClassFile>
+    <documentClass>foaf:Document</documentClass>
+    <creator>Vanderbilt Department of History of Art</creator>
+    <outputDirectory>c:\test\output\temple-images\</outputDirectory>
+    <outFileNameAfter/>
+    <separator>,</separator>
+    <baseIriColumn>dcterms_identifier</baseIriColumn>
+    <modifiedColumn>dcterms_modified</modifiedColumn>
+  </record>
+</constants>

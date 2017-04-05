@@ -32,6 +32,10 @@
     <value>http://www.w3.org/2003/01/geo/wgs84_pos#</value>
   </record>
   <record>
+    <curie>dwciri</curie>
+    <value>http://rs.tdwg.org/dwc/iri/</value>
+  </record>
+  <record>
     <curie>dwc</curie>
     <value>http://rs.tdwg.org/dwc/terms/</value>
   </record>
@@ -50,13 +54,5 @@
   <record>
     <curie>gvp</curie>
     <value>http://vocab.getty.edu/ontology#</value>
-  </record>
-  <record>
-    <curie>dctype</curie>
-    <value>http://purl.org/dc/dcmitype/</value>
-  </record>
-  <record>
-    <curie>ac</curie>
-    <value>http://rs.tdwg.org/ac/terms/</value>
   </record>
 </namespaces>

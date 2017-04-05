@@ -4,15 +4,23 @@
     <predicate>rdfs:label</predicate>
     <type>language</type>
     <value/>
-    <attribute>zh-Latn-pinyin</attribute>
+    <attribute>zh-latn-pinyin</attribute>
     <subject_id>$root</subject_id>
   </record>
   <record>
-    <header>site_name_zh-Hans</header>
+    <header>site_name3_simplified</header>
     <predicate>rdfs:label</predicate>
     <type>language</type>
     <value/>
-    <attribute>zh-Hans</attribute>
+    <attribute>zh-hans</attribute>
+    <subject_id>$root</subject_id>
+  </record>
+  <record>
+    <header>site_name2_traditional</header>
+    <predicate>rdfs:label</predicate>
+    <type>language</type>
+    <value/>
+    <attribute>zh-hant</attribute>
     <subject_id>$root</subject_id>
   </record>
   <record>
@@ -44,7 +52,7 @@
     <predicate>dwc:locality</predicate>
     <type>language</type>
     <value/>
-    <attribute>zh-Hans</attribute>
+    <attribute>zh-hans</attribute>
     <subject_id>$root</subject_id>
   </record>
   <record>
@@ -100,11 +108,11 @@
     <predicate>rdfs:label</predicate>
     <type>language</type>
     <value/>
-    <attribute>zh-Hans</attribute>
+    <attribute>zh-hans</attribute>
     <subject_id>_:1</subject_id>
   </record>
   <record>
-    <header>site_date_verbatim_en</header>
+    <header>site_date_en</header>
     <predicate>rdfs:label</predicate>
     <type>language</type>
     <value/>
@@ -134,5 +142,45 @@
     <value>time:ProperInterval</value>
     <attribute/>
     <subject_id>_:1</subject_id>
+  </record>
+  <record>
+    <header>province_name_zn-Hans</header>
+    <predicate>dwc:stateProvince</predicate>
+    <type>language</type>
+    <value/>
+    <attribute>zh-hans</attribute>
+    <subject_id>$root</subject_id>
+  </record>
+  <record>
+    <header>county-city_name_zn-Hans</header>
+    <predicate>dwc:county</predicate>
+    <type>language</type>
+    <value/>
+    <attribute>zh-hans</attribute>
+    <subject_id>$root</subject_id>
+  </record>
+  <record>
+    <header>province_name_zh-latn-pinyin</header>
+    <predicate>dwc:stateProvince</predicate>
+    <type>language</type>
+    <value/>
+    <attribute>zh-latn-pinyin</attribute>
+    <subject_id>$root</subject_id>
+  </record>
+  <record>
+    <header>county-city_name_zh-latn-pinyin</header>
+    <predicate>dwc:county</predicate>
+    <type>language</type>
+    <value/>
+    <attribute>zh-latn-pinyin</attribute>
+    <subject_id>$root</subject_id>
+  </record>
+  <record>
+    <header>political_subdivision_getty_tgn</header>
+    <predicate>dwciri:inDescribedPlace</predicate>
+    <type>iri</type>
+    <value>http://vocab.getty.edu/tgn/</value>
+    <attribute/>
+    <subject_id>$root</subject_id>
   </record>
 </column-index>

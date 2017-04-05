@@ -1,8 +1,8 @@
 <linked-classes>
   <record>
-    <link_column>site_name_zh-Latn-pinyin</link_column>
+    <link_column>built_work_site_foreign_key</link_column>
     <link_property>schema:containedInPlace</link_property>
-    <suffix1>building_local_name</suffix1>
+    <suffix1>work_building_identifier</suffix1>
     <link_characters/>
     <suffix2/>
     <class>schema:LandmarksOrHistoricalBuildings</class>

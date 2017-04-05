@@ -1,0 +1,14 @@
+<base-classes>
+  <record>
+    <id>$root</id>
+    <class>dctype:StillImage</class>
+  </record>
+  <record>
+    <id>_:1</id>
+    <class>ac:ServiceAccessPoint</class>
+  </record>
+  <record>
+    <id>_:2</id>
+    <class>ac:ServiceAccessPoint</class>
+  </record>
+</base-classes>
