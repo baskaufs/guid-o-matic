@@ -95,24 +95,27 @@ declare function page:handle-repesentation($acceptHeader,$full-local-id,$db)
 (: Function to return a representation of a resource or all resources :)
 declare function page:return-representation($response-media-type,$local-id,$flag,$db)
 {
+  if ($flag = "html")
+  then page:handle-html($local-id)
+  else   
+  (: I moved this within the ELSE statement because it interferes with the HTML redirect if I leave it before the IF :)
   <rest:response>
     <output:serialization-parameters>
       <output:media-type value='{$response-media-type}'/>
     </output:serialization-parameters>
   </rest:response>,
-  if ($flag = "html")
-  then page:handle-html($local-id)
-  else serialize:main-db($local-id,$flag,"single",$db)
+  serialize:main-db($local-id,$flag,"single",$db)
 };
 
 (: Placeholder function to return a web page :)
 declare function page:handle-html($local-id)
 {
-<html>
-    <body>
-        <p>Placeholder web page for: {$local-id}</p>
-    </body>
-</html>  
+  (: Perform a temporary redirect to the SPARQL-based web application that generates the HTML :)
+  <rest:response>
+    <http:response status="302">
+      <http:header name="location" value="http://bioimages.vanderbilt.edu/built-work.html?{$local-id}"/>
+    </http:response>
+  </rest:response> 
 };
 
 (: 303 See Also redirect to specific representation having file exension, based on requested media type :)
