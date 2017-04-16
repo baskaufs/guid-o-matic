@@ -18,10 +18,10 @@ The purpose of Guid-O-Matic is mostly to show that it is not really that hard to
 ## Why is it called "Guid-O-Matic" and not something like "RDF-Generator-O-Matic"?
 Because I already had the cute squid picture and "RDF Generator" doesn't rhyme with "squid".
 
-## Why did you write this script in Xquery and not something like Python or PHP?
+## Why did you write this script in XQuery and not something like Python or PHP?
 I am not a very good Python programmer and I don't know PHP.  Once you understand what Guid-O-Matic does, you can write your own (better) code to do the same thing.
 
-I used Xquery because I'm in a working group that includes a lot of Digital Humanists, and they love XML.  Also, the awesome Xquery processor, BaseX, is free and easily downloaded and installed.  So anybody can easily run the Guid-O-Matic scripts.  In addition, BaseX can run as a web server, so in theory, one could call the RDF-generating functions in response to a HTTP request and actually use the scripts to provide RDF online.
+I used XQuery because I'm in a working group that includes a lot of Digital Humanists, and they love XML.  Also, the awesome XQuery processor, BaseX, is free and easily downloaded and installed.  So anybody can easily run the Guid-O-Matic scripts.  In addition, BaseX can run as a web server, so in theory, one could call the RDF-generating functions in response to a HTTP request and actually use the scripts to provide RDF online.
 
 ## What did Guid-O-Matic 1.1 do?
 I wrote Guid-O-Matic 1 in about 2010.  Version 1.1 had a very limited scope:
@@ -44,9 +44,9 @@ Version 2 is intended to be as general as is practical considering that the sour
 - allows linking of any number of classes whose instances have a many-to-one relationship with the focal class (i.e. a "star schema"). This includes [Darwin Core Archive (DwCa)](http://www.gbif.org/resource/80636) files.
 - output can be onscreen or to a file.
 - output can be a single record or a dump of the entire database.
-- the main script is included in an Xquery module so that it could potentially be called from the [BaseX Web Application](http://docs.basex.org/wiki/Web_Application) and therefore be used to actually dereference IRIs.  (In that case, the code would probably be hacked to pull the data from an XML database rather than from the CSV files.)
+- the main script is included in an XQuery module so that it could potentially be called from the [BaseX Web Application](http://docs.basex.org/wiki/Web_Application) and therefore be used to actually dereference IRIs.  (In that case, the code would probably be hacked to pull the data from an XML database rather than from the CSV files.)
 
-Version 2 is written in [Xquery (a W3C Recommendation)](https://www.w3.org/TR/xquery/).  It can be run using [BaseX](http://basex.org/), a free Xquery processor.  Instructions for setting everything up are elsewhere.
+Version 2 is written in [XQuery (a W3C Recommendation)](https://www.w3.org/TR/xquery/).  It can be run using [BaseX](http://basex.org/), a free XQuery processor.  Instructions for setting everything up are elsewhere.
 
 In addition to the main script that generates the RDF, there is an additional script that processes a Darwin Core Archive so that it can be used as source data.  It pulls information from the meta.xml file to generate hackable mappings from the CSV files to the RDF.  
 
