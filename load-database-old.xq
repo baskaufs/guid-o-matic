@@ -1,8 +1,6 @@
 xquery version "3.1";
 (: part of Guid-O-Matic 2.0 https://github.com/baskaufs/guid-o-matic . You are welcome to reuse or hack in any way :)
 
-(: The earlier version of this (no HTTP support) is now called load-database-old.xq :)
-
 (: Note: output of the XML files is to the directory specified in the constants.csv file in the input directory :)
 
 (: It is important that the column headers in linked CSV data files are unique. :)
@@ -28,12 +26,19 @@ declare function local:substring-after-last
  } ;
 (:--------------------------------------------------------------------------------------------------:)
 
-declare function local:main($repoLocation,$repoPath,$dbaseName,$outputMethod,$password)
+declare function local:main($repoPath,$pcRepoLocation,$outputToFile)
 {
 
 (: This is an attempt to allow the necessary CSV files to load on any platform without hard-coding any paths here.  I know it works for PCs, but am not sure how consistently it works on non-PCs :)
-let $localFilesFolderUnix := "file:///"||$repoLocation||$repoPath||$dbaseName||"/"
-    
+let $localFilesFolderUnix := 
+(:  if (fn:substring(file:current-dir(),1,2) = "C:") 
+  then :)
+    (: the computer is a PC with a C: drive, the path specified in the function arguments are substituted :)
+    "file:///"||$pcRepoLocation||$repoPath
+(:  else
+     it's a Mac with the query running from a repo located at the default under the user directory
+    file:current-dir() || "/Repositories/"||$repoPath :)
+
 let $constantsDoc := file:read-text(concat($localFilesFolderUnix, 'constants.csv'))
 let $xmlConstants := csv:parse($constantsDoc, map { 'header' : true(),'separator' : "," })
 let $constants := $xmlConstants/csv/record
@@ -41,7 +46,7 @@ let $constants := $xmlConstants/csv/record
 let $domainRoot := $constants//domainRoot/text()
 let $coreDoc := $constants//coreClassFile/text()
 let $coreClassPrefix := substring-before($coreDoc,".")
-(: let $outputDirectory := "c:/test/output/xml/"   :)
+(: let $outputDirectory := "c:/test/output/xml/"  :)
 let $outputDirectory := $constants//outputDirectory/text()
 let $metadataSeparator := $constants//separator/text()
 let $baseIriColumn := $constants//baseIriColumn/text()
@@ -99,49 +104,31 @@ let $linkedMetadata :=
           }</metadata>
        }</file>
        )
-return (
-  (:  file:write-text("c:\Dropbox\swwg\manage-databases\upload-log.txt", :)
-    local:output($outputMethod,$outputDirectory,$dbaseName,$password,"constants.xml",<constants>{$constants}</constants>),
-    local:output($outputMethod,$outputDirectory,$dbaseName,$password,"column-index.xml",<column-index>{$columnInfo}</column-index>),
-    local:output($outputMethod,$outputDirectory,$dbaseName,$password,"namespaces.xml",<namespaces>{$namespaces}</namespaces>),
-    local:output($outputMethod,$outputDirectory,$dbaseName,$password,"classes.xml",<base-classes>{$classes}</base-classes>),
-    local:output($outputMethod,$outputDirectory,$dbaseName,$password,"linked-classes.xml",<linked-classes>{$linkedClasses}</linked-classes>),
-    local:output($outputMethod,$outputDirectory,$dbaseName,$password,"metadata.xml",<metadata>{$metadata}</metadata>),
-    local:output($outputMethod,$outputDirectory,$dbaseName,$password,"linked-metadata.xml",<linked-metadata>{$linkedMetadata}</linked-metadata>)
+  
+(: The main function returns a single string formed by concatenating all of the assembled pieces of the document :)
+return 
+  if ($outputToFile="true")
+  then
+    (: Creates the output directory specified in the constants.csv file if it doesn't already exist.  Then writes into a file having the name passed via the $id parameter concatenated with an appropriate file extension. uses default UTF-8 encoding :)
+    (file:create-dir($outputDirectory),
+    
+
+    file:write($outputDirectory||"constants.xml",<constants>{$constants}</constants>),
+    file:write($outputDirectory||"column-index.xml",<column-index>{$columnInfo}</column-index>),
+    file:write($outputDirectory||"namespaces.xml",<namespaces>{$namespaces}</namespaces>),
+    file:write($outputDirectory||"classes.xml",<base-classes>{$classes}</base-classes>),
+    file:write($outputDirectory||"linked-classes.xml",<linked-classes>{$linkedClasses}</linked-classes>),
+    file:write($outputDirectory||"metadata.xml",<metadata>{$metadata}</metadata>),
+    file:write($outputDirectory||"linked-metadata.xml",<linked-metadata>{$linkedMetadata}</linked-metadata>),
+    
+    (: put this in the Result window so that the user can tell that something happened :)
+    "Completed file write of XML files at "||fn:current-dateTime()
     )
-};
-
-declare function local:output($outputMethod,$outputDirectory,$dbaseName,$password,$fileName,$outputXml)
-{
-  if ($outputMethod="file")
-  then 
-    local:write-file-local($outputDirectory,$fileName,$outputXml)
   else
-    if ($outputMethod="screen")
-    then
-      $outputXml (: simply output the string to the Result window :)
-    else 
-      local:write-file-http($outputMethod||$dbaseName||'/',$password,$fileName,$outputXml) (: $outputMethod contains base URI for the REST service for the PUT; the database name gets concatenated after that :)
+    (: simply output the string to the Result window :)
+    $xmlNamespace
 };
 
-declare function local:write-file-local($outputDirectory,$fileName,$outputXml)
-{ 
-(: Creates the specified output directory if it doesn't already exist.  Then writes into a file using default UTF-8 encoding :)
-file:create-dir($outputDirectory),file:write($outputDirectory||$fileName,$outputXml),
-"Completed file write of "||$fileName||" at "||fn:current-dateTime()
-};
-
-declare function local:write-file-http($URI,$password,$fileName,$outputXml)
-{ 
-let $request :=
-  <http:request href='{concat($URI,$fileName)}'
-    method='put' username='admin' password='{$password}' send-authorization='true'>
-      <http:body media-type='application/xml'>
-        {$outputXml}
-      </http:body>
-  </http:request>
-return concat($fileName," ",string-join(http:send-request($request)))
-};
 
 (:--------------------------------------------------------------------------------------------------:)
 (: Here's the main query that makes it go :)
@@ -151,13 +138,6 @@ let $gitRepoWin := file:parent(file:base-dir())
 
 (: If it's a Windows file system, replace backslashes with forward slashes.  Otherwise, nothing happens. :)
 let $gitRepo := fn:replace($gitRepoWin,"\\","/")
-(:  let $gitRepo := "c:/github/"  :)
 
-(: 
-1st argument is the root path of the github repo, determined automatically if running from Guid-O-Matic repo (I hope; ignore if using HTTP)
-2nd argument is the path from the github repo to the repo in which the CSV files are saved (ignore if using HTTP)
-3rd arugment is the database name as used in restxq.xqm; must also be the subfolder name of the github repo in which the CSV files are saved
-4th argument is the output method: "file", "screen", or a URI for HTTP PUT to the BaseX REST API e.g. http://localhost:8984/rest/ for a local installation, or an Internet URI for the cloud.
-5th argument is the password for communicating with the BaseX REST API (ignore if not using HTTP)
-:)
-return local:main($gitRepo,"semantic-web/2016-fall/","building","screen","pwd")
+return local:main("guid-o-matic/",$gitRepo,"true")
+
