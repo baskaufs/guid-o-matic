@@ -103,7 +103,7 @@ ttk.Label(mainframe, textvariable=emptyText).grid(column=3, row=15, sticky=(W, E
 
 def dropGraphButtonClick():
 	dropGraph(endpointUriBox.get(), graphNameBox.get(), passwordBox2.get())
-dropGraphButton = ttk.Button(mainframe, text = "Drop graph", width = 30, command = lambda: dropGraphButtonClick() )
+dropGraphButton = ttk.Button(mainframe, text = "Drop (delete) graph", width = 30, command = lambda: dropGraphButtonClick() )
 dropGraphButton.grid(column=4, row=16, sticky=W)
 
 ttk.Label(mainframe, textvariable=emptyText).grid(column=3, row=17, sticky=(W, E))
