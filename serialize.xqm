@@ -335,9 +335,12 @@ declare function serialize:generate-a-record($record,$linkedMetadata,$baseIRI,$d
           )
           ,
           
-          (: The document description is done once for each record. :)
-          serialize:describe-document($baseIRI,$modified,$serialization,$namespaces,$constants)
-        
+          (: The document description is done once for each record. Suppress if the document class has a value of "null" :)
+          if ($constants//documentClass/text() = "null")
+          then
+            ()
+          else
+            serialize:describe-document($baseIRI,$modified,$serialization,$namespaces,$constants)
 };
 
 (:--------------------------------------------------------------------------------------------------:)

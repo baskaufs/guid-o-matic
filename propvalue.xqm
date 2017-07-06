@@ -88,7 +88,7 @@ switch ($serialization)
        then concat($iri,"&#10;") 
        else concat("<",$iri,">&#10;")
   case "xml" return 
-        if (fn:substring($iri,1,2)="_:") 
+       if (fn:substring($iri,1,2)="_:") 
        then concat('<rdf:Description rdf:nodeID="',concat("U",fn:substring($iri,3,fn:string-length($iri)-2)),'">&#10;') 
        else concat('<rdf:Description rdf:about="',$iri,'">&#10;')
   case "json" return concat("{&#10;",'"@id": "',$iri,'",&#10;')
@@ -140,11 +140,21 @@ switch ($serialization)
 declare function propvalue:type($type,$serialization,$namespaces)
 {
   (: Note: type is the last property listed, so the returned string includes characters necessary to close the container :)
-  (: There also is no trailing separator (if the serialization has one) :)
+  (: There also is no trailing separator (if the serialization has one). :) 
+  (:A value of "null" suppresses declaring a type and simply closes the container. :)
 switch ($serialization)
-  case "turtle" return concat("     a ",propvalue:wrap-turtle-iri($type),".&#10;&#10;")
-  case "xml" return concat('     <rdf:type rdf:resource="',propvalue:expand-iri($type,$namespaces),'"/>&#10;','</rdf:Description>&#10;&#10;')
-  case "json" return concat('"@type": "',$type,'"&#10;',"}&#10;")
+  case "turtle" return
+      if ($type = "null")
+      then "&#10;"
+      else concat("     a ",propvalue:wrap-turtle-iri($type),".&#10;&#10;")
+  case "xml" return
+      if ($type = "null")
+      then '</rdf:Description>&#10;&#10;'
+      else  concat('     <rdf:type rdf:resource="',propvalue:expand-iri($type,$namespaces),'"/>&#10;</rdf:Description>&#10;&#10;')
+  case "json" return
+      if ($type = "null")
+      then "}&#10;"
+      else  concat('"@type": "',$type,'"&#10;',"}&#10;")
   default return ""
 };
 
