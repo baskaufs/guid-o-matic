@@ -141,7 +141,7 @@ declare function propvalue:type($type,$serialization,$namespaces)
 {
   (: Note: type is the last property listed, so the returned string includes characters necessary to close the container :)
   (: There also is no trailing separator (if the serialization has one). :) 
-  (:A value of "null" suppresses declaring a type and simply closes the container. :)
+  (: A value of "null" suppresses declaring a type and simply closes the container. :)
 switch ($serialization)
   case "turtle" return
       if ($type = "null")

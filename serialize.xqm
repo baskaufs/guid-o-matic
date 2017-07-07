@@ -470,7 +470,7 @@ return (
             serialize:replace-semicolon-with-period($propertyBlock)
         else
             (: for XML there are no trailing delimiters, so nothing to remove. :)
-            ()
+            $propertyBlock
   else
     (: if there is a type declaration, no action needed on removing delimiters :)
     $propertyBlock
@@ -546,7 +546,7 @@ switch ($serialization)
 
 declare function serialize:construct-iri($baseIRI,$classes)
 {
-  (: This function basically creates a parallel set of class records that contain the full URIs in addition to the abbreviated ones that are found in classes.csv . In addition, UUID blank node identifiers are generated for nodes that are anonymous.  UUIDs are used instead of sequential numbers since the main function may be hacked to serializa ALL records rather than just one and in that case using UUIDs would ensure that there is no duplication of blank node identifiers among records. :)
+  (: This function basically creates a parallel set of class records that contain the full URIs in addition to the abbreviated ones that are found in classes.csv . In addition, UUID blank node identifiers are generated for nodes that are anonymous.  UUIDs are used instead of sequential numbers since the main function may be hacked to serialize ALL records rather than just one and in that case using UUIDs would ensure that there is no duplication of blank node identifiers among records. :)
   for $class in $classes
   let $suffix := $class/id/text()
   return
