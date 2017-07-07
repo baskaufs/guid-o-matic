@@ -275,24 +275,35 @@ declare function serialize:generate-entire-document($id,$linkedMetadata,$metadat
 concat( 
   (: the namespace abbreviations only needs to be generated once for the entire document :)
   serialize:list-namespaces($namespaces,$serialization),
-  string-join( 
-    if ($singleOrDump = "dump")
-    then
-      (: this case outputs every record in the database :)
-      for $record in $metadata
-      let $baseIRI := $domainRoot||$record/*[local-name()=$baseIriColumn]/text()
-      let $modified := $record/*[local-name()=$modifiedColumn]/text()
-      return serialize:generate-a-record($record,$linkedMetadata,$baseIRI,$domainRoot,$modified,$classes,$columnInfo,$serialization,$namespaces,$constants)
-    else
-      (: for a single record, each record in the database must be checked for a match to the requested URI :)
-      for $record in $metadata
-      where $record/*[local-name()=$baseIriColumn]/text()=$id
-      let $baseIRI := $domainRoot||$record/*[local-name()=$baseIriColumn]/text()
-      let $modified := $record/*[local-name()=$modifiedColumn]/text()
-      return serialize:generate-a-record($record,$linkedMetadata,$baseIRI,$domainRoot,$modified,$classes,$columnInfo,$serialization,$namespaces,$constants)      
-    ),
+  if($serialization = 'json')
+  then
+    (: When each each resource description in each record is generated as json, it has a trailing comma.  The last one must be removed before closing the container for the array and document :)
+    serialize:remove-last-comma(serialize:generate-records($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
+  else 
+    serialize:generate-records($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
+  ,
   serialize:close-container($serialization) 
   ) 
+};
+
+declare function serialize:generate-records($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
+{
+string-join( 
+  if ($singleOrDump = "dump")
+  then
+    (: this case outputs every record in the database :)
+    for $record in $metadata
+    let $baseIRI := $domainRoot||$record/*[local-name()=$baseIriColumn]/text()
+    let $modified := $record/*[local-name()=$modifiedColumn]/text()
+    return serialize:generate-a-record($record,$linkedMetadata,$baseIRI,$domainRoot,$modified,$classes,$columnInfo,$serialization,$namespaces,$constants)
+  else
+    (: for a single record, each record in the database must be checked for a match to the requested URI :)
+    for $record in $metadata
+    where $record/*[local-name()=$baseIriColumn]/text()=$id
+    let $baseIRI := $domainRoot||$record/*[local-name()=$baseIriColumn]/text()
+    let $modified := $record/*[local-name()=$modifiedColumn]/text()
+    return serialize:generate-a-record($record,$linkedMetadata,$baseIRI,$domainRoot,$modified,$classes,$columnInfo,$serialization,$namespaces,$constants)
+  )  
 };
 
 declare function serialize:generate-a-record($record,$linkedMetadata,$baseIRI,$domainRoot,$modified,$classes,$columnInfo,$serialization,$namespaces,$constants)
@@ -362,7 +373,13 @@ declare function serialize:describe-document($baseIRI,$modified,$serialization,$
     if ($modified)
     then propvalue:datatyped-literal("dcterms:modified",$modified,"xsd:dateTime",$serialization,$namespaces)
     else "",
-    propvalue:type($type,$serialization,$namespaces)
+    propvalue:type($type,$serialization,$namespaces),
+    
+    (: each described resource must be separated by a comma in JSON. The final trailing comma for all resources will be removed after they are all concatenated. :)
+    if ($serialization="json")
+    then ",&#10;"
+    else ""
+
   )  
 };
 
@@ -371,6 +388,13 @@ declare function serialize:describe-document($baseIRI,$modified,$serialization,$
 declare function serialize:remove-last-comma($temp)
 {
   concat(fn:substring($temp,1,fn:string-length($temp)-2),"&#10;")
+};
+
+(:--------------------------------------------------------------------------------------------------:)
+
+declare function serialize:replace-semicolon-with-period($temp)
+{
+  concat(fn:substring($temp,1,fn:string-length($temp)-2),".&#10;")
 };
 
 (:--------------------------------------------------------------------------------------------------:)
@@ -418,25 +442,45 @@ declare function serialize:curie-value-pairs($namespaces,$serialization)
 declare function serialize:describe-resource($IRIs,$columnInfo,$record,$class,$serialization,$namespaces,$extraTriple)
 {  
 (: Note: the propvalue:subject function sets up any string necessary to open the container, and the propvalue:type function closes the container :)
-  let $type := $class/class/text()
-  let $id := $class/id/text()
-  let $iri := $class/fullId/text()
-  return concat(
+let $type := $class/class/text()
+let $id := $class/id/text()
+let $iri := $class/fullId/text()
+let $propertyBlock := 
+  concat(
     propvalue:subject($iri,$serialization),
     string-join(serialize:property-value-pairs($IRIs,$columnInfo,$record,$id,$serialization,$namespaces)),
-
-(: make the backlink only for the instance of the primary class in a table :)
+    
+    (: make the backlink only for the instance of the primary class in a table :)
     if ($id="$root")
     then $extraTriple
     else ""
-    ,
-    propvalue:type($type,$serialization,$namespaces)
   )
+return (
+  if ($type = 'null')
+  then
+    (: if the type declaration is omitted, then delimiters may need to be removed from the last property/value pair :)
+    if ($serialization = 'json')
+    then 
+      (: For JSON, only the trailing comma needs to be removed. :)
+      serialize:remove-last-comma($propertyBlock)
+    else 
+        if ($serialization = 'turtle')
+        then
+            (: for Turtle, the trailing semicolon must be replaced with a final period :) 
+            serialize:replace-semicolon-with-period($propertyBlock)
+        else
+            (: for XML there are no trailing delimiters, so nothing to remove. :)
+            ()
+  else
+    (: if there is a type declaration, no action needed on removing delimiters :)
+    $propertyBlock
   ,
-  (: each described resource must be separated by a comma in JSON. The last described resource is the document, which isn't followed by a trailing comma :)
+  propvalue:type($type,$serialization,$namespaces),
+  (: each described resource must be separated by a comma in JSON. If a resource is the last described in the the array, the trailing comma will be removed after they are all concatenated. :)
   if ($serialization="json")
   then ",&#10;"
   else ""
+  )
 };
 
 (:--------------------------------------------------------------------------------------------------:)
