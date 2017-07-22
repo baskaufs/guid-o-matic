@@ -132,6 +132,7 @@ let $linkedMetadata :=
           $class/suffix1,
           $class/link_characters,
           $class/suffix2,
+          $class/forward_link,
           $class/class,
           <classes>{
             $xmlClassClasses/csv/record
@@ -232,6 +233,7 @@ let $linkedMetadata :=
           $class/suffix1,
           $class/link_characters,
           $class/suffix2,
+          $class/forward_link,
           $class/class,
           <classes>{
             $xmlClassClasses/csv/record
@@ -270,6 +272,8 @@ return
       return true()      
 };
 
+(:--------------------------------------------------------------------------------------------------:)
+
 declare function serialize:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
 {
 concat( 
@@ -285,6 +289,8 @@ concat(
   serialize:close-container($serialization) 
   ) 
 };
+
+(:--------------------------------------------------------------------------------------------------:)
 
 declare function serialize:generate-records($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
 {
@@ -306,6 +312,8 @@ string-join(
   )  
 };
 
+(:--------------------------------------------------------------------------------------------------:)
+
 declare function serialize:generate-a-record($record,$linkedMetadata,$baseIRI,$domainRoot,$modified,$classes,$columnInfo,$serialization,$namespaces,$constants)
 {
         
@@ -326,32 +334,67 @@ declare function serialize:generate-a-record($record,$linkedMetadata,$baseIRI,$d
             let $suffix1 := $linkedClass/suffix1/text()
             let $linkCharacters := $linkedClass/link_characters/text()
             let $suffix2 := $linkedClass/suffix2/text()
-            let $linkedClassType := $linkedClass/class/text()
+            let $forwardLink :=
+                  if ( exists($linkedClass/forward_link/text()) )
+                  then $linkedClass/forward_link/text()
+                  else "null"
             
             for $linkedClassRecord in $linkedClass/metadata/record
             where $baseIRI=$domainRoot||$linkedClassRecord/*[local-name()=$linkColumn]/text()
             
-            (: generate an IRI or bnode for the instance of the linked class based on the convention for that class :)
+            (: generate an IRI or bnode for the instance of the linked class based on the convention for that class. 
+            If the value of $linkCharacters is "http", then use the value in the $suffix1 column as the URI of the linked class instance :)
             let $linkedClassIRI := 
-                if (fn:substring($suffix1,1,2)="_:")
-                then 
-                    concat("_:",random:uuid() )
-                else
-                    $baseIRI||"#"||$linkedClassRecord/*[local-name()=$suffix1]/text()||$linkCharacters||$linkedClassRecord/*[local-name()=$suffix2]/text()
-            let $linkedIRIs := serialize:construct-iri($linkedClassIRI,$linkedClass/classes/record)
-            let $extraTriple := propvalue:iri($linkProperty,$baseIRI,$serialization,$namespaces)
-            for $linkedModifiedClass in $linkedIRIs
-            return
-               serialize:describe-resource($linkedIRIs,$linkedClass/mapping/record,$linkedClassRecord,$linkedModifiedClass,$serialization,$namespaces,$extraTriple) 
-          )
-          ,
-          
-          (: The document description is done once for each record. Suppress if the document class has a value of "null" :)
-          if ($constants//documentClass/text() = "null")
-          then
-            ()
-          else
-            serialize:describe-document($baseIRI,$modified,$serialization,$namespaces,$constants)
+                    if (fn:substring($suffix1,1,2)="_:")
+                    then
+                        concat("_:",random:uuid() )
+                    else
+                            if ($linkCharacters="http")
+                            then
+                                $linkedClassRecord/*[local-name()=$suffix1]/text()
+                            else
+                            $baseIRI||"#"||$linkedClassRecord/*[local-name()=$suffix1]/text()||$linkCharacters||$linkedClassRecord/*[local-name()=$suffix2]/text()
+            return (
+                    (: Construct the descriptions of the linked class instances :)
+                    let $linkedIRIs := serialize:construct-iri($linkedClassIRI,$linkedClass/classes/record)
+                    let $extraTriple := if ($linkProperty = "null")
+                                        then ""
+                                        else
+                                            (: The $extraTriple makes the backlink from the linked resource to the root class :)
+                                            propvalue:iri($linkProperty,$baseIRI,$serialization,$namespaces)
+                    for $linkedModifiedClass in $linkedIRIs
+                    return
+                       serialize:describe-resource($linkedIRIs,$linkedClass/mapping/record,$linkedClassRecord,$linkedModifiedClass,$serialization,$namespaces,$extraTriple)
+                    ,
+                    (: This provides an option to create a forward link from the root class resource to the linked resource:)
+                    if ($forwardLink = "null")
+                    then ()
+                    else
+                      (: construct a single triple :)
+                      concat(
+                            (: the last-item function removes trailing delimiters if necessary for a serialization :)
+                            serialize:last-item(concat(
+                                  propvalue:subject($baseIRI,$serialization),
+                                  propvalue:iri($forwardLink,$linkedClassIRI,$serialization,$namespaces)
+                                  )
+                                  , $serialization),
+                            (: The propvalue:type function with "null" type simply closes the container appropriately for the serialization. :)
+                            propvalue:type("null",$serialization,$namespaces),
+                            (: each described resource must be separated by a comma in JSON. If a resource is the last described in the the array, the trailing comma will be removed after they are all concatenated. :)
+                            if ($serialization="json")
+                            then ",&#10;"
+                            else ""
+                            )
+                    )
+            )
+            ,
+            
+            (: The document description is done once for each record. Suppress if the document class has a value of "null" :)
+            if ($constants//documentClass/text() = "null")
+            then
+              ()
+            else
+              serialize:describe-document($baseIRI,$modified,$serialization,$namespaces,$constants)
 };
 
 (:--------------------------------------------------------------------------------------------------:)
@@ -395,6 +438,25 @@ declare function serialize:remove-last-comma($temp)
 declare function serialize:replace-semicolon-with-period($temp)
 {
   concat(fn:substring($temp,1,fn:string-length($temp)-2),".&#10;")
+};
+
+(:--------------------------------------------------------------------------------------------------:)
+
+(: if the last item in a property-value list is not followed by a type declaration, a trailing delimiter may need removal :)
+declare function serialize:last-item($propertyBlock, $serialization)
+{
+if ($serialization = 'json')
+then 
+  (: For JSON, only the trailing comma needs to be removed. :)
+  serialize:remove-last-comma($propertyBlock)
+else 
+    if ($serialization = 'turtle')
+    then
+        (: for Turtle, the trailing semicolon must be replaced with a final period :) 
+        serialize:replace-semicolon-with-period($propertyBlock)
+    else
+        (: for XML there are no trailing delimiters, so nothing to remove. :)
+        $propertyBlock
 };
 
 (:--------------------------------------------------------------------------------------------------:)
@@ -459,18 +521,7 @@ return (
   if ($type = 'null')
   then
     (: if the type declaration is omitted, then delimiters may need to be removed from the last property/value pair :)
-    if ($serialization = 'json')
-    then 
-      (: For JSON, only the trailing comma needs to be removed. :)
-      serialize:remove-last-comma($propertyBlock)
-    else 
-        if ($serialization = 'turtle')
-        then
-            (: for Turtle, the trailing semicolon must be replaced with a final period :) 
-            serialize:replace-semicolon-with-period($propertyBlock)
-        else
-            (: for XML there are no trailing delimiters, so nothing to remove. :)
-            $propertyBlock
+    serialize:last-item($propertyBlock, $serialization)
   else
     (: if there is a type declaration, no action needed on removing delimiters :)
     $propertyBlock
