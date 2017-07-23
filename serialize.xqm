@@ -263,7 +263,7 @@ declare function serialize:find-db($id,$db)
 let $constants := fn:collection($db)//constants/record
 let $baseIriColumn := $constants//baseIriColumn/text()
 
-let $metadata := fn:collection($db)//metadata/record
+let $metadata := fn:collection($db)/metadata/record
   
 return 
       (: each record in the database must be checked for a match to the requested URI :)
