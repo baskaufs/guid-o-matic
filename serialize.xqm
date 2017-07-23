@@ -42,7 +42,7 @@ let $columnInfo := fn:collection($db)//column-index/record
 let $namespaces := fn:collection($db)//namespaces/record
 let $classes := fn:collection($db)//base-classes/record
 let $linkedClasses := fn:collection($db)//linked-classes/record
-let $metadata := fn:collection($db)//metadata/record
+let $metadata := fn:collection($db)/metadata/record
 let $linkedMetadata := fn:collection($db)//linked-metadata/file
   
 (: The main function returns a single string formed by concatenating all of the assembled pieces of the document :)
