@@ -1,0 +1,1001 @@
+ConstituentID,DisplayName,DisplayDate,AlphaSort,Nationality,BeginDate,EndDate,TextEntry
+2,Myron Kozman,"American, 1916-2002","Kozman, Myron",American,1916,2002,NULL
+20,Otto Alfred Wolfgang Schulze Wols,"German, 1913-1951","Wols, Otto Alfred Wolfgang Schulze",German,1913,1951,NULL
+21,Richard Artschwager,"American, 1923-2013","Artschwager, Richard",American,1923,2013,NULL
+28,Joel Shapiro,"American, born 1941","Shapiro, Joel",American,1941,2041,NULL
+35,Treahna Hamm,"Australian, born 1965","Hamm, Treahna",Australian,1965,2065,NULL
+54,Julião Sarmento,"Portuguese, born 1948","Sarmento, Julião",Portuguese,1948,2048,NULL
+63,James Drake,"American, born 1946","Drake, James",American,1946,2046,NULL
+67,Kurt Schwitters,"German, 1887-1948","Schwitters, Kurt",German,1887,1948,NULL
+79,Adrian Piper,"American, born 1948","Piper, Adrian",American,1948,2048,NULL
+82,Laurie Simmons,"American, born 1949","Simmons, Laurie",American,1949,2049,NULL
+83,Christo,"American, born 1935",Christo,American,1935,2035,NULL
+85,Eduardo Luigi Paolozzi,"Scottish, 1924-2005","Paolozzi, Eduardo Luigi",Scottish,1924,2005,NULL
+143,Hamish Fulton,"English, born 1946","Fulton, Hamish",English,1946,2046,NULL
+144,Douglas Gordon,"Scottish, born 1966","Gordon, Douglas",Scottish,1966,2066,NULL
+145,Jenny Holzer,"American, born 1950","Holzer, Jenny",American,1950,2050,NULL
+146,Anne Marie Jugnet,"French, born 1958","Jugnet, Anne Marie",French,1958,2058,NULL
+148,Richard Long,"English, born 1945","Long, Richard",English,1945,2045,NULL
+155,Ian Hamilton Finlay,"Scottish, 1925-2006","Finlay, Ian Hamilton",Scottish,1925,2006,NULL
+162,Georgeen Comerford,"American, active 1970s-2010s","Comerford, Georgeen",American,1970,2019,NULL
+175,Henry Phillipps,"American, active 1970s","Phillipps, Henry",American,1970,1979,NULL
+177,Paul Sheridan,"American, active 1970s","Sheridan, Paul",American,1970,1970,NULL
+195,Wolf Kahn,"American, born 1927","Kahn, Wolf",American,1927,2027,NULL
+237,Sean Mellyn,"American, born 1965","Mellyn, Sean",American,1965,2065,NULL
+242,Elizabeth Lennard,"American, born 1953","Lennard, Elizabeth",American,1953,2053,NULL
+257,William Seltzer Rice,"American, 1873-1963","Rice, William Seltzer",American,1873,1963,NULL
+261,Robert Barry,"American, born 1936","Barry, Robert",American,1936,2036,NULL
+264,Kathryn Jacobi,"American, born 1947","Jacobi, Kathryn",American,1947,2047,NULL
+268,Kiki Smith,"American, born 1954","Smith, Kiki",American,1954,2054,NULL
+273,Yoshiko Shimada,"Japanese, born 1959","Shimada, Yoshiko",Japanese,1959,2059,NULL
+305,Robert Therrien,"American, born 1947","Therrien, Robert",American,1947,2047,NULL
+308,Edvard Munch,"Norwegian, 1863-1944","Munch, Edvard",Norwegian,1863,1944,NULL
+316,Antonio Frasconi,"American, 1919-2013","Frasconi, Antonio",American,1919,2013,NULL
+347,Sylvia Plimack Mangold,"American, born 1938","Mangold, Sylvia Plimack",American,1938,2038,NULL
+349,Arnulf Rainer,"Austrian, born 1929","Rainer, Arnulf",Austrian,1929,2029,NULL
+361,Tetsuya Noda,"Japanese, born 1940","Noda, Tetsuya",Japanese,1940,2040,NULL
+377,Alan Uglow,"English, 1941-2011","Uglow, Alan",English,1941,2011,NULL
+381,Darren Almond,"English, born 1971","Almond, Darren",English,1971,2071,NULL
+383,Mat Collishaw,"English, born 1966","Collishaw, Mat",English,1966,2066,NULL
+387,Georgina Starr,"English, born 1968","Starr, Georgina",English,1968,2068,NULL
+391,Catherine Yass,"English, born 1963","Yass, Catherine",English,1963,2063,NULL
+392,Gilbert & George,"British, active 1960s-2010s",Gilbert & George,British,1960,2019,Gilbert & George is a partnership of Gilbert Proesch and George Passmore.
+405,Markus Raetz,"Swiss, born 1941","Raetz, Markus",Swiss,1941,2041,NULL
+407,Ian Van Coller,"South African, born 1970","Van Coller, Ian",South African,1970,2070,NULL
+426,Ellsworth Kelly,"American, 1923-2015","Kelly, Ellsworth",American,1923,2015,NULL
+427,Joseph Kosuth,"American, born 1945","Kosuth, Joseph",American,1945,2045,NULL
+430,Robert Rauschenberg,"American, 1925-2008","Rauschenberg, Robert",American,1925,2008,NULL
+432,Edward Ruscha,"American, born 1937","Ruscha, Edward",American,1937,2037,NULL
+433,Richard Serra,"American, born 1939","Serra, Richard",American,1939,2039,NULL
+441,Jürgen Partenheimer,"German, born 1947","Partenheimer, Juergen",German,1947,2047,NULL
+446,Yves Chaudouët,"French, born 1959","Chaudouët, Yves",French,1959,2059,NULL
+455,Jacques Villon,"French, 1875-1963","Villon, Jacques",French,1875,1963,NULL
+460,Bernard Kassoy,"American, born 1914","Kassoy, Bernard",American,1914,2014,NULL
+470,Gerhard Richter,"German, born 1932","Richter, Gerhard",German,1932,2032,NULL
+474,Jo Ganter,"Scottish, born 1963","Ganter, Jo",Scottish,1963,2063,NULL
+485,Hannah Höch,"German, 1889-1978","Höch, Hannah",German,1889,1978,NULL
+489,Lawrence Weiner,"American, born 1942","Weiner, Lawrence",American,1942,2042,NULL
+490,Jannis Kounellis,"Greek, 1936-2017","Kounellis, Jannis",Greek,1936,2017,NULL
+503,Leonard Baskin,"American, 1922-2000","Baskin, Leonard",American,1922,2000,NULL
+515,Prentiss Hottel Taylor,"American, 1907-1991","Taylor, Prentiss Hottel",American,1907,1991,NULL
+520,Barbara Morgan,"American, 1900-1992","Morgan, Barbara",American,1900,1992,NULL
+552,John W. Gregory,"American, 1903-1992","Gregory, John W.",American,1903,1992,NULL
+610,Dieter Roth,"Swiss, 1930-1998","Roth, Dieter",Swiss,1930,1998,NULL
+649,Lorna Simpson,"American, born 1960","Simpson, Lorna",American,1960,2060,NULL
+660,Chuck Close,"American, born 1940","Close, Chuck",American,1940,2040,NULL
+671,Richard Hamilton,"British, 1922-2011","Hamilton, Richard",British,1922,2011,NULL
+704,John Gordon Ross,"American, 1921-2006","Ross, John Gordon",American,1921,2006,NULL
+721,John Henry Bufford Sr.,"American, 1810-1870","Bufford, John Henry Sr.",American,1810,1870,NULL
+734,Bruce Conner,"American, 1933-2008","Conner, Bruce",American,1933,2008,NULL
+737,Philip Pearlstein,"American, born 1924","Pearlstein, Philip",American,1924,2024,NULL
+743,Celia Alvarez Muñoz,"American, born 1937","Muñoz, Celia Alvarez",American,1937,2037,NULL
+761,Eric Avery,"American, born 1948","Avery, Eric",American,1948,2048,NULL
+780,Harry Bowden,"American, 1907-1965","Bowden, Harry",American,1907,1965,NULL
+830,Reginald Marsh,"American, 1898-1954","Marsh, Reginald",American,1898,1954,NULL
+832,Tom Friedman,"American, born 1965","Friedman, Tom",American,1965,2065,NULL
+834,Peter Feldstein,"American, born 1942","Feldstein, Peter",American,1942,2042,NULL
+836,Mel Chin,"American, born 1951","Chin, Mel",American,1951,2051,NULL
+863,El Lissitzky,"Russian, 1890-1941","Lissitzky, El",Russian,1890,1941,NULL
+864,Ann Hamilton,"American, born 1956","Hamilton, Ann",American,1956,2056,NULL
+865,Christy Wyckoff,"American, born 1946","Wyckoff, Christy",American,1946,2046,NULL
+873,Talia Segal,"Israeli, born 1967","Segal, Talia",Israeli,1967,2067,NULL
+903,Albert Oehlen,"German, born 1954","Oehlen, Albert",German,1954,2054,NULL
+906,Pablo Picasso,"Spanish, 1881-1973","Picasso, Pablo",Spanish,1881,1973,NULL
+908,Vija Celmins,"American, born 1938","Celmins, Vija",American,1938,2038,NULL
+924,Tom Marioni,"American, born 1937","Marioni, Tom",American,1937,2037,NULL
+925,David Nash,"British, born 1945","Nash, David",British,1945,2045,NULL
+926,Bryan Hunt,"American, born 1947","Hunt, Bryan",American,1947,2047,NULL
+946,Angus Fairhurst,"English, 1966-2008","Fairhurst, Angus",English,1966,2008,NULL
+948,Christopher Wool,"American, born 1955","Wool, Christopher",American,1955,2055,NULL
+952,Gavin Turk,"English, born 1967","Turk, Gavin",English,1967,2067,NULL
+955,Henry Bond,"British, born 1966","Bond, Henry",English,1966,2066,NULL
+956,Itai Doron,"British, born 1967","Doron, Itai",British,1967,1967,NULL
+960,Lee Friedlander,"American, born 1934","Friedlander, Lee",American,1934,2034,NULL
+968,Sam Taylor-Wood,"English, born 1967","Taylor-Wood, Sam",English,1967,2067,NULL
+973,Tracey Emin,"English, born 1963","Emin, Tracey",English,1963,2063,NULL
+974,Wolfgang Volz,"German, born 1948","Volz, Wolfgang",German,1948,1948,NULL
+990,Jean-François Millet,"French, 1814-1875","Millet, Jean-François",French,1814,1875,NULL
+997,Eugène Delacroix,"French, 1798-1863","Delacroix, Eugène",French,1798,1863,NULL
+998,Ralph Goings,"American, born 1928","Goings, Ralph",American,1928,2028,NULL
+999,Felix Gonzalez-Torres,"American, 1958-1996","Gonzalez-Torres, Felix",American,1958,1996,NULL
+1065,Sandrine Guérin,"French, born 1971","Guérin, Sandrine",French,1971,2071,NULL
+1066,Juan Uslé,"Spanish, born 1954","Uslé, Juan",Spanish,1954,2054,NULL
+1083,Naum Gabo,"American, 1890-1977","Gabo, Naum",American,1890,1977,NULL
+1087,Yasuo Kuniyoshi,"American, 1889-1953","Kuniyoshi, Yasuo",American,1889,1953,NULL
+1088,Fred Tomaselli,"American, born 1956","Tomaselli, Fred",American,1956,2056,NULL
+1090,Josef Albers,"American, 1888-1976","Albers, Josef",American,1888,1976,NULL
+1092,Rolf Cavael,"German, 1898-1979","Cavael, Rolf",German,1898,1979,NULL
+1096,Kerr Eby,"American, 1889-1946","Eby, Kerr",American,1889,1946,NULL
+1130,Gerson Leiber,"American, born 1921","Leiber, Gerson",American,1921,2021,NULL
+1162,Gabriel Orozco,"Mexican, born 1962","Orozco, Gabriel",Mexican,1962,2062,NULL
+1170,Rosemarie Trockel,"German, born 1952","Trockel, Rosemarie",German,1952,2052,NULL
+1188,Seneca Ray Stoddard,"American, 1844-1917","Stoddard, Seneca Ray",American,1844,1917,NULL
+1190,Walter Askin,"American, born 1929","Askin, Walter",American,1929,2029,NULL
+1198,Thomas Schütte,"German, born 1954","Schütte, Thomas",German,1954,2054,NULL
+1202,Sol LeWitt,"American, 1928-2007","LeWitt, Sol",American,1928,2007,NULL
+1204,Barbara Yoshida,"American, born 1945","Yoshida, Barbara",American,1945,2045,NULL
+1219,Armin Landeck,"American, 1905-1984","Landeck, Armin",American,1905,1984,NULL
+1226,Eva Schlegel,"Austrian, born 1960","Schlegel, Eva",Austrian,1960,2060,NULL
+1229,Martin Puryear,"American, born 1941","Puryear, Martin",American,1941,2041,NULL
+1232,Arthur Secunda,"American, born 1927","Secunda, Arthur",American,1927,2027,NULL
+1253,Bill Jacobson,"American, born 1955","Jacobson, Bill",American,1955,2055,NULL
+1265,Fairfield Porter,"American, 1907-1975","Porter, Fairfield",American,1907,1975,NULL
+1324,Trinidad Mac-Auliffe,"American, born 1972","Mac-Auliffe, Trinidad",American,1972,2072,NULL
+1362,Eva Hesse,"American, 1936-1970","Hesse, Eva",American,1936,1970,NULL
+1363,David Hockney,"British, born 1937","Hockney, David",British,1937,2037,NULL
+1387,Mario Merz,"Italian, 1925-2003","Merz, Mario",Italian,1925,2003,NULL
+1388,Robert Indiana,"American, born 1928","Indiana, Robert",American,1928,2028,NULL
+1390,Andy Warhol,"American, 1928-1987","Warhol, Andy",American,1928,1987,NULL
+1398,Salvo,"Italian, 1947-2015",Salvo,Italian,1947,2015,NULL
+1420,Gwenn Thomas,"American, born 1945","Thomas, Gwenn",American,1945,2045,NULL
+1440,George Wesley Bellows,"American, 1882-1925","Bellows, George Wesley",American,1882,1925,NULL
+1444,Robert Cottingham,"American, born 1935","Cottingham, Robert",American,1935,2035,NULL
+1450,Mona Hatoum,"Palestinian, born 1952","Hatoum, Mona",Palestinian,1952,2052,NULL
+1453,Álvaro Barrios,"Colombian, born 1945","Barrios, Álvaro",Colombian,1945,2045,NULL
+1455,Juan Manuel Echavarría,"Colombian, born 1947","Echavarría, Juan Manuel",Colombian,1947,2047,NULL
+1459,Miguel Ángel Rojas,"Colombian, born 1946","Rojas, Miguel Ángel",Colombian,1946,2046,NULL
+1467,Grace Hartigan,"American, 1922 - 2008","Hartigan, Grace",American,1922,2008,NULL
+1468,Allen Ruppersberg,"American, born 1944","Ruppersberg, Allen",American,1944,2044,NULL
+1474,Olafur Eliasson,"Danish, born 1967","Eliasson, Olafur",Danish,1967,2067,NULL
+1475,Richard Estes,"American, born 1932","Estes, Richard",American,1932,2032,NULL
+1476,John Clem Clarke,"American, born 1937","Clarke, John Clem",American,1937,2037,NULL
+1477,Richard McLean,"American, 1934-2014","McLean, Richard",American,1934,2014,NULL
+1530,Lothar Osterburg,"German, born 1961","Osterburg, Lothar",German,1961,2061,NULL
+1566,Irwin Hollander,"American, born 1927","Hollander, Irwin",American,1927,2027,NULL
+1654,Wilson Flagg,"American, 1805-1884","Flagg, Wilson",American,1805,1884,NULL
+1655,Smedley & White,"American, active 1880s",Smedley & White,American,1880,1889,Smedley & White was a partnership of Thomas D. Smedley and Luther S. White.
+1658,Herbert George Ponting,"English, 1870-1935","Ponting, Herbert George",English,1870,1935,NULL
+1659,Robert ParkeHarrison,"American, born 1968","ParkeHarrison, Robert",American,1968,2068,NULL
+1661,John Benton-Harris,"American, born 1939","Benton-Harris, John",American,1939,2039,NULL
+1662,Sanford A. Taylor,"American, born 1841","Taylor, Sanford A.",American,1841,1841,NULL
+1663,Napoleon Sarony,"American, 1821-1896","Sarony, Napoleon",American,1821,1896,NULL
+1664,Aimé Dupont,"American, 1842-1900","Dupont, Aimé",American,1842,1900,Business directories indicate that the studio was active until at least 1918.
+1665,Sir William Stirling-Maxwell,"British, 1818-1878","Stirling-Maxwell, William Sir",British,1818,1878,NULL
+1666,Benjamin Joseph Falk,"American, 1853-1925","Falk, Benjamin Joseph",American,1853,1925,NULL
+1667,Gloria Hoffman,"American, 1922-2002","Hoffman, Gloria",American,1922,2002,NULL
+1668,Roy J. Hyrkin,"American, born 1927","Hyrkin, Roy J.",American,1927,2027,NULL
+1669,Berenice Abbott,"American, 1898-1991","Abbott, Berenice",American,1898,1991,NULL
+1670,Florentin Joseph Charnaux,"Swiss, 1819-1883","Charnaux, Florentin Joseph",Swiss,1819,1883,NULL
+1671,Underwood & Underwood,"American, active 1880s-1940s",Underwood & Underwood,American,1880,1949,Underwood & Underwood was a partnership of Bert Underwood and Elmer Underwood.
+1672,W. R. Faribault,"American, active 1900s","Faribault, W. R.",American,1900,1900,NULL
+1673,William Thompson Howell,"American, 1873-1916","Howell, William Thompson",American,1873,1916,NULL
+1674,Blessing & Co.,"American, active 1887-1901",Blessing & Co.,American,1887,1901,Blessing & Co. was a partnership of J. P. Blessing and Henry Fenge.
+1675,William Klein,"American, born 1928","Klein, William",American,1928,2028,NULL
+1676,Herman Henneberger,"American, 1852-1924","Henneberger, Herman",American,1852,1924,NULL
+1680,Mark C. Klett,"American, born 1952","Klett, Mark C.",American,1952,2052,NULL
+1681,Brainard Freemont Childs,"American, 1842-1921","Childs, Brainard Freemont",American,1842,1921,NULL
+1682,Esther Bubley,"American, 1921-1998","Bubley, Esther",American,1921,1998,NULL
+1683,Frank Gohlke,"American, born 1942","Gohlke, Frank",American,1942,2042,NULL
+1684,Conrad Doring,"German, active 1900s","Doring, Conrad",German,1900,1900,NULL
+1685,Léon & Lévy,"French, active 1860s-1870s",Léon & Lévy,French,1860,1879,Léon & Lévy was a partnership of M. Léon and J. Lévy.
+1686,William Henry Jackson,"American, 1843-1942","Jackson, William Henry",American,1843,1942,NULL
+1687,Richard Sandler,"American, born 1946","Sandler, Richard",American,1946,2046,NULL
+1688,Mark Feldstein,"American, 1937-2001","Feldstein, Mark",American,1937,2001,NULL
+1689,Jeff Mermelstein,"American, born 1957","Mermelstein, Jeff",American,1957,2057,NULL
+1690,Herman Goustin,"American, 1923-1997","Goustin, Herman",American,1923,1997,NULL
+1691,William Morrell Harmer,"Canadian, 1859-1949","Harmer, William Morrell",Canadian,1859,1949,NULL
+1692,Lindsley Foote Hall,"American, 1883-1969","Hall, Lindsley Foote",American,1883,1969,"From as early as 1919 through at least the 1940s, Hall was an archaeological draftsman for the Metropolitan Museum of Art. He died in Portland."
+1693,Margaret Bourke-White,"American, 1904-1971","Bourke-White, Margaret",American,1904,1971,NULL
+1694,Jeanette Moore,"American, active 1930s","Moore, Jeanette",American,1930,1930,NULL
+1695,Edith Hastings Tracy,"American, active 1900s-1910s","Tracy, Edith Hastings",American,1900,1919,NULL
+1696,Ray Jerome Baker,"American, 1880-1972","Baker, Ray Jerome",American,1880,1972,NULL
+1697,G. R. Lambert & Co.,"German, active 1870s-1880s","Lambert, G. R., & Co.",German,1870,1889,G. R. Lambert & Co. was a partnership of G. R. Lambert and Gustav Richard Lambert.
+1698,Waldemar Franz Herman Titzenthaler,"German, 1869-1937","Titzenthaler, Waldemar Franz Herman",German,1869,1937,NULL
+1699,Macduff Everton,"American, born 1947","Everton, Macduff",American,1947,2047,NULL
+1700,Wehrli A. G.,"Swiss, active 1890s-1910s",Wehrli A. G.,Swiss,1890,1919,"Wehrli A. G. was a partnership of Bruno Wehrli, Harry Wehrli, and Arthur Wehrli."
+1701,Guerrilla Girls,"American, established 1985",Guerrilla Girls,American,1985,2019,NULL
+1703,Pach Bros.,"American, active 1860s-1920s",Pach Bros.,American,1860,1929,"The original Pach Bros. was a partnership of Gustavus W. and Morris Pach, listed at 260 Bowery in New York City, 1866. Then G. W. Pach operated his own studio until about 1882 when the firm name changed to G. W. Pach & Bros. The partners then were G. W., Gothelef, and Oscar Pach. In 1885 the firm was again listed as Pach Bros., and operated at least into the early 1900s. The firm operated branch studios at Long Branch and Ocean Grove, New Jersey."
+1704,William A. White,"American, born 1847","White, William A.",American,1847,1947,NULL
+1705,Zedler & Vogel,"German, active 1890s",Zedler & Vogel,German,1890,1890,NULL
+1706,Mark Hood,"American, 1960-1992","Hood, Mark",American,1960,1992,NULL
+1707,Abraham Bogardus,"American, 1822-1908","Bogardus, Abraham",American,1822,1908,"Edward W. Bogardus is listed as an artist for the 229 Greenwich studio, and later as a photographer in the 363 Broadway studio, which in 1873 is renamed Bogardus Photographic Establishment under his proprietorship. The 1890 business directory for Edward Bogardus boasts ""the only photographer bearing this name"", although Abraham Bogardus' studio is still in operation. Neither man appears in the 1892 directory."
+1708,William Notman,"Canadian, 1826-1891","Notman, William",Canadian,1826,1891,NULL
+1709,George Gardner Rockwood,"American, 1832-1911","Rockwood, George Gardner",American,1832,1911,NULL
+1711,Giorgio Sommer,"Italian, 1834-1914","Sommer, Giorgio",Italian,1834,1914,NULL
+1713,United States. Army. Signal Corps,"American, 1863-1962",United States. Army. Signal Corps,American,1863,1962,NULL
+1714,Zoe Leonard,"American, born 1961","Leonard, Zoe",American,1961,2061,NULL
+1715,Charles P. Hibbard,"American, born ca. 1848","Hibbard, Charles P.",American,1848,1848,NULL
+1716,Irwin B. Klein,"American, 1933-1974","Klein, Irwin B.",American,1933,1974,NULL
+1717,William Bell,"American, 1830-1910","Bell, William",American,1830,1910,NULL
+1718,John Albok,"American, 1894-1982","Albok, John",American,1894,1982,NULL
+1719,Timothy H. O'Sullivan,"American, 1840-1882","O'Sullivan, Timothy H.",American,1840,1882,NULL
+1720,James Thomson,"American, born ca. 1818","Thomson, James",American,1818,1918,NULL
+1721,G. P. Putnam & Co.,"American, active 1852-1857","Putnam, George Palmer, & Co.",American,1852,1857,G. P. Putnam & Co. was a partnership of George Palmer Putnam and John W. Leslie.
+1722,Constantine George Rickards,"British, born ca. 1875","Rickards, Constantine George",British,1875,1875,NULL
+1724,Marcus Aurelius Root,"American, 1808-1888","Root, Marcus Aurelius",American,1808,1888,NULL
+1726,Richard Avedon,"American, 1923-2004","Avedon, Richard",American,1923,2004,NULL
+1727,Séraphin-Médéric Mieusement,"French, 1840-1905","Mieusement, Séraphin-Médéric",French,1840,1905,NULL
+1728,Todd Walker,"American, 1917-1998","Walker, Todd",American,1917,1998,NULL
+1731,West Coast Art Co.,"American, active 1909-1912",West Coast Art Co.,American,1909,1912,"West Coast Art Co. had Freeman M. Huddleston as President, Foster G. Huddleston as Secretary and J. T. Kelley as Manager. The California Panorama Co., also run by Freeman M. Huddleston, preceded West Coast Art Co. (1908), and McClellan Panorama Photo Co. succeeded it in 1913."
+1732,X. Phot.,"French, active 1850s-1880s",X. Phot.,French,1850,1889,NULL
+1733,Mrs. Schuyler Van Rensselaer,"American, 1851-1934","Van Rensselaer, Schuyler Mrs.",American,1851,1934,NULL
+1734,Michael Spano,"American, born 1949","Spano, Michael",American,1949,2049,NULL
+1735,Carl Mydans,"American, 1907-2004","Mydans, Carl",American,1907,2004,NULL
+1736,Charles Dudley Arnold,"American, 1844-1927","Arnold, Charles Dudley",American,1844,1927,"Charles Dudley Arnold was a noted architectural photographer who was official photographer for the World's Columbian Exposition (Chicago, 1892) and the Pan-American Exposition (Buffalo, 1901)."
+1737,Ernest C. Rost,"American, 1867-1940","Rost, Ernest C.",American,1867,1940,"On the 1900 Census, Rost's occupation is given as photographer; on his 1904 passport application, he gives it as scientist."
+1739,Caithness & Bambridge,"English, active 1860s",Caithness & Bambridge,English,1860,1869,William Bambridge was a partner in Caithness & Bambridge.
+1740,United States. Army Medical Museum,"American, established 1862",United States. Army Medical Museum,American,1862,1862,NULL
+1741,Camera Club of New York,"American, established 1884",Camera Club of New York,American,1884,2019,NULL
+1742,Bunny Adler,"American, active 1940s-1950s","Adler, Bunny",American,1940,1959,NULL
+1743,"Eggleston Drug Co. [Laramie, WY]","American, active 1900s",Eggleston Drug Co.,American,1900,1900,"Frank Eggleston was a partner in Eggleston Drug Co. of Laramie, Wyoming."
+1745,Madoka Takagi,"American, 1956-2015","Takagi, Madoka",American,1956,2015,NULL
+1746,Francis Frith,"English, 1822-1898","Frith, Francis",English,1822,1898,NULL
+1747,Edward Rode,"American, active 1900s","Rode, Edward",American,1900,1900,NULL
+1748,John Thomson,"Scottish, 1837-1921","Thomson, John",Scottish,1837,1921,NULL
+1756,Jean-Martin Charcot,"French, 1825-1893","Charcot, Jean-Martin",French,1825,1893,NULL
+1757,DeWitt Clinton Falls,"American, 1864-1937","Falls, DeWitt Clinton",American,1864,1937,NULL
+1758,Marc Ferrez,"Brazilian, 1843-1923","Ferrez, Marc",Brazilian,1843,1923,NULL
+1759,Hubert Howe Bancroft,"American, 1832-1918","Bancroft, Hubert Howe",American,1832,1918,NULL
+1760,Fratelli Alinari,"Italian, active 1850s-1910s","Alinari, Fratelli",Italian,1850,1919,"Fratelli Alinari was a partnership of Giuseppe Alinari, Leopoldo Alinari, Romualdo Alinari, and Vittorio Alinari."
+1762,Alfred Stieglitz,"American, 1864-1946","Stieglitz, Alfred",American,1864,1946,NULL
+1763,Dave Heath,"American, 1931-2016","Heath, Dave",American,1931,2016,NULL
+1764,Robert Dewalt Good,"American, 1903-1974","Good, Robert Dewalt",American,1903,1974,NULL
+1765,Jim Mason,"American, active 1980s","Mason, Jim",American,1980,1980,NULL
+1766,J. A. Keller,"American, active 1970s","Keller, J. A.",American,1970,1970,NULL
+1769,Aleksandr Mikhailovich Rodchenko,"Russian, 1891-1956","Rodchenko, Aleksandr Mikhailovich",Russian,1891,1956,NULL
+1771,William Bradford,"American, 1823-1892","Bradford, William",American,1823,1892,NULL
+1773,Gilliams Service,"American, active 1920s-1940s",Gilliams Service,American,1920,1949,NULL
+1774,Geoffrey Grant,"American, active 1990s","Grant, Geoffrey",American,1990,1990,NULL
+1776,George Washington Wilson,"Scottish, 1823-1893","Wilson, George Washington",Scottish,1823,1893,NULL
+1778,Red Thunder Cloud,"Native American, 1919-1996","Cloud, Red Thunder",Native American,1919,1996,NULL
+1780,Jacob Schloss,"American, 1857-1938","Schloss, Jacob",American,1857,1938,NULL
+1782,Lou Stoumen,"American, 1917-1991","Stoumen, Lou",American,1917,1991,NULL
+1784,Carl Norman & Co.,"English, active 1870s-1880s","Norman, Carl, & Co.",English,1870,1889,Carl Norman was a partner in Carl Norman & Co.
+1785,Robert V. Reid,"Scottish, 1868-1948","Reid, Robert V.",Scottish,1868,1948,NULL
+1786,Harald Kirschner,"German, active 1980s","Kirschner, Harald",German,1980,1980,NULL
+1787,William M. Vander Weyde,"American, 1870-1929","Vander Weyde, William M.",American,1870,1929,NULL
+1789,G. Blain,"Cuban, active 1900s","Blain, G.",Cuban,1900,1909,NULL
+1790,Ernest Edwards,"English, 1837-1903","Edwards, Ernest",English,1837,1903,NULL
+1791,Lovell Augustus Reeve,"English, 1814-1865","Reeve, Lovell Augustus",English,1814,1865,NULL
+1792,Arvind Garg,"Indian, born 1946","Garg, Arvind",Indian,1946,1946,NULL
+1793,Edwin Hale Lincoln,"American, 1848-1938","Lincoln, Edwin Hale",American,1848,1938,NULL
+1797,Ramón Corral,"Cuban, active 1900s","Corral, Ramón",Cuban,1900,1909,NULL
+1798,Sol Libsohn,"American, 1914-2001","Libsohn, Sol",American,1914,2001,NULL
+1801,Detroit Publishing Co.,"American, active 1890s-1930s",Detroit Publishing Co.,American,1890,1939,NULL
+1802,Anne Chamberlain,"American, active 1980s-1990s","Chamberlain, Ann",American,1980,1999,NULL
+1803,Paul Etienne Lincoln,"English, born 1959","Lincoln, Paul Etienne",English,1959,1959,NULL
+1804,Bruce Cratsley,"American, 1944-1998","Cratsley, Bruce",American,1944,1998,NULL
+1807,Dennis Darling,"American, born ca. 1946","Darling, Dennis",American,1946,2046,NULL
+1808,Lewis Koch,"American, born 1949","Koch, Lewis",American,1949,2049,"In addition to collections linked below, Lewis Koch's work is in the following public collections: ·         Allen Memorial Art Museum, Oberlin College, Oberlin, OH·         Bibliothèque Nationale, Paris, France·         Brooklyn Museum of Art, Brooklyn, NY·         Canadian Centre for Architecture, Montreal, Québec, Canada·         JP Morgan Chase (& Bank One) Art Collection, New York, NY, Chicago, IL & Tokyo, Japan·         Cincinnati Art Museum, Cincinnati, OH·         Corcoran Gallery of Art, Washington, DC·         Deutsche Bank Art Collection, Frankfurt, Germany and New York, NY·         DZ (formerly DG) Bank Photography Collection, Frankfurt, Germany·         Everson Museum of Art, Syracuse, NY·         H. F. Johnson Museum of Art, Cornell University, Ithaca, NY·         J. D. and C. T. MacArthur Foundation, Chicago, IL·         Kongelige Biblioteket (The Royal Library), Copenhagen, Denmark·         Library of Tibetan Works and Archives, Dharamsala, H.P., India·         LightWork, Syracuse University, Syracuse, NY·         Maison Européenne de la Photographie, Paris, France·         Metropolitan Museum of Art, New York, NY·         Milwaukee Art Museum, Milwaukee, WI·         Musée de la Photographie Charleroi, Belgium·         Museet for Fotokunst (National Museum of Photography), Odense, Denmark·         Museum für Kunst und Gewerbe, Hamburg, Germany·         Museum of Contemporary Art, Chicago, IL·         Museum of Contemporary Photography, Chicago, IL·         Museum of Fine Arts, St. Petersburg, FL·         Museum of Photographic Arts, San Diego, IL·         Nelson-Atkins Museum of Art, Kansas City, MO·         New York Public Library Art, Prints & Photographs Collection, New York, NY·         Julia J. Norrell Collection, Washington, DC·         Northwestern University Law Library Art Collection, Chicago, IL·         Oppenheimer Fund Art Collection, New York, NY·         Alain & Marie-Thérèse Perrin Collection, London, England & Paris, France·         Picker Art Gallery, Colgate University, Hamilton, NY·         Princeton University Art Museum, Princeton, NJ·         Harry Ransom Center Photography Collection, University of Texas, Austin, TX·         Rose Art Museum, Brandeis University, Waltham, MA·         San Francisco Museum of Modern Art, San Francisco, CA·         Staatsgalerie Stuttgart, Stuttgart, Germany·         Stanford University, Stanford, CA·         State Historical Society of Wisconsin, Madison, WI·         University of Texas, Harry Ransom Center Photography Collection, Austin, TX·         Whitney Museum of American Art, New York, NY·         The Winnipeg Art Gallery, Winnipeg, Manitoba, Canada "
+1809,Valdir Cruz,"Brazilian, born 1952","Cruz, Valdir",Brazilian,1952,2052,NULL
+1810,Ann Zane Shanks,"American, 1927-2015","Shanks, Ann Zane",American,1927,2015,NULL
+1811,Susan Heske,"American, active 1990s-2000s","Heske, Susan",American,1990,2009,NULL
+1812,Glasotype Photo Co.,"American, active 1900s",Glasotype Photo Co.,American,1900,1909,NULL
+1813,Baker Art Gallery,"American, active 1860s-1950s",Baker Art Gallery,American,1860,1959,Baker Art Gallery was a partnership of L. M. Baker and D. H. Baker.
+1815,Robert E. Wescott,"American, active 1890s","Wescott, Robert E.",American,1890,1899,NULL
+1816,Elmer Chickering,"American, 1857-1915","Chickering, Elmer",American,1857,1915,NULL
+1817,John H. Melrose,"American, born 1872","Melrose, John H.",American,1872,1872,"Melrose was convicted of mail fraud in 1899. He appears in the 1900 census as a prisoner of Blackwells Island. Additionally, the New York Times, on October 1, 1900, reports than an ex-convict named John Melrose was arrested for passing counterfeit money for elevated train tickets."
+1818,Nicholas R. Worden,"American, ca. 1845-1889","Worden, Nicholas R.",American,1845,1889,"Cartes-des-visites bear only the last name, but are the same cursive font found on cabinet cards."
+1819,Humphrey Lloyd Hime,"Canadian, 1833-1903","Hime, Humphrey Lloyd",Canadian,1833,1903,NULL
+1820,E. Percy Olive,"American, born 1861","Olive, E. Percy",American,1861,1861,NULL
+1822,Herman Oliver Albright,"American, 1876-1944","Albright, Herman Oliver",American,1876,1944,NULL
+1824,Frank Albert Rinehart,"American, 1861-1928","Rinehart, Frank Albert",American,1861,1928,NULL
+1825,Antony,"Belgian, active 1920s",Antony,Belgian,1920,1929,Antony was a partnership of Maurice Antony and Robert Antony.
+1826,Felix A. Raymer,"American, born 1870","Raymer, Felix A.",American,1870,1870,NULL
+1827,Harry Morey Callahan,"American, 1912-1999","Callahan, Harry Morey",American,1912,1999,NULL
+1828,Paul Caponigro,"American, born 1932","Caponigro, Paul",American,1932,2032,NULL
+1829,Lucien Clergue,"French, 1934-2014","Clergue, Lucien",French,1934,2014,NULL
+1830,Linda Connor,"American, born 1944","Connor, Linda",American,1944,2044,NULL
+1831,Joe Deal,"American, 1947-2010","Deal, Joe",American,1947,2010,NULL
+1832,Robert Doisneau,"French, 1912-1994","Doisneau, Robert",French,1912,1994,NULL
+1833,Barbara Drucker,"American, active 1970s-2010s","Drucker, Barbara",American,1970,2019,NULL
+1834,Wilton S. Tifft,"American, 1941-2015","Tifft, Wilton S.",American,1941,2015,NULL
+1835,Margaretta Kuhlthau Mitchell,"American, born 1935","Mitchell, Margaretta Kuhlthau",American,1935,2035,NULL
+1836,Claude-Joseph-Désiré Charnay,"French, 1828-1915","Charnay, Claude-Joseph-Désiré",French,1828,1915,NULL
+1837,Ellen McMahon,"American, born 1951","McMahon, Ellen",American,1951,1951,NULL
+1838,Susan Wides,"American, born 1955","Wides, Susan",American,1955,2055,NULL
+1839,Walther Dobbertin,"German, 1882-1961","Dobbertin, Walther",German,1882,1961,NULL
+1840,Elgin R. Shepard,"American, born 1850","Shepard, Elgin R.",American,1850,1850,NULL
+1844,Adolphe Braun,"French, 1812-1877","Braun, Adolphe",French,1812,1877,NULL
+1846,Edward Sheriff Curtis,"American, 1868-1952","Curtis, Edward Sheriff",American,1868,1952,NULL
+1847,Dinanda Hansen Nooney,"American, 1918-2004","Nooney, Dinanda Hansen",American,1918,2004,"Nooney had been coordinator of volunteers in 14th Congressional District during McGovern election campaign and while accompanying workers on their rounds of homes, had opportunity to observe interiors."
+1848,Rosalie Gwathmey,"American, 1908-2001","Gwathmey, Rosalie",American,1908,2001,NULL
+1849,Brady's National Portrait Gallery,"American, active 1870s",Brady's National Portrait Gallery,American,1870,1870,NULL
+1850,Friedrich Bruckmann,"German, 1814-1898","Bruckmann, Friedrich",German,1814,1898,NULL
+1852,Collection Classique,active 19th century,Collection Classique,NULL,1850,1899,NULL
+1853,Franz Seraph Hanfstaengl,"German, 1804-1877","Hanfstaengl, Franz Seraph",German,1804,1877,"In 1852 Hanfstaengl opened an ""artistic-photographic"" studio in Munich that he operated with the painter Moritz Lotze. In 1854 he documented the Munich Glass Palace and the First German General Industrial Exhibition [Erste Deutsche Allgemeine Industrieausstellung]. Hanfstaengl made portraits of the aristocracy, established artists and the upper class. In 1868 he ceded his business to his son Edgar (1842-1910) who built the successful art publishing company Hanfstaengl [Kunstverlag Hanfstaengl]. [EC]"
+1856,Charles Jacotin,"French, active 1860s-1870s","Jacotin, Charles",French,1860,1879,NULL
+1857,George Kirchner & Co.,"American, active 1880s","Kirchner, George, & Co.",American,1880,1889,George Kirchner was a partner in George Kirchner & Co.
+1858,Chester A. Lawrence,"American, born 1854","Lawrence, Chester A.",American,1854,1854,NULL
+1859,Librairie Nilsson,"French, active 1880s-1900s","Nilsson, Librairie",French,1880,1909,NULL
+1860,William Luks,"English, active 1880s","Luks, William",English,1880,1889,NULL
+1861,M. F. Phillips,"American, active 1880s","Phillips, M. F.",American,1880,1889,NULL
+1862,Charles L. Ritzmann,"American, active 1870s-1890s","Ritzmann, Charles L.",American,1870,1899,"Ritzmann is described alternately as a Sporting goods, Gun, & photographic materials dealer in business directories."
+1863,E. H. Schroeder,"German, active 1860s-1870s","Schroeder, E. H.",German,1860,1879,NULL
+1864,"Stereoscopic Company, Ltd.","English, active 1850s-1880s","Stereoscopic Company, Ltd.",English,1850,1889,NULL
+1865,Sophus Williams,"German, ca. 1835-1900","Williams, Sophus",German,1835,1900,NULL
+1866,Ziégler & Cie,"French, active 1870s",Ziégler & Cie,French,1870,1870,E. Ziégler was a partner in Ziégler & Cie.
+1867,Joseph J. Ciarlo,"American, born 1859","Ciarlo, Joseph J.",American,1859,1859,NULL
+1868,N. E. Maceo y Hno.,"Cuban, active 1890s","Maceo, N. E., y Hno.",Cuban,1890,1899,N. E. Maceo was a partner in N. E. Maceo y Hno.
+1870,Andrea Modica,"American, born 1960","Modica, Andrea",American,1960,2060,NULL
+1871,John Burton & Sons,"English, active 1880s","Burton, John, & Sons",English,1880,1889,NULL
+1872,Elliott & Fry,"English, active 1860s-1960s",Elliott & Fry,English,1860,1969,Elliott & Fry was a partnership of Joseph John Elliott and Clarence Edmund Fry. They were succeeded by Bassano & Vandyck.
+1873,George & Rebecca Lavis,"English, active 1860s-1870s","Lavis, George & Rebecca",English,1860,1879,George & Rebecca Lavis was a partnership of George Lavis and Rebecca Lavis.
+1874,Burton Berinsky,"American, 1931-1991","Berinsky, Burton",American,1931,1991,NULL
+1875,Héctor Rondón Lovera,"Venezuelan, born 1933","Rondón Lovera, Héctor",Venezuelan,1933,1933,NULL
+1876,David Hume Kennerly,"American, born 1947","Kennerly, David Hume",American,1947,2047,NULL
+1877,"Goodwin & Co. [New York, NY]","American, active 1880s-1910s",Goodwin & Co.,American,1880,1919,William H. Goodwin was a partner in Goodwin & Co. in New York. It is unclear when this tobacco company (or companies) began publishing photographic cards. Most cards in NYPL collection were copyrighted in the late 1880s.
+1879,James Edward Purdy,"American, 1858-1933","Purdy, James Edward",American,1858,1933,NULL
+1881,Charles H. James,"American, born 1849","James, Charles H.",American,1849,1849,NULL
+1882,George Louis Patterson,active 1950s,"Patterson, George Louis",NULL,1950,1950,NULL
+1883,William Emmet Patterson,active 1950s,"Patterson, William Emmet",NULL,1950,1950,NULL
+1885,Dimmers' Photo Studio,"American, active 1880s",Dimmers' Photo Studio,American,1880,1889,NULL
+1887,Charles Pratt,"American, 1926-1976","Pratt, Charles",American,1926,1976,NULL
+1888,Daniel Libens,"Belgian, born 1954","Libens, Daniel",Belgian,1954,2054,NULL
+1889,"Smith [New Haven, CT)]","American, active 1870s",Smith,American,1870,1879,"Fritz W. Burwell is at this address in 1874. Frank H. Smith, photographer, is at 297 Chapel."
+1890,Alexandre Bougault Sr.,"French, 1851-1911","Bougault, Alexandre Sr.",French,1851,1911,NULL
+1891,Kay Simmon Blumberg,"American, 1909-2004","Blumberg, Kay Simmon",American,1909,2004,"A 1948 city directory lists her as Kay Simmon, a photographer, but her home address is that of Morris Blumberg. Though it is unclear when they wed, she evidently kept her maiden name professionally. It is unclear how long her studio operated. Based on photographs in the New York Public Library she remained active as a travelling photographer from at least 1941 into the 1990s."
+1892,Michael Wayne Meads,"American, active 1990s-2000s","Meads, Michael Wayne",American,1990,2009,NULL
+1893,Flavia Derossi Robinson,"American, born 1926","Robinson, Flavia Derossi",American,1926,2026,NULL
+1895,Felice Beato,"Italian, 1832-1909","Beato, Felice",Italian,1832,1909,NULL
+1896,William Pryor Floyd,"British, 1834-1900","Floyd, William Pryor",British,1834,1900,NULL
+1897,Lenke Szilagyi,"Hungarian, born 1959","Szilagyi, Lenke",Hungarian,1959,1959,NULL
+1898,Imre Benko,"Hungarian, born 1943","Benko, Imre",Hungarian,1943,2043,NULL
+1899,Jessie Tarbox Beals,"American, 1870-1942","Beals, Jessie Tarbox",American,1870,1942,NULL
+1900,John George Brill,"American, active 1900s","Brill, John George",American,1900,1900,Brill built cars by profession.
+1901,Joel Peter Sternfeld,"American, born 1944","Sternfeld, Joel Peter",American,1944,2044,NULL
+1902,Karin Székessy,"German, born 1939","Székessy, Karin",German,1939,2039,NULL
+1903,Friedrich Pustet,"German, 1831-1902","Pustet, Friedrich",German,1831,1902,NULL
+1904,Ernest C. Youens,"English, active 1890s","Youens, Ernest C.",English,1890,1899,NULL
+1911,Paula Wright,"American, 1897-2001","Wright, Paula",American,1897,2001,NULL
+1912,Germaine Kellerman,"French, active 1940s","Kellerman, Germaine",French,1940,1940,NULL
+1913,William Howard Case,"American, 1868-1920","Case, William Howard",American,1868,1920,NULL
+1914,Alfred Horsley Hinton,"English, 1863-1908","Hinton, Alfred Horsley",English,1863,1908,NULL
+1916,Shawn Walker,"American, born 1940","Walker, Shawn",American,1940,2040,NULL
+1919,Margalit Mannor,"Israeli, born 1940","Mannor, Margalit",Israeli,1940,2040,NULL
+1920,Römmler & Jonas,"German, active 1870s-1940s",Römmler & Jonas,German,1870,1949,Römmler & Jonas was a partnership of Emil Römmler and Leopold Erasmus Jonas.
+1923,Oscar Krämer,"Austrian, 1835-1892","Krämer, Oscar",Austrian,1835,1892,NULL
+1925,Jack A. Partington Jr.,"American, 1914-1987","Partington, Jack A. Jr.",American,1914,1987,NULL
+1926,David Scheinbaum,"American, born 1951","Scheinbaum, David",American,1951,2051,NULL
+1928,David Vestal,"American, 1924-2013","Vestal, David",American,1924,2013,NULL
+1929,Walker Evans,"American, 1903-1975","Evans, Walker",American,1903,1975,NULL
+1930,Eadweard James Muybridge,"American, 1830-1904","Muybridge, Eadweard James",American,1830,1904,NULL
+1931,Marianne Engberg,"American, born 1937","Engberg, Marianne",American,1937,2037,NULL
+1932,John Goodman,"American, born 1947","Goodman, John",American,1947,2047,NULL
+1933,John C. Taylor,"American, born ca. 1845","Taylor, John C.",American,1845,1845,"Taylor's primary occupation was secretary of the Connecticut Prison Association, though he was a partner in various other enterprises on the side. Two were publishing ventures, specializing in Civil War views in partnership with William Huntington. Some time after 1884, Taylor had acquired a large collection of negatives by Matthew Brady, Alexander Gardner, and others previously in the posession of Col. Arnold A. Rand and Gen. Albert Ordway. Under the name of Taylor & Huntington, The War Photo & Exhibition Co., or his own name, he produced stereos and larger prints until at least 1903. An 1894 publication by The War Photograph & Exhibition Co. states that they have over 6,000 different views available. In 1907, the collection passed to Edward B. Eaton of Hartford, who embarked on his own publishing ventures with the images. After the death of Eaton in 1942, the Library of Congress acquired the collection."
+1934,John Noone,"Australian, active 1858-1888","Noone, John",Australian,1858,1888,NULL
+1936,A. C. Champagne,"French, active 1880s","Champagne, A. C.",French,1880,1889,NULL
+1937,William L. Bates,"American, born ca. 1844","Bates, William L.",American,1844,1844,NULL
+1938,Chaplain Thomas J. Dickson,"American, active 1900s","Dickson, Thomas J. Chaplain",American,1900,1900,NULL
+1939,Clarence Kennedy,"American, 1892-1972","Kennedy, Clarence",American,1892,1972,NULL
+1940,Frederick Gutekunst,"American, 1831-1917","Gutekunst, Frederick",American,1831,1917,NULL
+1941,Helen Levitt,"American, 1913-2009","Levitt, Helen",American,1913,2009,NULL
+1942,Gordon B. Church,"American, born 1867","Church, Gordon B.",American,1867,1867,NULL
+1943,Lorna Bieber,"American, born 1949","Bieber, Lorna",American,1949,2049,NULL
+1944,Gene Bagnato,"American, 1951-1995","Bagnato, Gene",American,1951,1995,NULL
+1946,Jonathan Allen,"British, born 1966","Allen, Jonathan",British,1966,2066,NULL
+1947,Bradley & Rulofson,"American, active 1863-1890",Bradley & Rulofson,American,1863,1890,"Bradley & Rulofson was a partnership of Henry William Bradley, and William Herman Rulofson."
+1949,Joseph Gaylord Gessford,"American, 1864-1942","Gessford, Joseph Gaylord",American,1864,1942,NULL
+1950,Marguerite W. Stoddard,"American, 1893-1979","Stoddard, Marguerite W.",American,1893,1979,NULL
+1951,Headley & Reed,"American, active 1890s",Headley & Reed,American,1890,1899,Headley & Reed was a partnership of Phineas C. Headley Jr. and James E. Reed.
+1952,E. G. Clements,"American, 1843-1926","Clements, E. G.",American,1843,1926,NULL
+1953,Newsboy,"American, active 1880s",Newsboy,American,1880,1889,NULL
+1954,"Century Association [New York, N.Y.]","American, active 1860s","Century Association [New York, N.Y.]",American,1860,1860,NULL
+1955,Lewis Morris Rutherfurd,"American, 1816-1892","Rutherfurd, Lewis Morris",American,1816,1892,NULL
+1956,Hermann Wilhelm Vogel,"German, 1834-1898","Vogel, Hermann Wilhelm",German,1834,1898,"Born in Dobrilugk, Saxony in 1834 and died in 1898 in Berlin. Vogel started the Photography Club in Berlin [Photographisches Verein] and organized the 1865 International Photography Exhibition. In 1868 he joined the expedition to observe the solar eclipse in Aden, Yemen. Between 1867 and 1870 Vogel published his Lehrbuch der Photographie [copy in ART], which had international editions following in 1875. In 1879 he published Lichtbilder nach der Natur [copy in Rare Books]. From 1884 on he headed the Institute for Photochemistry and scientific photography on the Technical University in Berlin-Charlottenburg."
+1958,Gustaf Niles Adolf Nordenskiöld,"Swedish, 1868-1895","Nordenskiöld, Gustaf Niles Adolf",Swedish,1868,1895,NULL
+1959,Louis Jacques Mandé Daguerre,"French, 1787-1851","Daguerre, Louis Jacques Mandé",French,1787,1851,NULL
+1961,Albert Fernique,"French, 1841-1898","Fernique, Albert",French,1841,1898,NULL
+1962,Allen Ginsberg,"American, 1926-1997","Ginsberg, Allen",American,1926,1997,NULL
+1963,Read-Stroop Drug Co.,"American, active 1910s",Read-Stroop Drug Co.,American,1910,1910,NULL
+1965,Edward Augustus Bromley,"American, 1848-1925","Bromley, Edward Augustus",American,1848,1925,NULL
+1966,Northern Pacific Railroad Co.,"American, established 1864",Northern Pacific Railroad Co.,American,1864,1864,NULL
+1967,Jack Ellis Haynes,"American, 1884-1962","Haynes, Jack Ellis",American,1884,1962,NULL
+1968,Lee Moorhouse,"American, 1850-1926","Moorhouse, Lee",American,1850,1926,NULL
+1969,Hugo E. Schwichtenberg,"American, born 1866","Schwichtenberg, Hugo E.",American,1866,1866,NULL
+1971,Dorothea Lange,"American, 1895-1965","Lange, Dorothea",American,1895,1965,NULL
+1972,Arthur Mineyard Teakell,"American, born 1883","Teakell, Arthur Mineyard",American,1883,1883,NULL
+1973,Ernest H. Dewey,"American, born ca. 1871","Dewey, Ernest H.",American,1871,1871,"The 1920 census says he is a travelling photographer, though he seems to have settled in Faribault for most of the decade, before moving to Madison, WI."
+1974,Jasper G. Ewing,"American, active 1910s","Ewing, Jasper G.",American,1910,1919,NULL
+1976,Douglas Leigh,"American, 1907-1999","Leigh, Douglas",American,1907,1999,NULL
+1977,Eugene Stamm,"American, born 1918","Stamm, Eugene",American,1918,1918,NULL
+1978,Art Specialty Co.,"American, active 1900s",Art Specialty Co.,American,1900,1900,NULL
+1979,Xenophon O. Howe,"American, active 1880s-1890s","Howe, Xenophon O.",American,1880,1899,NULL
+1980,Lighty Photo Company,"American, active 1900s-1910s",Lighty Photo Company,American,1900,1919,NULL
+1981,Hippolyte Arnoux,"French, active 1860s-1880s","Arnoux, Hippolyte",French,1860,1889,NULL
+1982,Joel Greenberg,"American, born 1947","Greenberg, Joel",American,1947,1947,NULL
+1983,Edward Jean Steichen,"American, 1879-1973","Steichen, Edward Jean",American,1879,1973,NULL
+1984,Lewis Wickes Hine,"American, 1874-1940","Hine, Lewis Wickes",American,1874,1940,NULL
+1985,Edward Henry Weston,"American, 1886-1958","Weston, Edward Henry",American,1886,1958,NULL
+1986,Bruce Davidson,"American, born 1933","Davidson, Bruce",American,1933,2033,NULL
+1987,Robert Adams,"American, born 1937","Adams, Robert",American,1937,2037,NULL
+1988,Jesse Lyman Alexander,"American, born 1929","Alexander, Jesse Lyman",American,1929,2029,NULL
+1989,Morley Baer,"American, 1916-1995","Baer, Morley",American,1916,1995,NULL
+1990,Lewis Baltz,"American, 1945-2014","Baltz, Lewis",American,1945,2014,NULL
+1991,Bruce Barnbaum,"American, born 1943","Barnbaum, Bruce",American,1943,2043,NULL
+1992,Ruth Bernhard,"American, 1905-2006","Bernhard, Ruth",American,1905,2006,NULL
+1994,Marilyn Bridges,"American, born 1948","Bridges, Marilyn",American,1948,2048,NULL
+1995,Wynn Bullock,"American, 1902-1975","Bullock, Wynn",American,1902,1975,NULL
+1996,Dr. Harold Eugene Edgerton,"American, 1903-1990","Edgerton, Harold Eugene Dr.",American,1903,1990,NULL
+1997,Elliott Erwitt,"American, born 1928","Erwitt, Elliott",American,1928,2028,NULL
+1998,Don Farber,"American, active 1960s-2000s","Farber, Don",American,1960,2009,NULL
+1999,Gary Leon Faye,"American, born 1938","Faye, Gary Leon",American,1938,2038,NULL
+2000,Jo Alison Feiler,"American, born 1951","Feiler, Jo Alison",American,1951,2051,NULL
+2001,Susan Felter,"American, born 1945","Felter, Susan",American,1945,2045,NULL
+2002,Jeff Gates,"American, born 1949","Gates, Jeff",American,1949,2049,NULL
+2003,Goodwin Harding,"American, born 1947","Harding, Goodwin",American,1947,2047,NULL
+2004,Erich Hartmann,"American, 1922-1999","Hartmann, Erich",American,1922,1999,NULL
+2005,Evelyn Hofer,"English, 1922-2009","Hofer, Evelyn",English,1922,2009,NULL
+2006,Eikoh Hosoe,"Japanese, born 1933","Hosoe, Eikoh",Japanese,1933,2033,NULL
+2007,Yasuhiro Ishimoto,"Japanese, 1921-2012","Ishimoto, Yasuhiro",Japanese,1921,2012,NULL
+2008,Christopher James,"American, born 1947","James, Christopher",American,1947,2047,NULL
+2009,Pirkle Jones,"American, 1914-2009","Jones, Pirkle",American,1914,2009,NULL
+2010,Barbara Kasten,"American, born 1936","Kasten, Barbara",American,1936,2036,NULL
+2011,Michael Kenna,"English, born 1953","Kenna, Michael",English,1953,2053,NULL
+2012,Nathan Bernard Lerner,"American, 1913-1997","Lerner, Nathan Bernard",American,1913,1997,NULL
+2013,Nancy Lloyd,"American, born 1949","Lloyd, Nancy",American,1949,2049,NULL
+2014,Mary Ellen Mark,"American, 1940-2015","Mark, Mary Ellen",American,1940,2015,NULL
+2015,Roger Marshutz,"American, 1929-2007","Marshutz, Roger",American,1929,2007,NULL
+2016,Tom Millea,"American, 1944-2015","Millea, Tom",American,1944,2015,NULL
+2017,Doug Muir,"American, born 1940","Muir, Doug",American,1940,2040,NULL
+2018,Barbara P. Norfleet,"American, born 1926","Norfleet, Barbara P.",American,1926,2026,NULL
+2019,Jenny Okun,"American, born 1953","Okun, Jenny",American,1953,2053,NULL
+2020,Arthur Ollman,"American, born 1947","Ollman, Arthur",American,1947,2047,NULL
+2021,Ted Orland,"American, born 1941","Orland, Ted",American,1941,2041,NULL
+2022,Don Ornitz,"American, born 1920","Ornitz, Don",American,1920,2020,NULL
+2023,Olivia Parker,"American, born 1941","Parker, Olivia",American,1941,2041,NULL
+2024,Doug Prince,"American, born 1943","Prince, Doug",American,1943,2043,NULL
+2025,Cathy Raff,"American, active 1970s-1980s","Raff, Cathy",American,1970,1989,NULL
+2026,Irene Ray,active 1970s,"Ray, Irene",NULL,1970,1970,NULL
+2027,Terry Reed,"American, active 1970s","Reed, Terry",American,1970,1979,NULL
+2028,Jan Saudek,"Czechoslovakian, born 1935","Saudek, Jan",Czechoslovakian,1935,2035,NULL
+2029,Eugene Richards,"American, born 1944","Richards, Eugene",American,1944,2044,NULL
+2030,Herb Ritts,"American, 1952-2002","Ritts, Herb",American,1952,2002,NULL
+2031,Alan Ross,"American, born 1948","Ross, Alan",American,1948,2048,NULL
+2032,Eva Rubinstein,"American, born 1933","Rubinstein, Eva",American,1933,2033,NULL
+2033,Linda Robbennolt,"American, born 1951","Robbennolt, Linda",American,1951,2051,NULL
+2034,John Sexton,"American, born 1953","Sexton, John",American,1953,2053,NULL
+2035,Ron Starr,"American, born 1947","Starr, Ron",American,1947,2047,NULL
+2036,Sandra Tasca,"American, active 1970s","Tasca, Sandra",American,1970,1970,NULL
+2037,Reed Thomas,"American, born 1937","Thomas, Reed",American,1937,1937,NULL
+2038,George A. Tice,"American, born 1938","Tice, George A.",American,1938,2038,NULL
+2039,Arthur Tress,"American, born 1940","Tress, Arthur",American,1940,2040,NULL
+2040,Catherine Wagner,"American, born 1953","Wagner, Catherine",American,1953,2053,NULL
+2041,Melanie J. Walker,"American, born 1949","Walker, Melanie J.",American,1949,2049,NULL
+2042,Brett Weston,"American, 1911-1993","Weston, Brett",American,1911,1993,NULL
+2043,Minor White,"American, 1908-1976","White, Minor",American,1908,1976,NULL
+2044,Huntington Witherill,"American, born 1949","Witherill, Huntington",American,1949,2049,NULL
+2045,Marion Post Wolcott,"American, 1910-1990","Wolcott, Marion Post",American,1910,1990,"Credit stamps for ""Post"" appear on Farm Security Administration photographs also credited to Russell Lee. This is possibly Marion Post-Wolcott."
+2046,Penny Diane Wolin,"American, born 1953","Wolin, Penny Diane",American,1953,1953,NULL
+2047,Don Worth,"American, 1924-2009","Worth, Don",American,1924,2009,NULL
+2048,Lou Jacobs Jr.,"American, born 1921","Jacobs, Lou Jr.",American,1921,2021,NULL
+2049,Judy Dater,"American, born 1941","Dater, Judy",American,1941,2041,NULL
+2050,Willard Ames Van Dyke,"American, 1906-1986","Van Dyke, Willard Ames",American,1906,1986,NULL
+2051,Linda Gail Rich,"American, born 1949","Rich, Linda Gail",American,1949,2049,NULL
+2052,Anne W. Brigman,"American, 1869-1950","Brigman, Anne W.",American,1869,1950,NULL
+2053,Ansel Adams,"American, 1902-1984","Adams, Ansel",American,1902,1984,NULL
+2054,Brassaï,"French, 1899-1984",Brassaï,French,1899,1984,NULL
+2055,James Edward Abbe,"American, 1883-1973","Abbe, James Edward",American,1883,1973,NULL
+2056,Henry Gilpin,"American, born 1922","Gilpin, Henry",American,1922,2022,NULL
+2058,Vilem Kriz,"American, 1921-1994","Kriz, Vilem",American,1921,1994,NULL
+2059,Paul Strand,"American, 1890-1976","Strand, Paul",American,1890,1976,NULL
+2060,Robert Adamson,"Scottish, 1821-1848","Adamson, Robert",Scottish,1821,1848,NULL
+2061,Julia Margaret Cameron,"British, 1815-1879","Cameron, Julia Margaret",British,1815,1879,NULL
+2062,Rev. Charles Lutwidge Dodgson,"English, 1832-1898","Dodgson, Charles Lutwidge Rev.",English,1832,1898,NULL
+2063,Peter Henry Emerson,"English, 1856-1936","Emerson, Peter Henry",English,1856,1936,NULL
+2064,Frederick Henry Evans,"English, 1853-1943","Evans, Frederick Henry",English,1853,1943,NULL
+2065,Roger Fenton,"English, 1819-1869","Fenton, Roger",English,1819,1869,NULL
+2066,Lady Clementina Hawarden,"British, 1822-1865","Hawarden, Clementina Lady",British,1822,1865,NULL
+2067,David Octavius Hill,"Scottish, 1802-1870","Hill, David Octavius",Scottish,1802,1870,NULL
+2068,Robert Howlett,"English, 1830-1858","Howlett, Robert",English,1830,1858,NULL
+2069,Oscar Gustav Rejlander,"English, 1813-1875","Rejlander, Oscar Gustav",English,1813,1875,NULL
+2070,William Henry Fox Talbot,"English, 1800-1877","Talbot, William Henry Fox",English,1850,1877,NULL
+2071,Benjamin Brecknell Turner,"English, 1815-1894","Turner, Benjamin Brecknell",English,1815,1894,NULL
+2072,Faye Godwin,"English, 1931-2005","Godwin, Faye",English,1931,2005,NULL
+2073,Margaret F. Boughton,active 1900s,"Boughton, Margaret F.",NULL,1900,1900,NULL
+2074,Winston Swift Boyer,"American, born 1954","Boyer, Winston Swift",American,1954,1954,NULL
+2075,Jo Ann Callis,"American, born 1940","Callis, Jo Ann",American,1940,2040,NULL
+2076,Augustin Victor Casasola,"Mexican, 1874-1938","Casasola, Augustin Victor",Mexican,1874,1938,NULL
+2077,Jerry Cooke,"American, 1921-2005","Cooke, Jerry",American,1921,2005,NULL
+2078,William Ashford Garnett,"American, 1916-2006","Garnett, William Ashford",American,1916,2006,NULL
+2079,Roy DeCarava,"American, 1919-2009","DeCarava, Roy",American,1919,2009,NULL
+2080,Baron Adolphe De Meyer,"German, 1868-1949","De Meyer, Adolphe Baron",German,1868,1949,NULL
+2081,Jay Dusard,"American, born 1937","Dusard, Jay",American,1937,2037,NULL
+2082,Wilma Ervin,"American, active 1970s-2000s","Ervin, Wilma",American,1970,2009,NULL
+2083,Arthur Freed,"American, born 1936","Freed, Arthur",American,1936,2036,NULL
+2084,Chris Gulker,"American, 1951-2010","Gulker, Chris",American,1951,2010,NULL
+2085,Hiroshi Hamaya,"Japanese, 1915-1999","Hamaya, Hiroshi",Japanese,1915,1999,NULL
+2086,Wanda Lee Hammerbeck,"American, born 1945","Hammerbeck, Wanda Lee",American,1945,2045,NULL
+2087,Fritz Henle,"American, 1909-1993","Henle, Fritz",American,1909,1993,NULL
+2088,Philip J. Hyde,"American, 1921-2006","Hyde, Philip J.",American,1921,2006,NULL
+2089,Andrea L. Jennison,"American, born 1944","Jennison, Andrea L.",American,1944,2044,NULL
+2090,Les Krims,"American, born 1942","Krims, Les",American,1942,2042,NULL
+2091,Charles E. Manley,active 1980s,"Manley, Charles E.",NULL,1980,1980,Possibly the opthamologist at Columbia University Medical Center.
+2092,Wayne Forest Miller,"American, 1918-2013","Miller, Wayne Forest",American,1918,2013,NULL
+2093,William Mortensen,"American, 1897-1965","Mortensen, William",American,1897,1965,NULL
+2094,Greg O'Loughlin,"American, active 1980s-2000s","O'Loughlin, Greg",American,1980,2009,NULL
+2095,Marion Louise Patterson,"American, born 1933","Patterson, Marion Louise",American,1933,2033,NULL
+2096,Sylvia Plachy,"American, born 1943","Plachy, Sylvia",American,1943,2043,NULL
+2097,Leland Rice,"American, born 1940","Rice, Leland",American,1940,2040,NULL
+2100,Harry A. Smith,"American, 1883-1973","Smith, Harry A.",American,1883,1973,"This is not the filmmaker and musicologist, Harry E. Smith."
+2101,Eve Arnold,"American, 1912-2012","Arnold, Eve",American,1912,2012,NULL
+2102,Jill Freedman,"American, born 1939","Freedman, Jill",American,1939,2039,NULL
+2103,Ernst Haas,"American, 1921-1986","Haas, Ernst",American,1921,1986,NULL
+2104,André Kertész,"American, 1894-1985","Kertész, André",American,1894,1985,NULL
+2105,Duane Michals,"American, born 1932","Michals, Duane",American,1932,2032,NULL
+2106,Inge Morath,"American, 1923-2002","Morath, Inge",American,1923,2002,NULL
+2107,Neal Slavin,"American, born 1941","Slavin, Neal",American,1941,2041,NULL
+2108,James Van Der Zee,"American, 1886-1983","Van Der Zee, James",American,1886,1983,NULL
+2109,Jerry N. Uelsmann,"American, born 1934","Uelsmann, Jerry N.",American,1934,2034,NULL
+2110,Stephen Von Seeger,active 1970s,"Von Seeger, Stephen",NULL,1970,1970,NULL
+2111,James Deane,"American, 1801-1858","Deane, James",American,1801,1858,NULL
+2112,Pepe Diniz,"Portuguese, born 1945","Diniz, Pepe",Portuguese,1945,2045,NULL
+2113,Dana B. Merrill,"American, born 1877","Merrill, Dana B.",American,1877,1877,NULL
+2115,Peter Britt,"American, 1819-1905","Britt, Peter",American,1819,1905,NULL
+2116,Publisher's Photo Service,"American, active 1910s-1920s",Publisher's Photo Service,American,1910,1929,"Charles d'Emery was President of Publisher's Photo Service from 1918 into the 1920s. Mary E. Morrow was Secretary and Treasurer at the same time. Julian F. Detmore was listed as Vice President in 1922. It was unclear if this was a name variant of Publisher's Photo Co., a New York firm from the same period."
+2118,Jim Dow,"American, born 1942","Dow, Jim",American,1942,2042,NULL
+2119,William R. Brooks,"American, active 1880s","Brooks, William R.",American,1880,1889,NULL
+2120,Schuyler U. Bunnell,"American, 1868-1935","Bunnell, Schuyler U.",American,1868,1935,"Bunnell's wife, Cora D. Bunnell, was also a photographer."
+2121,Tomer J. Hileman,"American, 1882-1945","Hileman, Tomer Jacob",American,1882,1945,NULL
+2122,Vivian Ronay,"American, active 1980s-2000s","Ronay, Vivian",American,1980,2009,NULL
+2123,Dena,"American, 1910-1987",Dena,American,1910,1987,NULL
+2124,Marion Faller,"American, 1941-2014","Faller, Marion",American,1941,2014,NULL
+2125,James Klukkert,"American, born 1950","Klukkert, James",American,1950,2050,NULL
+2126,Russell Munson,"American, born 1938","Munson, Russell",American,1938,2038,NULL
+2127,Leonard Speier,"American, active 1970s","Speier, Leonard",American,1970,1970,NULL
+2128,Harvey Zipkin,"American, born 1942","Zipkin, Harvey",American,1942,2042,NULL
+2129,E. Willard Spurr,"American, born 1865","Spurr, E. Willard",American,1865,1865,NULL
+2130,Michel Berthaud,"French, active 1870s-1890s","Berthaud, Michel",French,1870,1899,NULL
+2131,Rudolph Eickemeyer Jr.,"American, 1862-1932","Eickemeyer, Rudolph Jr.",American,1862,1932,Eikemeyer was a longtome manager of the Alfred S. Campbell Studio in New York.
+2132,Robert Mahon,"American, born 1949","Mahon, Robert",American,1949,2049,NULL
+2133,Lilian Caruana,"American, born 1946","Caruana, Lilian",American,1946,2046,NULL
+2134,Mittet & Co.,"Norwegian, active 1900s-1930s",Mittet & Co.,Norwegian,1900,1939,"Often is written as ""Eneret Mittet"", but Eneret (or Enerett) is Copyright."
+2135,Richard Misrach,"American, born 1949","Misrach, Richard",American,1949,2049,NULL
+2136,Bruno Barbey,"French, born 1941","Barbey, Bruno",French,1941,2041,NULL
+2137,John Ruskin,"English, 1819-1900","Ruskin, John",English,1819,1900,NULL
+2138,Brian Graham,"Canadian, born 1951","Graham, Brian",Canadian,1951,2051,NULL
+2140,William A. Lucas,"American, born 1868","Lucas, William A.",American,1868,1868,NULL
+2141,John K. Hillers,"American, 1843-1925","Hillers, John K.",American,1843,1925,NULL
+2143,Frutkoff & Horn,"American, active 1930s",Frutkoff & Horn,American,1930,1930,Leo Frutkoff was a partner in Frutkoff & Horn.
+2144,Charles Eiseman,"American, active 1930s","Eiseman, Charles",American,1930,1930,NULL
+2145,Anton Refregier,"American, 1905-1979","Refregier, Anton",American,1905,1979,NULL
+2146,Mabel Thérèse Bonney,"American, 1894-1978","Bonney, Mabel Thérèse",American,1894,1978,NULL
+2147,Rodney Stokes,"American, active 1900s","Stokes, Rodney",American,1900,1900,NULL
+2148,Alvin Langdon Coburn,"British, 1882-1966","Coburn, Alvin Langdon",British,1882,1966,NULL
+2149,Harry A. Fogg,"American, active 1900s","Fogg, Harry A.",American,1900,1909,NULL
+2150,Kaufmann-Fabry,"American, active 1910s-1930s",Kaufmann-Fabry,American,1910,1939,NULL
+2152,Bliss Bros.,"American, active 1880s-1890s",Bliss Bros.,American,1880,1899,Bliss Bros. was a partnership of Harry A. Bliss and Frank H. Bliss.
+2153,Harry O. Wilks,"American, born 1942","Wilks, Harry O.",American,1942,2042,NULL
+2154,Keystone View Co.,"American, active 1890s-1960s",Keystone View Co.,American,1890,1969,NULL
+2156,Harvey Stein,"American, born 1941","Stein, Harvey",American,1941,2041,NULL
+2157,Garry Winogrand,"American, 1928-1984","Winogrand, Garry",American,1928,1984,NULL
+2160,Joan Roth,"American, born 1942","Roth, Joan",American,1942,2042,NULL
+2161,Camilo José Vergara,"American, born 1945","Vergara, Camilo José",American,1945,2045,Vergara studied sociology and has used the camera to document stressed areas of de-urbanization over time. The result is a visual chronicle revealing stark changes within the urban landscape.
+2162,Joel D. Levinson,"American, born 1953","Levinson, Joel D.",American,1953,2053,NULL
+2163,Salvation Army Studio,"American, active 1910s-1920s",Salvation Army Studio,American,1910,1929,NULL
+2164,Philip Meadows Taylor,"British, 1808-1876","Taylor, Philip Meadows",British,1808,1876,NULL
+2167,G. W. Curtiss,"American, active 1890s","Curtiss, G. W.",American,1890,1899,NULL
+2169,Ernest James Bellocq,"American, 1873-1949","Bellocq, Ernest James",American,1873,1949,NULL
+2170,Francis Frith & Co.,"English, active 1859-1971","Frith, Francis, & Co.",English,1859,1971,Francis Frith was a partner in Francis Frith & Co.
+2171,Morris Engel,"American, 1918-2005","Engel, Morris",American,1918,2005,NULL
+2172,Samuel Bourne,"English, 1834-1912","Bourne, Samuel",English,1834,1912,NULL
+2173,Tina Barney,"American, born 1945","Barney, Tina",American,1945,2045,NULL
+2174,Sarah Charlesworth,"American, 1947-2013","Charlesworth, Sarah",American,1947,2013,NULL
+2175,Alfredo Jaar,"Chilean, born 1956","Jaar, Alfredo",Chilean,1956,2056,NULL
+2176,Frank Majore,"American, born 1948","Majore, Frank",American,1948,2048,NULL
+2177,McDermott & McGough,"American, active 1990s-2000s",McDermott & McGough,American,1990,2009,McDermott & McGough was a partnership of Peter McGough and David McDermott.
+2178,Thomas Ruff,"German, born 1958","Ruff, Thomas",German,1958,2058,NULL
+2179,Andres Serrano,"American, born 1953","Serrano, Andres",American,1953,2053,NULL
+2180,Jeff Wall,"Canadian, born 1946","Wall, Jeff",Canadian,1946,2046,NULL
+2181,James Welling,"American, born 1951","Welling, James",American,1951,2051,NULL
+2182,Joel-Peter Witkin,"American, born 1939","Witkin, Joel-Peter",American,1939,2039,NULL
+2184,Jan Groover,"American, 1943-2012","Groover, Jan",American,1943,2012,NULL
+2185,Annette Lemieux,"American, born 1957","Lemieux, Annette",American,1957,2057,NULL
+2186,Richard Prince,"American, born 1949","Prince, Richard",American,1949,2049,"Prince painted figuratively, then focused on work using rephotographed magazine advertisements, raising questions on originality and authorship."
+2187,Cindy Sherman,"American, born 1954","Sherman, Cindy",American,1954,2054,NULL
+2188,Bruce Weber,"American, born 1946","Weber, Bruce",American,1946,2046,NULL
+2189,William Wegman,"American, born 1943","Wegman, William",American,1943,2043,NULL
+2190,Roger Minick,"American, born 1944","Minick, Roger",American,1944,2044,NULL
+2191,Nathan Lyons,"American, 1930-2016","Lyons, Nathan",American,1930,2016,NULL
+2192,Elaine Mayes,"American, born 1938","Mayes, Elaine",American,1938,2038,NULL
+2193,Henry Wessel Jr.,"American, born 1942","Wessel, Henry Jr.",American,1942,2042,NULL
+2194,Harold Henry Jones,"American, born 1940","Jones, Harold Henry",American,1940,2040,NULL
+2195,Tod Papageorge,"American, born 1940","Papageorge, Tod",American,1940,2040,NULL
+2196,Jim Alinder,"American, born 1941","Alinder, Jim",American,1941,2041,NULL
+2197,Robbert F. Flick,"Canadian, born 1939","Flick, Robbert F.",Canadian,1939,2039,NULL
+2198,Barbara Crane,"American, born 1928","Crane, Barbara",American,1928,2028,NULL
+2199,Steve Fitch,"American, born 1949","Fitch, Steve",American,1949,2049,NULL
+2200,Michael Becotte,"American, born 1945","Becotte, Michael",American,1945,2045,NULL
+2201,Michael Bishop,"American, born 1946","Bishop, Michael",American,1946,2046,NULL
+2202,Ken Brown,"American, born 1944","Brown, Ken",American,1944,2044,NULL
+2203,Robert Whitten Fichter,"American, born 1939","Fichter, Robert Whitten",American,1939,2039,NULL
+2204,Victor Landweber,"American, born 1943","Landweber, Victor",American,1943,2043,NULL
+2205,Barbara Jo Revelle,"American, born 1946","Revelle, Barbara Jo",American,1946,2046,NULL
+2206,Robert A. Widdicombe,"American, born 1949","Widdicombe, Robert A.",American,1949,2049,NULL
+2207,Martin Birnbaum,"American, 1878-1970","Birnbaum, Martin",American,1878,1970,NULL
+2209,Emma Justine Farnsworth,"American, 1860-1952","Farnsworth, Emma Justine",American,1860,1952,"Emma Justine Farnsworth was from Albany, New York and was an active photographer from around 1886 to 1912. She created allegorical and narrative images to use for book illustrations. Alfred Stieglitz called her the finest lady amateur photographer; she won numerous prizes for her work."
+2210,Edward Bailey Eaton,"American, 1870-1942","Eaton, Edward Bailey",American,1870,1942,"Edward Bailey Eaton was a journalist and publisher in Hartford, CT. In 1907, Eaton acquired thousands of negatives by Matthew Brady, Alexander Gardner, and others from John C. Taylor of Hartford, CT. From these, he published six books between 1907 and 1913, most notably the ten volume The Photographic History of the Civil War. On the 1910 census, Eaton was listed as ""Publisher- Patriot Publishing Co."", though an article from April 22, 1909 in the National Tribune stated that Eaton was to sell both the collection and the company to settle debts. It noted that the collection, ""weighing about three tons,"" was stored in ""fireproof vaults in Hartford"". The company seems to have relocated to Springfield, MA and retained Eaton as manager from 1910 to as late as 1918. Springfield directories indicate that he still lived in Hartford. By 1920, he had given up publishing and spent the rest of his life as a real estate agent. It seems that Eaton never sold the Brady collection, and it remained in the ""fireproof vaults"" where, according to the Library of Congress, ""it suffered its worst damage and destruction."" After Eaton's death in 1942, the Library of Congress acquired the collection for the cost of the unpaid storage."
+2211,Norddeutscher Lloyd,"German, established 1857","Lloyd, Norddeutscher",German,1857,1857,NULL
+2212,Eugène Atget,"French, 1857-1927","Atget, Eugène",French,1857,1927,NULL
+2213,Brown Bros.,"American, active 1900s-1940s",Brown Bros.,American,1900,1949,The Brown Bros. studio was a partnership of Charles H. S. Brown and Arthur R. Brown.
+2214,George Gilbert,"American, 1922-2012","Gilbert, George",American,1922,2012,"George Gilbert, born in New York City in 1922, is an American marketing professional, photographer and writer on photography and a collector of antique photographic equipment and memorabilia. As a writer, he has also used the pseudonyms Gil Jordan and Pam Stevens. He was a member of the Photo League, a cooperative of amateur and professional photographers that existed from 1936 to 1951 in New York City.[NYPL catalogue record]"
+2215,Johnston & Hoffmann,"British, active 1865-ca. 1895",Johnston & Hoffmann,British,1865,1895,Johnston & Hoffmann was a partnership of P. A. Johnston and Theodore Julius Hoffmann.
+2216,Ranger & Austen,"American, active 1870s",Ranger & Austen,American,1870,1879,Henry V. Ranger was a partner in Ranger & Austen.
+2217,Hermann Landshoff,"American, 1905-1986","Landshoff, Hermann",American,1905,1986,NULL
+2218,Steve Albahari,"American, born 1957","Albahari, Steve",American,1957,2057,NULL
+2220,Robinson & Churchman,"American, active 1890s",Robinson & Churchman,American,1890,1899,Robinson & Churchman was a partnership of Ida Robinson and Schuyler Elmer Churchman.
+2221,"Central Photo Parlors [Denver, CO]","American, active 1890s",Central Photo Parlors,American,1890,1899,NULL
+2222,Colombus W. Motes,"American, 1837-1919","Motes, Colombus W.",American,1837,1919,NULL
+2223,William H. Potter,"American, 1841-1913","Potter, William H.",American,1841,1913,"Potter enlisted in Ohio, September 1861 and served until the war's end, attaining the rank of Captain. His military records indicate a ""slight defect in vision""."
+2224,James S. Cummins,"American, active 1870s-1900s","Cummins, James S.",American,1870,1909,NULL
+2225,Charles Milton Bell,"American, 1849-1893","Bell, Charles Milton",American,1849,1893,NULL
+2226,Cherrington & Bros.,"American, active 1890s",Cherrington & Bros.,American,1890,1899,NULL
+2228,John C. H. Grabill,"American, active 1860s-1890s","Grabill, John C. H.",American,1860,1899,NULL
+2229,Man Ray,"American, 1890-1976","Ray, Man",American,1890,1976,NULL
+2230,Albert J. Naegeli,"American, active 1870s-1900s","Naegeli, Albert J.",American,1870,1909,NULL
+2231,Alfred Cox,"American, born 1854","Cox, Alfred",American,1854,1954,NULL
+2232,Richard Henry Smith,"English, born 1820","Smith, Richard Henry",English,1820,1920,NULL
+2233,Andries Jager,"Dutch, 1825-1905","Jager, Andries",Dutch,1825,1905,NULL
+2234,Brewster Co.,"Scottish, active 1850s-1900s",Brewster Co.,Scottish,1850,1909,NULL
+2235,Christopher Braun,"American, active 1980s","Braun, Christopher",American,1980,1980,NULL
+2236,G. Solis,"Cuban, active 1910s","Solis, G.",Cuban,1910,1910,NULL
+2237,Hills & Saunders,"English, 1860 - 1929",Hills & Saunders,English,1860,1929,Hills & Saunders was a partnership of Robert Hills and John Henry Saunders.
+2239,Owen A. Eames,"American, active 1890s","Eames, Owen A.",American,1890,1899,NULL
+2241,Charles C. Cook,"American, active 1900s-1940s","Cook, Charles C.",American,1900,1949,NULL
+2242,Pettibone Bros. Manufacturing Co.,"American, active 1890s-1920s",Pettibone Bros. Manufacturing Co.,American,1890,1923,"James V. Pettibone was a partner in Pettibone Bros. Manufacturing Co. They were ""Manufacturers of Regalia, Lodge Supplies and Military Goods."""
+2244,F. Bedrich Grunzweig,"American, 1910-2009","Grunzweig, F. Bedrich",American,1910,2009,NULL
+2245,Wilhelm Photo Studio,"American, active 1909",Wilhelm Photo Studio,American,1909,1909,NULL
+2248,Bisson Frères,"French, active 1841-1864",Bisson Frères,French,1841,1864,Bisson Frères was a partnership of Auguste-Rosalie Bisson and Louis-Auguste Bisson.
+2250,Jeffrey Wolin,"American, born 1951","Wolin, Jeffrey",American,1951,2051,NULL
+2251,Edward Daniel Macfee Jr.,"American, born ca. 1860","Macfee, Edward Daniel Jr.",American,1860,1860,NULL
+2253,J. H. Schenck,"American, active 1840s","Schenck, J. H.",American,1840,1849,NULL
+2254,James Hall Nasmyth,"English, 1808-1890","Nasmyth, James Hall",English,1808,1890,NULL
+2255,James Carpenter,"American, born 1949","Carpenter, James",American,1949,1949,NULL
+2256,John B. Scholl,"American, 1857-1924","Scholl, John B.",American,1857,1924,NULL
+2257,Joanne Dugan,"American, born 1961","Dugan, Joanne",American,1961,2061,NULL
+2259,Mervyn Herbert Nevil Story-Maskelyne,"English, 1823-1911","Story-Maskelyne, Mervyn Herbert Nevil",English,1823,1911,NULL
+2260,Edward King Tenison,"Irish, 1805-1878","Tenison, Edward King",Irish,1805,1878,NULL
+2261,Camino,"Spanish, died 1888",Camino,Spanish,1888,1888,NULL
+2262,Emilio Beauchy,"Spanish, 1847-1928","Beauchy, Emilio",Spanish,1847,1928,NULL
+2263,Charles Clifford,"Welsh, 1819-1863","Clifford, Charles",Welsh,1819,1863,NULL
+2264,Juan Laurent y Cia,"Spanish, active 1880s","Laurent, Juan, y Cia",Spanish,1880,1889,Juan Laurent was a partner in Juan Laurent y Cia.
+2265,Timothy Greenfield-Sanders,"American, born 1952","Greenfield-Sanders, Timothy",American,1952,2052,NULL
+2266,Wolf von dem Bussche,"American, 1934-2014","von dem Bussche, Wolf",American,1934,2014,NULL
+2267,Leo Seltzer,"American, 1916-2007","Seltzer, Leo",American,1916,2007,NULL
+2268,Lee D. Witkin,"American, 1935-1984","Witkin, Lee D.",American,1935,1984,NULL
+2269,Russell-Morgan Print,"American, active 1860s-1890s",Russell-Morgan Print,American,1860,1899,Russell-Morgan Print was a partnership of A. O. Russell and Robert J. Morgan.
+2270,Eastman Kodak Company,"American, established 1888",Eastman Kodak Company,American,1888,2019,George Eastman was a partner in Eastman Kodak Company.
+2271,Henry Frederick Van der Weyde,"English, 1838-1924","Van der Weyde, Henry Frederick",English,1838,1924,NULL
+2272,William Henry Tipton,"American, 1850-1929","Tipton, William Henry",American,1850,1929,NULL
+2273,Thomas Richard Williams,"English, 1824-1871","Williams, Thomas Richard",English,1824,1871,NULL
+2275,Alexander J. Copelin,"American, active 1870s-1890s","Copelin, Alexander J.",American,1870,1899,NULL
+2278,James Casebere,"American, born 1953","Casebere, James",American,1953,2053,NULL
+2279,New York Zoological Society,"American, established 1895",New York Zoological Society,American,1895,1895,NULL
+2280,Ann P. Meredith,"American, born 1948","Meredith, Ann P.",American,1948,1948,NULL
+2281,J. Hermanovitch,"Lithuanian, active 1890s","Hermanovitch, J.",Lithuanian,1890,1899,NULL
+2282,Giacomo Brogi,"Italian, 1822-1881","Brogi, Giacomo",Italian,1822,1881,NULL
+2283,C. Hodcend,"Italian, active 1860s-1870s","Hodcend, C.",Italian,1860,1879,NULL
+2284,L. P.,"French, active 1890s",L. P.,French,1890,1899,NULL
+2285,N. D. Phot.,"French, active 1880s",N. D. Phot.,French,1880,1889,NULL
+2286,Ferdinando Ongania,"Italian, 1842-1911","Ongania, Ferdinando",Italian,1842,1911,NULL
+2287,Carlo Ponti,"Italian, 1820-1893","Ponti, Carlo",Italian,1820,1893,NULL
+2289,Charles Pollock,"American, 1828-1900","Pollock, Charles",American,1828,1900,NULL
+2290,Jacob Siler,"American, 1842-1925","Siler, Jacob",American,1842,1925,Siler's studio was established in 1888.
+2291,Charles Edwin Bolles,"American, 1846-1914","Bolles, Charles Edwin",American,1846,1914,NULL
+2292,William E. Daugherty,"American, born 1872","Daugherty, William E.",American,1872,1872,NULL
+2293,Louis E. Hirschy,"American, active 1890s","Hirschy, Louis E.",American,1890,1890,NULL
+2294,M. H. Birge & Sons,"American, active 1890s-1900s","Birge, M. H., & Sons",American,1890,1909,Martin H. Birge was a principal in M. H. Birge & Sons.
+2295,Villroy L. Richardson,"American, 1827-1903","Richardson, Villroy L.",American,1827,1903,NULL
+2297,William Y. Beach,"American, active 1880s","Beach, William Y.",American,1880,1880,NULL
+2298,Steve Hoffman,"American, active 1990s-2000s","Hoffman, Steve",American,1990,2009,NULL
+2299,Josef Sudek,"Czechoslovakian, 1896-1976","Sudek, Josef",Czechoslovakian,1896,1976,NULL
+2300,Samuel W. Vandivert,"American, active 1950s","Vandivert, Samuel W.",American,1950,1950,NULL
+2302,Laurence Syter,active 1980s,"Syter, Laurence",NULL,1980,1989,NULL
+2303,Elizabeth Buehrmann,"American, 1886-1965","Buehrmann, Elizabeth",American,1886,1965,"Buehrmann enrolled at Art Institute of Chicago at 15 but ,discouraged, began to learn photography with Eva Watson-Schütze. In March 1904 she received a letter from Stieglitz that she had been elected to the Associateship of the Secession. Buehrmann went to London from 1906-7. She mostly took portraits in the sitter's homes, and also did some advertising photography. She died in St. Augustine, FL in 1965. [EC]"
+2304,Dr. Charles Henry Breed,"American, 1876-1950","Breed, Charles Henry Dr.",American,1876,1950,NULL
+2307,Putnam & Valentine,"American, active 1900s-1920s",Putnam & Valentine,American,1900,1929,Putnam & Valentine was a partnership of John R. Putnam and Carlton O. Valentine.
+2308,J. W. Wulff Jeune,"French, active 1860s-1870s","Wulff, J. W. Jeune",French,1860,1879,NULL
+2309,Cranmer C. Langill,"American, ca. 1860-1906","Langill, Cranmer C.",American,1860,1906,Langill arrived in New York from England in 1881 and was naturalized in 1891.
+2312,Theodore J. Kerlin,"American, born ca. 1861","Kerlin, Theodore J.",American,1861,1861,NULL
+2313,Rensselaer Emmett Churchill,"American, 1820-1892","Churchill, Rensselaer Emmett",American,1820,1892,NULL
+2316,Armand Hippolyte Louis Fizeau,"French, 1819-1896","Fizeau, Armand Hippolyte Louis",French,1819,1896,NULL
+2319,O. L. Deming,"American, active 1900s","Deming, O. L.",American,1900,1900,NULL
+2320,Morris Huberland,"American, 1909-2003","Huberland, Morris",American,1909,2003,"Arriving in the US from Poland in 1924, Morris Huberland studied at rabinnical school before turning to photography. He was an active member of the Photo League, and photographed throughout his service in WWII. His enlistment records give his civil occupation as electrician. In later directories he is a photographer.A 1933 border crossing document for a visit to a sister in Toronto notes that his entry into Canada was ""Rejected- No Appeal""."
+2321,Anita M. Beer,"American, active 1970s","Beer, Anita M.",American,1970,1970,NULL
+2324,Karl Blossfeldt,"German, 1865-1932","Blossfeldt, Karl",German,1865,1932,NULL
+2325,Robert Giard,"American, 1939-2002","Giard, Robert",American,1939,2002,"Robert Giard (1939-2002) was a self-taught photographer of landscapes and nudes, but it is for his portraiture that he is now best known. After seeing Larry Kramer's 1985 play The Normal Heart, Giard set about to photograph gay and lesbian writers and activists. Against the backdrop of the escalating AIDS crisis and growing public hysteria, Giard sought out those from whom he derived strength and inspiration. The resulting archive includes significant figures from before the Stonewall era to his own contemporaries, and each image highlights the individuality of its subject. Aptly titled Particular Voices, Giard's photographs form a collective portrait, while resisting homogenizing or simplifying the gay and lesbian community. The New York Public Library began acquiring these portraits in 1990, adding to its already significant holdings of LGBTQ materials. MIT Press published a selection of these portraits in 1997, and the following year the New York Public Library mounted Particular Voices: Robert Giard's Portraits of Gay and Lesbian Writers, an exhibition of 110 prints from this collection."
+2327,László Moholy-Nagy,"American, 1895-1946","Moholy-Nagy, László",American,1895,1946,NULL
+2329,Duffus Bros.,"South African, active 1890s-1900s",Duffus Bros.,South African,1890,1909,NULL
+2331,Mathew B. Brady,"American, 1822-1896","Brady, Mathew B.",American,1822,1896,NULL
+2332,Arezoo Moseni,"American, born 1958","Moseni, Arezoo",American,1958,2058,NULL
+2333,Edward Schwartz,"American, 1906-2005","Schwartz, Edward",American,1906,2005,NULL
+2334,Carleton Eugene Watkins,"American, 1829-1916","Watkins, Carleton Eugene",American,1829,1916,NULL
+2335,Charles Leander Weed,"American, 1824-1903","Weed, Charles Leander",American,1824,1903,NULL
+2336,Ken Light,"American, born 1951","Light, Ken",American,1951,2051,NULL
+2338,Cecil Beaton,"English, 1904-1980","Beaton, Cecil",English,1904,1980,NULL
+2339,Eugène Pirou,"French, 1841-1909","Pirou, Eugène",French,1841,1909,NULL
+2340,Alfred Eisenstaedt,"American, 1898-1995","Eisenstaedt, Alfred",American,1898,1995,NULL
+2341,United States. Works Progress Administration,"American, active 1935-1943",United States. Works Progress Administration,American,1935,1943,NULL
+2342,Charles Delevan Mosher,"American, 1829-1897","Mosher, Charles Delevan",American,1829,1897,NULL
+2343,William J. Root,"American, born 1854","Root, William J.",American,1854,1854,NULL
+2344,Frances Benjamin Johnston,"American, 1864-1952","Johnston, Frances Benjamin",American,1864,1952,NULL
+2345,Michael Torosian,"Canadian, born 1952","Torosian, Michael",Canadian,1952,2052,NULL
+2346,Jean Locey,"American, born 1944","Locey, Jean",American,1944,2044,NULL
+2350,Joseph H. Ladd,"American, active 1850s","Ladd, Joseph H.",American,1850,1859,NULL
+2362,Pierre Louÿs,"French, 1870-1925","Louÿs, Pierre",French,1870,1925,NULL
+2364,Yousuf Karsh,"Canadian, 1908-2002","Karsh, Yousuf",Canadian,1908,2002,NULL
+2365,Rose Mackiewicz,"American, born 1947","Mackiewicz, Rose",American,1947,2047,NULL
+2366,Arthur Sinsabaugh,"American, 1924-1983","Sinsabaugh, Arthur",American,1924,1983,NULL
+2367,Carl Ray Woodring,"American, 1919-2009","Woodring, Carl Ray",American,1919,2009,NULL
+2368,William Edward Friese-Greene,"English, 1855-1921","Friese-Greene, William Edward",English,1855,1921,NULL
+2369,Robert C. Price,"American, active 1900s","Price, Robert C.",American,1900,1909,"There is a Robert C. Price in Albuquerque in 1910, born 1888; his profession is bookkeeper."
+2370,Jerry Dantzic,"American, 1925-2006","Dantzic, Jerry",American,1925,2006,NULL
+2371,Maury Englander,"American, active 1960s-2000s","Englander, Maury",American,1960,2009,NULL
+2372,Joseph R. Goldberg,"American, active 1980s","Goldberg, Joseph R.",American,1980,1989,NULL
+2373,Joan Liftin,"American, born 1935","Liftin, Joan",American,1935,2035,NULL
+2374,John Messina,"American, born 1940","Messina, John",American,1940,2040,NULL
+2375,Beverly Nadelman,"American, active 1970s-2000s","Nadelman, Beverly",American,1970,2009,NULL
+2376,Susan S. Perry,"American, active 1970s-1980s","Perry, Susan S.",American,1970,1989,NULL
+2377,Nancy Rudolph,"American, born 1923","Rudolph, Nancy",American,1923,2023,NULL
+2379,Ethel Virga,"American, active 1970s-1980s","Virga, Ethel",American,1970,1989,NULL
+2380,Barbra Walz,"American, 1951-1990","Walz, Barbra",American,1951,1990,NULL
+2381,Marke Daryl Webb,"American, born 1950","Webb, Marke Daryl",American,1950,2050,NULL
+2382,Ezra Stoller,"American, 1915-2004","Stoller, Ezra",American,1915,2004,NULL
+2383,Victor Prevost,"French, 1820-1881","Prevost, Victor",French,1820,1881,NULL
+2384,Carlo Naya,"Italian, 1816-1882","Naya, Carlo",Italian,1816,1882,NULL
+2385,Thomas William Leonard,"American, active 1890s","Leonard, Thomas William",American,1890,1899,NULL
+2386,The Notman Photographic Co.,"Canadian, active 1850s-1930s",Notman Photographic Co.,Canadian,1850,1939,William Notman was a partner in The Notman Photographic Co.
+2387,Larry Clark,"American, born 1943","Clark, Larry",American,1943,2043,NULL
+2388,Alan Pogue,"American, born 1946","Pogue, Alan",American,1946,2046,NULL
+2389,Anne Hemminger,"American, 1904-1999","Hemminger, Anne",American,1904,1999,NULL
+2390,Emery P. Révés-Biró,"American, 1895-1975","Révés-Biró, Emery P.",American,1895,1975,NULL
+2391,Walter Henry Horne,"American, 1883-1921","Horne, Walter Henry",American,1883,1921,NULL
+2392,John A. Pack,"American, born 1950","Pack, John A.",American,1950,1950,NULL
+2393,C. L. Howe & Son,"American, active 1890s","Howe, C. L., & Son",American,1890,1899,Caleb Lysander Howe was a partner in C. L. Howe & Son.
+2394,Albany Art Union,"American, active 1890s-1900s",Albany Art Union,American,1890,1909,NULL
+2395,Larry Racioppo,"American, born 1947","Racioppo, Larry",American,1947,1947,NULL
+2396,John Y. Robinson,"American, active 1910s","Robinson, John Y.",American,1910,1910,NULL
+2397,Mike Mandel,"American, born 1950","Mandel, Mike",American,1950,2050,NULL
+2399,Herbert Rose Barraud,"English, 1845-1896","Barraud, Herbert Rose",English,1845,1896,NULL
+2400,Ralph Gibson,"American, born 1939","Gibson, Ralph",American,1939,2039,NULL
+2401,Paul McCarthy,"American, born 1945","McCarthy, Paul",American,1945,2045,NULL
+2402,Betty Tompkins,"American, born 1945","Tompkins, Betty",American,1945,2045,NULL
+2403,John Milisenda,"American, born 1947","Milisenda, John",American,1947,2047,NULL
+2404,Ralph Eugene Meatyard,"American, 1925-1972","Meatyard, Ralph Eugene",American,1925,1972,NULL
+2405,Danny Lyon,"American, born 1942","Lyon, Danny",American,1942,2042,NULL
+2406,Roy Colmer,"American, 1935-2014","Colmer, Roy",American,1935,2014,NULL
+2407,Scott Thomas Heiser,"American, born 1949","Heiser, Scott Thomas",American,1949,2049,NULL
+2408,Michele Mang,"Italian, active 1860s-1870s","Mang, Michele",Italian,1860,1879,NULL
+2409,Lieut. C. D. Kennedy,"American, active 1880s","Kennedy, C. D. Lieut.",American,1880,1889,NULL
+2410,Rufus W. Holsinger,"American, 1866-1930","Holsinger, Rufus W.",American,1866,1930,NULL
+2411,Michael Bernstein,"American, active 1980s-1990s","Bernstein, Michael",American,1980,1999,NULL
+2412,Lynn Geesaman,"American, born 1938","Geesaman, Lynn",American,1938,2038,NULL
+2414,Sara Yagi,"American, born 1955","Yagi, Sara",American,1955,2055,NULL
+2415,Elias Olcott Beaman,"American, 1837-1876","Beaman, Elias Olcott",American,1837,1876,NULL
+2417,James Valentine,"Scottish, 1815-1880","Valentine, James",Scottish,1815,1880,NULL
+2418,Edward F. Foley,"American, active 1900s","Foley, Edward F.",American,1900,1909,NULL
+2419,Lock & Whitfield,"English, active 1850s-1900s",Lock & Whitfield,English,1850,1909,Lock & Whitfield was a partnership of Samuel Robert Lock and George C. Whitfield.
+2420,Edward Livingston Wilson,"American, 1838-1903","Wilson, Edward Livingston",American,1838,1903,NULL
+2422,"Photographische Gesellschaft [Berlin, Germany]","German, active 1860s-1890s",Photographische Gesellschaft,German,1860,1899,NULL
+2423,M. James,"Indian, active ca. 1900s","James, M.",Indian,1900,1909,NULL
+2424,Gita Lenz,"American, 1910-2011","Lenz, Gita",American,1910,2011,NULL
+2425,Isaac Kassoy,"American, 1909-2001","Kassoy, Isaac",American,1909,2001,NULL
+2426,George Norman Barnard,"American, 1819-1902","Barnard, George Norman",American,1819,1902,NULL
+2427,Jon Henry,"American, 1916-1990","Henry, Jon",American,1916,1990,NULL
+2428,Scott Tugel,"American, born 1962","Tugel, Scott",American,1962,1962,NULL
+2429,Russell Lee,"American, 1903-1986","Lee, Russell",American,1903,1986,NULL
+2431,David G. Noble,"American, born 1939","Noble, David G.",American,1939,2039,NULL
+2433,Jonathan Torgovnik,"American, born 1969","Torgovnik, Jonathan",American,1969,1969,NULL
+2434,Kassian Cephas,"Javanese, 1845-1912","Cephas, Kassian",Javanese,1845,1912,NULL
+2435,O. Kurkdjan,"German, active 1880s-1890s","Kurkdjan, O.",German,1880,1899,NULL
+2436,O. Hisgen & Co.,"Dutch, active 1900s-1940s","Hisgen, O., & Co.",Dutch,1900,1949,NULL
+2437,Handel Maatschappy,"Dutch, established 1824","Maatschappy, Handel",Dutch,1824,1824,NULL
+2438,Bond Bros.,"American, active 1920s",Bond Bros.,American,1920,1920,NULL
+2441,R. Sylvan Wallace,"American, born 1888","Wallace, R. Sylvan",American,1888,1888,NULL
+2442,M. Glover,"Irish, active 1860s-1880s","Glover, M.",Irish,1860,1889,NULL
+2444,Richard Gordon,"American, 1945-2012","Gordon, Richard",American,1945,2012,NULL
+2446,Bert G. Covell,"American, born ca. 1868","Covell, Bert G.",American,1868,1868,NULL
+2447,Milton Ernest Ebie,"American, 1880-1943","Ebie, Milton Ernest",American,1880,1943,"An advertisement in Snap Shots (v. 24-25), ca. 1914, reads: ""For Sale Studio in Canton, Ohio. Population 55,000. Equipped 11x14 Camera, attachment for plate holders; best location in the city. Fine display entrance with fine living rooms on the same floor. Large north light. Operating room, 17x35 feet. Must be sold on account other business. Will sell at a reasonable price. Write for particulars. Ebie Studio, Canton, Ohio."""
+2448,William Eugene Irons,"American, active 1900s","Irons, William Eugene",American,1900,1900,"William Eugene Irons' studio label describes him as ""Photographer to Advertisers"" and ""Special Attention given to the Illustrating of Booklets and Catalogs""."
+2449,George Barker,"American, 1844-1894","Barker, George",American,1844,1894,NULL
+2450,Barry Brukoff,"American, born 1935","Brukoff, Barry",American,1935,2035,NULL
+2451,Herb McLaughlin,"American, 1918-1991","McLaughlin, Herb",American,1918,1991,NULL
+2452,George Holz,"American, born 1956","Holz, George",American,1956,2056,NULL
+2453,John Collins Warren,"American, 1778-1856","Warren, John Collins",American,1778,1856,NULL
+2456,Courret Hermanos,"Peruvian, active 1863-1873",Courret Hermanos,Peruvian,1863,1873,"Courret Hermanos was a partnership of E. Courret, Aquiles Courret, and E. Maunoury."
+2457,Joseph Fagnani,"Italian, 1819-1873","Fagnani, Joseph",Italian,1819,1873,NULL
+2458,Gaëtan Viaris de Lesegno,"French, born 1939","Viaris de Lesegno, Gaëtan",French,1939,2039,NULL
+2459,Frank Meadow Sutcliffe,"English, 1853-1941","Sutcliffe, Frank Meadow",English,1853,1941,NULL
+2460,Beverly Brown,"American, active 1990s","Brown, Beverly",American,1990,1990,NULL
+2461,J. Adamson & Son,"Scottish, active 1890s","Adamson, J., & Son",Scottish,1890,1899,J. Adamson was a partner in J. Adamson & Son.
+2464,Mrs. N. Gray Bartlett,"American, born 1847","Bartlett, N. Gray Mrs.",American,1847,1947,NULL
+2465,Hagler & White,"American, active 1900s",Hagler & White,American,1900,1900,NULL
+2467,Frederick Richard Dapprich,"American, 1880-1965","Dapprich, Frederick Richard",American,1880,1965,"Dapprich worked in advertising in Manhattan in the 1910s, in Richmond as early as 1918, before moving to Los Angeles by 1930. A bookplate in the NYPL collection reads: ""Dapprich. Photographer of Interesting People""."
+2469,Terence Koh,"American, born 1969","Koh, Terence",American,1969,1969,NULL
+2470,Donald Baechler,"American, born 1956","Baechler, Donald",American,1956,2056,NULL
+2472,Bruce Bennett,"American, born 1961","Bennett, Bruce",American,1961,2061,NULL
+2474,Philander H. Kellogg,"American, born 1869","Kellogg, Philander H.",American,1869,1869,NULL
+2475,Edward A. G. Smith,"American, born 1861","Smith, Edward A. G.",American,1861,1861,NULL
+2476,James Russell & Sons,"English, active 1860s-1910s","Russell, James, & Sons",English,1860,1919,James Russell was a partner in James Russell & Sons.
+2477,Frank Starke,"American, active 1890s-1920s","Starke, Frank",American,1890,1929,NULL
+2478,C. H. Howe,"American, active 1890s","Howe, C. H.",American,1890,1899,NULL
+2479,Nadar,"French, 1820-1910",Nadar,French,1820,1910,NULL
+2480,Joseph M. Appleton,"American, born 1848","Appleton, Joseph M.",American,1848,1948,NULL
+2481,Valleto y Cia,"Mexican, active 1870s-1900s",Valleto y Cia,Mexican,1870,1909,NULL
+2482,Eugenio Courret,"Peruvian, 1841-1900","Courret, Eugenio",Peruvian,1841,1900,NULL
+2483,Carlos Vasques,"Portuguese, active 1910s","Vasques, Carlos",Portuguese,1910,1919,NULL
+2484,Alfred Weidener,"German, active 1880s","Weidener, Alfred",German,1880,1889,NULL
+2485,John P. Nicholas & Co.,"Indian, active 1850s-1900s","Nicholas, John P., & Co.",Indian,1850,1909,John P. Nicholas was a partner in John P. Nicholas & Co.
+2486,Weegee,"American, 1899-1968",Weegee,American,1899,1968,NULL
+2487,William J. Hillman,"American, 1849-after 1920","Hillman, William J.",American,1849,1920,The 1870 census lists Hillman's occupation as school teacher.
+2488,Eliot Furness Porter,"American, 1901-1990","Porter, Eliot Furness",American,1901,1990,NULL
+2489,Franco Fontana,"Italian, born 1933","Fontana, Franco",Italian,1933,2033,NULL
+2490,Peter Innisfree Moore,"American, 1932-1993","Moore, Peter Innisfree",American,1932,1993,NULL
+2491,Diane Arbus,"American, 1923-1971","Arbus, Diane",American,1923,1971,NULL
+2492,Georges Piette,"French, active 1980s","Piette, Georges",French,1980,1989,NULL
+2493,Alma Ruth Lavenson,"American, 1897-1989","Lavenson, Alma Ruth",American,1897,1989,NULL
+2494,David M. Grossman,"American, born 1948","Grossman, David M.",American,1948,2048,NULL
+2495,Diane Witlin,"American, 1924-2005","Witlin, Diane",American,1924,2005,NULL
+2496,Ray Witlin,"American, born 1920","Witlin, Ray",American,1920,2020,NULL
+2497,Harvey Horowitz,"American, 1948-1987","Horowitz, Harvey",American,1948,1987,NULL
+2498,William Clift,"American, born 1944","Clift, William",American,1944,2044,NULL
+2499,Jerry L. Thompson,"American, born 1945","Thompson, Jerry L.",American,1945,2045,NULL
+2500,Denny Denfield,"American, active 1950s-1980s","Denfield, Denny",American,1950,1989,NULL
+2501,Theodore Endean,"American, 1856-1913","Endean, Theodore",American,1856,1913,"Endean arrived in the US in 1861 from England. Artfact gives his birthyear as 1853, but his Naturalization Record from 1892 give his birthdate as January 1, 1856."
+2502,William McKenzie Morrison,"American, 1857-1921","Morrison, William McKenzie",American,1857,1921,"In 1882, Morrison appears in city directories as Morrison & Co. with Herman Vollrath ; in 1887 the studio name reappears, this time with A. L. Morrison as a partner. After 1911, Morrison is listed in city directories as a photographer with home address only. In 1912, there is an entry for Morrison Photographer, Inc. at his State Street studio address. That listed John E. Dietrich as manager."
+2503,William H. Rau,"American, 1855-1920","Rau, William H.",American,1855,1920,NULL
+2504,Robert Gambee,"American, active 1960s-2000s","Gambee, Robert",American,1960,2009,NULL
+2505,Liberian Art Publishing Company,"American, active 1890s",Liberian Art Publishing Company,American,1890,1899,NULL
+2506,"Souvenir Photo Co. [Chicago, IL]","American, active 1890s",Souvenir Photo Co.,American,1890,1899,"Souvenir Photo Co. photographed at the World's Columbian Exposition, Chicago, 1893. No mention of a company with this name can be found in city directories. GEH has two similarly named firms, though it is not clear if they are variants of this studio."
+2507,Beaumont Newhall,"American, 1908-1993","Newhall, Beaumont",American,1908,1993,NULL
+2508,Maxime Du Camp,"French, 1822-1894","Du Camp, Maxime",French,1822,1894,NULL
+2509,Robert Disraeli,"American, 1905-1988","Disraeli, Robert",American,1905,1988,NULL
+2510,Ben Heller,"American, born 1913","Heller, Ben",American,1913,1913,NULL
+2511,Roy Perry,"American, 1911-1982","Perry, Roy",American,1911,1982,NULL
+2512,Walt Sander,"American, active 1940s-1950s","Sander, Walt",American,1940,1959,NULL
+2513,Ben Schnall,"American, 1906-1998","Schnall, Ben",American,1906,1998,NULL
+2514,Lee Sievan,"American, 1907-1990","Sievan, Lee",American,1907,1990,NULL
+2516,L. G. Brockman,"Chinese, active ca. 1930s","Brockman, L. G.",Chinese,1930,1939,NULL
+2517,J. Goux,active 1930s,"Goux, J.",NULL,1930,1939,NULL
+2518,Herman W. Fechner,"American, born ca. 1897","Fechner, Herman W.",American,1897,1897,NULL
+2519,Budd Studio,"American, active 1950s",Budd Studio,American,1950,1959,NULL
+2520,André Roosevelt,"French, 1879-1962","Roosevelt, André",French,1879,1962,NULL
+2522,Cincinnati Art Foundry,"American, active 1880s",Cincinnati Art Foundry,American,1880,1881,NULL
+2523,Bernard G. Silberstein,"American, 1905-1999","Silberstein, Bernard G.",American,1905,1999,NULL
+2524,Joseph Parkin Mayall,"English, 1839-1906","Mayall, Joseph Parkin",English,1839,1906,NULL
+2525,Martin S. Zuckermann,"American, born 1872","Zuckermann, Martin S.",American,1872,1872,"Zuckermann was born in Bucharest, Romania and emigrated to the US in 1899. He was a stone cutter."
+2527,Dr. Joseph Janvier Woodward,"American, 1833-1884","Woodward, Joseph Janvier Dr.",American,1833,1884,NULL
+2528,Abe Frajndlich,"German, born 1946","Franjndlich, Abe",German,1946,1946,NULL
+2529,Ruth Orkin,"American, 1921-1985","Orkin, Ruth",American,1921,1985,NULL
+2530,Étienne Neurdein,"French, ca. 1845-1913","Neurdein, Étienne",French,1845,1913,NULL
+2531,Piloty & Loehle,"German, active 1840s-1930s",Piloty & Loehle,German,1840,1939,Karl von Piloty was a partner in Piloty & Loehle.
+2532,Gustav Schauer,"German, 1826-1902","Schauer, Gustav",German,1826,1902,NULL
+2533,Knaffl & Bro.,"American, active 1880s-1910s",Knaffl & Bros.,American,1880,1919,Knaffl & Bro. was a partnership of Charles Knaffl and Joseph Knaffl.
+2534,Emilie Bieber,"German, 1810-1884","Bieber, Emilie",German,1810,1884,NULL
+2535,George F. Edwards,"American, born 1869","Edwards, George F.",American,1869,1869,NULL
+2536,Frank Henry Farley,"American, born 1877","Farley, Frank Henry",American,1877,1877,"Farley is listed as a newspaper printer in the 1910 census. According to his Draft Registration card, he is still a printer (of the Providence Tribune) until at least 1918, although he appears as a photographer in a 1917 business directory. He is a photographer on the 1920 and 1930 censuses. The city directory for 1931 shows his son, Frank J. Farley, also employed at the Farley Studio."
+2537,Liv Kristin Robinson,"American, active 1980s-2000s","Robinson, Liv Kristin",American,1980,2009,NULL
+2538,Arthur Percy Fitt,"American, born 1869","Fitt, Arthur Percy",American,1869,1869,"Fitt arrived in Chicago in 1893, and was naturalized in 1908."
+2540,Kathryn Marx,"American, active 1980s","Marx, Kathryn",American,1980,1989,NULL
+2541,Charles Linn,"American, active 1990s","Linn, Charles",American,1990,1990,NULL
+2542,Wade Zimmerman,"American, born 1945","Zimmerman, Wade",American,1945,2045,NULL
+2543,Joseph Caputo,"American, 1955-1995","Caputo, Joseph",American,1955,1995,NULL
+2544,Robert Capa,"American, 1913-1954","Capa, Robert",American,1913,1954,NULL
+2545,John M. Dietz,"American, active 1900s","Dietz, John M.",American,1900,1900,Dietz was also a coin collector. He placed an ad in The Numismatist in 1905 seeking to trade a camera body for coins.
+2547,Baron Raimond von Stillfried-Rathenitz,"Austrian, 1839-1911","von Stillfried-Rathenitz, Raimond, Baron",Austrian,1839,1911,NULL
+2548,See Tay,"Chinese, active 1870s",See Tay,Chinese,1870,1879,NULL
+2549,Thomas Child,"British, 1841-1898","Child, Thomas",British,1841,1898,NULL
+2550,Manrique & Cia,"Venezuelan, active 1900s-1910s",Manrique & Cia,Venezuelan,1900,1919,NULL
+2551,Charles Marville,"French, 1813-1879","Marville, Charles",French,1813,1879,NULL
+2552,Henri Jean-Louis Le Secq,"French, 1818-1882","Le Secq, Henri Jean-Louis",French,1818,1882,NULL
+2553,Louis Stanger,"American, active 1900s-1910s","Stanger, Louis",American,1900,1919,NULL
+2555,Felix H. Man,"British, 1893-1985","Man, Felix H.",British,1893,1985,NULL
+2556,Erich Salomon,"German, 1886-1944","Salomon, Erich",German,1886,1944,NULL
+2557,Ye Holland Studios,"American, active 1890s-1890s","Holland Studios, Ye",American,1890,1899,"Ye Holland Studios was a partnership of Charles E. Holland, Thomas Holland, and William A. Holland."
+2558,Joyce Fay,"American, active 1990s-2000s","Fay, Joyce",American,1990,2009,NULL
+2559,Reesa Tansey,"American, active 1970s-2000s","Tansey, Reesa",American,1970,2009,NULL
+2560,Holland & Roberts,"American, active 1880s",Holland & Roberts,American,1880,1889,Holland & Roberts was a partnership of Henry F. Holland and George P. Roberts.
+2561,Chester Burger,"American, 1921-2011","Burger, Chester",American,1921,2011,NULL
+2562,Genevieve Naylor,"American, 1915-1989","Naylor, Genevieve",American,1915,1989,NULL
+2563,John K. Grande,"Canadian, born 1954","Grande, John K.",Canadian,1954,2054,NULL
+2564,William Barclay Parsons,"American, 1859-1932","Parsons, William Barclay",American,1859,1932,NULL
+2565,William & Daniel Downey,"English, active 1855-1940","Downey, William & Daniel",English,1855,1940,NULL
+2566,David Wojnarowicz,"American, 1954-1992","Wojnarowicz, David",American,1954,1992,NULL
+2567,William C. Billington,"American, active 1890s-1900s","Billington, William C.",American,1890,1909,Billington was originally a ferry conductor. He appears in city directories as a photographer first in 1894.
+2568,George F. Holman,"American, born 1861","Holman, George F.",American,1861,1861,Holman was an attorney by profession. There is a George F. Holman of Portland who died in 1951 (no birth year given).
+2569,Louis M. Snow,"American, born 1873","Snow, Louis M.",American,1873,1873,NULL
+2570,Walter A. Scott,"American, 1864-1956","Scott, Walter A.",American,1864,1956,NULL
+2571,John S. Johnston,"American, ca. 1839-1899","Johnston, John S.",American,1839,1899,"Johnston appears as a first as a painter, then photographer with no studio address in the 1887-1899 city directories."
+2572,James Burton,"American, 1871-1909","Burton, James",American,1871,1909,No records found in censuses.
+2573,John M. Moriarty,"American, born 1864","Moriarty, John M.",American,1864,1864,"Moriarty is listed as having taken portraits of Supreme [Court] Judges for the state of Montana in May of 1910 for $326.70 (though his name is misspelled ""Moriarity"")."
+2574,Jim Antonucci,"American, active 1980s-2000s","Antonucci, Jim",American,1980,2009,NULL
+2576,Alexander Gardner,"American, 1821-1882","Gardner, Alexander",American,1821,1882,NULL
+2578,William S. Wakeman,"American, born 1868","Wakeman, William S.",American,1868,1868,NULL
+2579,Fred C. Rollman,"American, born 1858","Rollman, Fred C.",American,1858,1858,"Fred Rollman, coal miner of Elk Garden in 1900. F. C. Rollman, undertaker of Fairfax, 1920. Fred C. Rollman, retired in Elk Garden, 1930."
+2580,Charles C. Curtis,"American, active 1880s-1890s","Curtis, Charles C.",American,1880,1899,NULL
+2581,Samuel A. M. Kneeland,"American, 1821-1888","Kneeland, Samuel A. M. Dr.",American,1821,1888,Kneeland was a zoologist in Boston.
+2583,Wallis Gardner,"American, active 1890s","Gardner, Wallis",American,1890,1890,NULL
+2584,Lucien Reiser,"German, active 1900s-1910s","Reiser, Lucien",German,1900,1919,Reiser took over the Alexandria studio of his father Andreas D. Reiser. The elder Reiser is either German or Romanian. Both father and son later worked in Germany.
+2585,"Johnstone, O'Shannessy & Co.","Australian, active 1860s-1890s","Johnstone, O'Shannessy & Co.",Australian,1860,1899,"Johnstone, O'Shannessy & Co. was a partnership of Emily O'Shanassy and Henry Johnstone."
+2586,James Anderson,"Italian, 1813-1877","Anderson, James",Italian,1813,1877,NULL
+2587,Henry F. De Puy,"American, active 1910s","De Puy, Henry F.",American,1910,1919,"Henry F. De Puy's library was posthumously acutioned in 1925. He is listed as a secretary of the Babcock & Wilcox Co., an exporting company. de Puy also photographed in and around Baghdad in the 1910s."
+2589,Eric Lindbloom,"American, born 1934","Lindbloom, Eric",American,1934,2034,NULL
+2592,Toma Fichter,"American, born 1947","Fichter, Toma",American,1947,2047,NULL
+2593,Isaac F. Alofsin,"American, active 1900s-1920s","Alofsin, Isaac F.",American,1900,1929,Isaac F. Alofsin is listed in the St. Louis business directory as a reporter.
+2596,Todd Webb,"American, 1905-2000","Webb, Todd",American,1905,2000,NULL
+2597,John Vachon,"American, 1914-1975","Vachon, John",American,1914,1975,NULL
+2598,Harold Corsini,"American, 1919-2008","Corsini, Harold",American,1919,2008,NULL
+2599,Andrew Joseph Russell,"American, 1830-1902","Russell, Andrew Joseph",American,1830,1902,NULL
+2601,Rhoda Nathans,"American, 1937-1997","Nathans, Rhoda",American,1937,1997,NULL
+2603,Louis Wiley,"American, 1869-1935","Wiley, Louis",American,1869,1935,NULL
+2604,Chris Maté,"American, active 1970s-1980s","Maté, Chris",American,1970,1989,NULL
+2605,Johannes Sébah,"Ottoman, 1872-1947","Sébah, Johannes",Ottoman,1872,1947,NULL
+2606,Helios Caire,"Egyptian, active 1860s-1870s",Helios Caire,Egyptian,1860,1879,NULL
+2608,Guiseppe Incorpora,"Italian, 1834-1914","Incorpora, Guiseppe",Italian,1834,1914,NULL
+2609,Sommer,"Italian, active 19th century",Sommer,Italian,1880,1900,NULL
+2610,Philip Mook,"American, active 1890s","Mook, Philip",American,1890,1899,NULL
+2611,Paul Boyer,"French, 1861-1908","Boyer, Paul",French,1861,1908,"Most sources give a death date of 1908; however, the BNF gives 1952."
+2612,Sherman & McHugh,"American, active 1889-1895",Sherman & McHugh,American,1889,1895,Charles H. Sherman and Anthony J. McHugh succeeded the studio of Abraham Bogardus.
+2613,Hermann Linck,"Swiss, 1866-1938","Linck, Hermann",Swiss,1866,1938,NULL
+2614,John Gruen,"American, born 1935","Gruen, John",American,1935,1935,NULL
+2615,George Henry Knight,"American, born 1851","Knight, George Henry",American,1851,1951,NULL
+2616,American Telephone and Telegraph Company,"American, active 1920s",American Telephone and Telegraph Company,American,1920,1920,NULL
+2617,Charles A. Ekberg,"American, born 1944","Ekberg, Charles A.",American,1944,2044,NULL
+2618,Dr. Guillaume Duchenne,"French, 1806-1875","Duchenne, Guillaume Dr.",French,1806,1875,NULL
+2620,Charles I. Newman,"American, active 1890s","Newman, Charles I.",American,1890,1890,NULL
+2621,Devon Cummings,"American, active 1990s-2000s","Cummings, Devon",American,1990,2009,NULL
+2622,Paul A. McDonough,"American, born 1941","McDonough, Paul A.",American,1941,2041,NULL
+2625,Robert B. Bridges,"American, 1922-1993","Bridges, Robert B.",American,1922,1993,NULL
+2626,Arnold C. Hinton,"American, born 1940","Hinton, Arnold C.",American,1940,1940,"Arnold C. Hinton is a photographer specializing in documenting people in Africa, the United States, the Caribbean, South America and Europe. Commercially he has worked in fashion photography and developed a line of greeting cards and posters.Born in New York City, in 1940, Hinton worked at the New York Public Library in the Picture Collection from the mid 1950's until 1964. He attended Pratt Institute in Brooklyn as an Art major. He also studied photography at the New School for Social Research and illustration at the Art Student's League, both in Manhattan. Hinton has been a professional photographer since 1963, working freelance, on assignment and for his own company."
+2627,Isaac Almstaedt,"American, 1851-1921","Almstaedt, Isaac",American,1851,1921,NULL
+2628,Rev. Cornelius H. Baker,"American, 1829-1902","Baker, Cornelius H. Rev.",American,1829,1902,NULL
+2629,Alexander Bassano,"English, 1829-1913","Bassano, Alexander",English,1829,1913,NULL
+2630,Benque et Cie,"French, active 1880s",Benque et Cie,French,1880,1889,NULL
+2631,J. W. Black & Co.,"American, active 1850s-1900s","Black, J. W., & Co.",American,1850,1909,James Wallace Black was the founder of J. W. Black & Co. W. H. Drew's was involved in an unknown capacity.
+2632,Teofil Józef Boretti,"Polish, 1834-1910","Boretti, Teofil Józef",Polish,1834,1910,NULL
+2633,Van Bosch,"French, active 1860s-1880s",Van Bosch,French,1860,1889,NULL
+2634,"Bunnell [Houston, TX]","American, active 1900s-1910s",Bunnell,American,1900,1919,No information found for this photographer.
+2635,John N. Chamberlain,"American, 1841-1925","Chamberlain, John N.",American,1841,1925,Chamberlain was proprietor of the photographic studio at the Royal Palm Hotel in Miami in the 1890s. Noted for his photographs of Seminoles.
+2636,Orville C. Conkling,"American, born 1870","Conkling, Orville C.",American,1870,1870,NULL
+2637,E. B. Core & Co.,"American, active 1860s-1900s","Core, E. B., & Co.",American,1860,1909,Elijah B. Core was proprietor of E. B. Core & Co.
+2638,Charles Lake Cramer,"American, 1835-1911","Cramer, Charles Lake",American,1835,1911,"Cramer was the operator of Vance's Gallery in 1863, and the unknown Hamilton's Gallery in 1864. M. E. & C. L. Cramer were a publishing firm operated out of their home which published the religious magazine Harmony. Malinda Cramer was the president of the Home College of Divine Science. Malinda Cramer died in 1906 from injuries suffered in the previous year's earthquake. After 1905, only a home address is listed for Charles Cramer. Son Frank, who had been a photographer in the studio for years, is listed as working for other firms after 1905."
+2639,James H. Crockwell,"American, 1855-1940","Crockwell, James H.",American,1855,1940,NULL
+2640,Dames & Hayes,"American, active 1870s",Dames & Hayes,American,1870,1879,Dames & Hayes was a partnership of William W. Dames and H. C. Hayes.
+2641,Edward C. Dana,"American, 1852-1897","Dana, Edward C.",American,1852,1897,NULL
+2642,Frederick Egirt,"American, born 1857","Egirt, Frederick",American,1857,1857,NULL
+2643,Jones & Lotz,"American, active 1880s-1900s",Jones & Lotz,American,1880,1904,Jones & Lotz was a partnership of Thomas H. Jones and Paul Lotz.
+2644,Ellis & Walery,"English, active 1900s-1920s",Ellis & Walery,English,1900,1929,Alfred Ellis was a partner in Ellis & Walery.
+2645,M. W. Emerson & Co.,"American, active 1900s","Emerson, M. W., & Co.",American,1900,1909,M. W. Emerson was a partner in M. W. Emerson & Co.
+2646,Jacob Fowzer,"American, born ca. 1849","Fowzer, Jacob",American,1849,1849,NULL
+2648,Gilbert & Bacon,"American, active 1870s-1900s",Gilbert & Bacon,American,1870,1909,Gilbert & Bacon was a partnership of Conrad M. Gilbert and W. Frank Bacon. A 1906 Business directory also lists M. A. & F. T. Bacon.
+2649,Goupil & Cie.,"French, active 1830s-1880s",Goupil & Cie.,French,1830,1889,Goupil & Cie. was a partnership of Adolph Goupil and Alfred Mainquet. Goupil & Cie. were succeeded by Michael Knoedler.
+2650,E. F. Hall & Co.,"American, active 1880s-1890s","Hall, E. F., & Co.",American,1880,1899,"Eleck F. Hall and J. W. Aldrich were partners in E. F. Hall & Co. The studio's stylized script on their card mounts is easily mistaken for ""F. Hall & Co."""
+2651,Levin Corbin Handy,"American, 1855-1933","Handy, Levin Corbin",American,1855,1933,NULL
+2652,Thomas Houseworth & Co.,"American, active 1850s-1880s","Houseworth, Thomas, & Co.",American,1850,1889,Thomas Houseworth was a partner in Thomas Houseworth & Co. They were successors to Lawrence & Houseworth.
+2653,Daniel H. Howd,"American, born 1855","Howd, Daniel H.",American,1855,1855,NULL
+2654,William A. Howe,"American, active 1880s-1890s","Howe, William A.",American,1880,1899,NULL
+2656,Marcellus D. Kilburn,"Canadian, 1840-1909","Kilburn, Marcellus D.",Canadian,1840,1909,Kilburn served in Vermont's 9th Infantry from 1862-1863.
+2658,Rudolf Krziwanek,"Austrian, died 1905","Krziwanek, Rudolf",Austrian,1805,1905,NULL
+2659,William Kurtz,"American, 1834-1904","Kurtz, William",American,1834,1904,NULL
+2660,James Lafayette,"Irish, 1853-1923","Lafayette, James",Irish,1853,1923,NULL
+2662,M. Landesberg,"American, active 1890s","Landesberg, M.",American,1890,1890,NULL
+2663,James M. Landy,"American, 1838-1897","Landy, James M.",American,1838,1897,NULL
+2664,George W. Leeds,"American, active 1900s","Leeds, George W.",American,1900,1909,NULL
+2665,Charles Robertson Lenthall,"English, 1847-1927","Lenthall, Charles Robertson",English,1847,1927,NULL
+2667,Loescher & Petsch,"German, active 1860s-1890s",Loescher & Petsch,German,1860,1899,Max Petsch was a partner in Loescher & Petsch.
+2668,London Stereoscopic Co.,"English, active 1840s-1920s",London Stereoscopic Co.,English,1840,1929,London Stereoscopic Co. was founded by George Swann Nottage.
+2669,Julius Ludovici,"American, 1837-1906","Ludovici, Julius",American,1837,1906,Ludovici arrived from Germany in 1855.
+2670,Lyon & Vey,"Canadian, active 1880s",Lyon & Vey,Canadian,1880,1889,NULL
+2671,Albert Martin Marton,"American, active 1870s-1930s","Marton, Albert Martin",American,1870,1939,NULL
+2672,Hezekiah McMichael,"American, 1844-1907","McMichael, Hezekiah",American,1844,1907,NULL
+2674,R. Minzloff,"Russian, active 1890s-1900s","Minzloff, R.",Russian,1890,1909,NULL
+2675,José María Mora Sr.,"American, 1849-1926","Mora, José María Sr.",American,1849,1926,NULL
+2678,George Daniels Morse,"American, born ca. 1835","Morse, George Daniels",American,1835,1935,NULL
+2679,James Notman,"Canadian, 1849-1932","Notman, James",Canadian,1849,1932,NULL
+2680,Charles Parker,"American, born ca. 1845","Parker, Charles",American,1845,1845,NULL
+2681,Morris Burke Parkinson,"American, 1847-1926","Parkinson, Morris Burke",American,1847,1926,NULL
+2682,Thomas E. Perkins,"Canadian, active 1860s-1890s","Perkins, Thomas E.",Canadian,1860,1899,NULL
+2683,Pierre Petit & Fils,"French, active 1880s","Petit, Pierre, & Fils",French,1880,1889,Pierre Petit was a partner in Pierre Petit & Fils.
+2684,Francis A. Place,"American, born ca. 1851","Place, Francis A.",American,1851,1851,NULL
+2685,George Loren Prince Sr.,"American, 1848-1929","Prince, George Loren Sr.",American,1848,1929,NULL
+2686,Enrico Resta,"English, 1857-1942","Resta, Enrico",English,1857,1942,NULL
+2687,Reutlinger,"French, active 1850s-1930s",Reutlinger,French,1850,1939,"Reutlinger was a partnership of Charles Reutlinger, Emile-August Reutlinger, and Léopold Reutlinger."
+2688,Ritz & Hastings,"American, active 1880s",Ritz & Hastings,American,1880,1889,Ritz & Hastings was a partnership of E. F. Ritz and George H. Hastings.
+2689,Robinson & Roe,"American, active 1870s-1890s",Robinson & Roe,American,1870,1899,Robinson & Roe was a partnership of W. A. Robinson and A. J. Roe.
+2690,Charles B. Schmitt,"American, active 1890s-1920s","Schmitt, Charles B.",American,1890,1929,NULL
+2691,Seeley & Warnock,"American, active 1880s-1890s",Seeley & Warnock,American,1880,1899,Seeley & Warnock was a partnership of H. J. Seeley and James Warnock.
+2692,George W. Sittler,"American, born ca. 1850","Sittler, George W.",American,1850,1850,NULL
+2693,Sloan (National Youth Administration),"American, active 1940s",Sloan,American,1940,1940,NULL
+2694,Augustus B. Taylor,"American, 1846-1887","Taylor, Augustus B.",American,1846,1887,NULL
+2695,Pulaski Willington Tennant,"American, 1840-1923","Tennant, Pulaski Willington",American,1840,1923,Tennant was a dry plate manufacturer.
+2696,"The Imperial Photographic Gallery [San Francisco, CA]","American, active 1870s-1890s",Imperial Photographic Gallery,American,1870,1899,"Emma Vaughan was listed as proprietor of The Imperial Photographic Gallery in San Francisco, and Hector M. Vaughan was a photographer."
