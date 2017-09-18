@@ -16,6 +16,10 @@ To complete this example, you need at a minimum:
 - ability to push to a GitHub repository.  This is most easily done if you have the GitHub desktop application installed on your computer.  I assume that you know how to use GitHub.  
 - some way to run the Guid-O-Matic scripts.  If your organization has the Guid-O-Matic web server script running on a BaseX server, you don't need to install anything yourself.  If not, you will need to install BaseX on your computer and run the scripts directly in BaseX.  
 
+## Note about "URIs" and "IRIs"
+
+Although HTTP identifiers are often referred to as URIs (uniform resource identifiers), there is a broader class of identifiers called IRIs (internationalized resource identifiers) that includes URIs, but also allows a broader set of characters.  For this exercise, I will use "URI" and "IRI" interchangeably, recognizing that IRIs are actually a superset of URIs.
+
 ## The dataset
 
 The dataset includes CSV tables describing a number of entities, but in this example, we will focus on two.
@@ -81,7 +85,15 @@ In the header column of the first row, type (or copy and paste) the column heade
 
 You might have also noticed that "foaf:name" would be a possible property to map to the first column.  There is nothing wrong with mapping the same column to two properties, so you could add a second row with "DisplayName" in the first column and "foaf:name" in the second.
 
-7\. Continue adding rows to the mapping table until you have mapped all of the columns that you want or are able to map.  You don't have to map all of the columns.  The ones you don't map will be ignored.  Savle the file and close it.
+7\. When a column in the data table is used to make a link to a resource not described in that row of the table (e.g. the arrows shown in Fig. 3), and the linked resource is identified by a URI (as opposed to the column containing a plain literal value object), the "type" column has a value of "iri" rather than "plain".  If the value in the data table column contains the unabbreviated URI, nothing else need be done in that row of the mapping table.  If the value in the data table column contains a locally unique identifier, rather than a URI, placing a URI or CURIE prefix in the "value" column will prepend that prefix to the locally unique identifier, turning it into a URI.  
+
+There are no examples of this in the constituents.csv table, but in the address.csv table, the ConstituentID column contains a foreign key that refers to the constituent that the address is linked to.  To generate that link between address and constituent, put "iri" in the type column, and "http://pic.nypl.org/constituents/" in the value column.  This will append a foreign key like "20" to the value in the value column to form a URI like "http://pic.nypl.org/constituents/20". 
+
+I don't know of any well-known predicate that can be used to make the link, so we will make one up.  We can use ex:hasConstituent (see Fig. 4) in the predicate column, where "ex" = "http://example.org/".
+
+(You may wonder why we are making the arrows point from the address to the constituent instead of the other way around.  It might make sense to use a property like foaf:based_near to make the link in the direction from the constituent to the address.  However, making this happen in Guid-O-Matich is significantly more complicated, so we won't address the issue in this simple example.)
+
+8\. Continue adding rows to the mapping table until you have mapped all of the columns that you want or are able to map.  You don't have to map all of the columns.  The ones you don't map will be ignored.  Save the file and close it.
 
 ## Setting the type of the data
 
@@ -89,45 +101,45 @@ In this simple example, we can consider all of the information in the table to b
 
 The value ("object" in RDF terminology) of rdf:type should be the URI of a class. Typically, the local name of a class URI is capitalized.  For example, foaf:Image is a class, while foaf:name (a property) has a local name that begins with a lower-case letter.  The Dublin Core list of classes (which includes classes in the DCMI Type Vocabulary) is a very well-known source of classes.  
 
-8\. Open the file constituents-classes.csv (renamed from blank-classes.csv).  When you have decided on an appropriate class for the data table, put it in the "class" column of the table in the row that has "$root" in the id column.  Save the file and close it.
+9\. Open the file constituents-classes.csv (renamed from blank-classes.csv).  When you have decided on an appropriate class for the data table, put it in the "class" column of the table in the row that has "$root" in the id column.  Save the file and close it.
 
 ## Edit the configuration settings
 
-9\. Open the file constants.csv, which contains configuration settings.
+10\. Open the file constants.csv, which contains configuration settings.
 
-10\. In the domainRoot column, enter the string that will be prepended to the primary key of the table to form a unique URI identifying the subject of the table row.  As we already noted, for the constituents table, the PIC already has chosen "http://pic.nypl.org/constituents/", so replace the default "http://example.org/" value with that.
+11\. In the domainRoot column, enter the string that will be prepended to the primary key of the table to form a unique URI identifying the subject of the table row.  As we already noted, for the constituents table, the PIC already has chosen "http://pic.nypl.org/constituents/", so replace the default "http://example.org/" value with that.
 
-11\. In the coreClassFile column, enter the name of the primary data file ("constituents.csv").
+12\. In the coreClassFile column, enter the name of the primary data file ("constituents.csv").
 
-12\. The documentClass column is used to indicate the class of the metadata document containing the RDF.  foaf:Document is commonly used for this, so you can leave that value unless you have a better idea.
+13\. The documentClass column is used to indicate the class of the metadata document containing the RDF.  foaf:Document is commonly used for this, so you can leave that value unless you have a better idea.
 
-13\. The creator column is a literal (string) value giving the name of the person or organization that created the metadata document.  You can put your name or the name of your organization there.  (Although the New York Public Library created the dataset, they are not creating the RDF document.)
+14\. The creator column is a literal (string) value giving the name of the person or organization that created the metadata document.  You can put your name or the name of your organization there.  (Although the New York Public Library created the dataset, they are not creating the RDF document.)
 
-14\. The baseIriColumn column is used to indicate the column in the primary data table that contains the locally unique identifier (i.e. the primary key) for the resource in each row.  In the constituents table, it's "ConstituentID" (and "ConAddressID" in the address.csv table).  Replace the default "primaryKey" value with the column name that's appropriate for your table.
+15\. The baseIriColumn column is used to indicate the column in the primary data table that contains the locally unique identifier (i.e. the primary key) for the resource in each row.  In the constituents table, it's "ConstituentID" (and "ConAddressID" in the address.csv table).  Replace the default "primaryKey" value with the column name that's appropriate for your table.
 
-15\. Save the file.
+16\. Save the file.
 
 ## Enter the CURIEs (namespace abbreviations) used in the mappings
 
-16\. Open the file namespace.csv .
+17\. Open the file namespace.csv .
 
-17\. Each row of this file contains an abbreviation that is used for URIs to form "compact URIs" (CURIEs).  The default values defined by W3C (rdf:, rdfs:, and xsd:) are already given, as is foaf: (used with the default type for the metadata document in the configuration file).  Add additional rows for any namespaces that you used in either the constituents-column-mappings.csv or constituents-classes.csv file.
+18\. Each row of this file contains an abbreviation that is used for URIs to form "compact URIs" (CURIEs).  The default values defined by W3C (rdf:, rdfs:, and xsd:) are already given, as is foaf: (used with the default type for the metadata document in the configuration file).  Add additional rows for any namespaces that you used in either the constituents-column-mappings.csv or constituents-classes.csv file.
 
-18\. Save the file.
+19\. Save the file.
 
 ## Ignore the linked-classes.csv file
 
-19\. The linked-classes.csv file is used when the data file contains information about more than one type of thing.  We can consider that to not be true in this example, so you can just leave this file the way it is.
+20\. The linked-classes.csv file is used when the data file contains information about more than one type of thing.  We can consider that to not be true in this example, so you can just leave this file the way it is.
 
 # Using Guid-O-Matic to generate RDF from the data table using a remote server
 
 The scripts that Guid-O-Matic use to turn CSV data into RDF can be invoked in several ways and can access the CSV data from local files or from the web.  The simplest way is to access the data from GitHub and that's how we'll do it in this example.
 
-20\. If you followed the earlier instructions, you should already have been editing the relevant files in a directory called "constituents" located in your local GitHub repo.  Use the GitHub desktop application to push the files in the constituents folder to your online GitHub repo.  You can go to your GitHub site and check that they are actually there.
+21\. If you followed the earlier instructions, you should already have been editing the relevant files in a directory called "constituents" located in your local GitHub repo.  Use the GitHub desktop application to push the files in the constituents folder to your online GitHub repo.  You can go to your GitHub site and check that they are actually there.
 
-21\. If your organization has the Guid-O-Matic scripts running on a server, then they also probably are using the rdf-mover.py Python script to load data from GitHub into the BaseX database that the server script operates on.  If that is the case and somebody from your organization is helping you with this, they can preform the following step for you.  If you want to do the transfer yourself, then you will need to have Python3 installed on your computer and have cloned the Guid-O-Matic repo to your local computer.  (If you don't have access to Guid-O-Matic scripts on a remote server, you can set up the scripts on a server operating locally on your computer and accessed through HTTP calls to a localhost: URI.  However, explaining how to make this work is beyond the scope of this tutorial.)
+22\. If your organization has the Guid-O-Matic scripts running on a server, then they also probably are using the rdf-mover.py Python script to load data from GitHub into the BaseX database that the server script operates on.  If that is the case and somebody from your organization is helping you with this, they can preform the following step for you.  If you want to do the transfer yourself, then you will need to have Python3 installed on your computer and have cloned the Guid-O-Matic repo to your local computer.  (If you don't have access to Guid-O-Matic scripts on a remote server, you can set up the scripts on a server operating locally on your computer and accessed through HTTP calls to a localhost: URI.  However, explaining how to make this work is beyond the scope of this tutorial.)
 
-22\. In a terminal window or command prompt window, navigate to the Guid-O-Matic folder in your local computer's GitHub repo.  Invoke the Python script using the command
+23\. In a terminal window or command prompt window, navigate to the Guid-O-Matic folder in your local computer's GitHub repo.  Invoke the Python script using the command
 
 ```
 python rdf-mover.py
@@ -139,21 +151,21 @@ If you get an error message, then the Python application may not be in your syst
 
 If all goes well, you will see something like in Fig. 5.  
 
-23\. Edit the Github repo path box appropriately for your GitHub site.  If your GitHub username were "baskaufs" and the repo into which you put the directory containing the data were called "test", then you would change the path from "VandyVRC/tcadrt/" to "baskaufs/test/".  
+24\. Edit the Github repo path box appropriately for your GitHub site.  If your GitHub username were "baskaufs" and the repo into which you put the directory containing the data were called "test", then you would change the path from "VandyVRC/tcadrt/" to "baskaufs/test/".  
 
-24\. The database name is the name that you gave to the directory that you created in your repo to hold the files.  In this example, it will be "constituents".  **NOTE: the database name cannot be the same as any existing database on the BaseX server.  If it is, it will potentially overwrite the data already in that database.**  
+25\. The database name is the name that you gave to the directory that you created in your repo to hold the files.  In this example, it will be "constituents".  **NOTE: the database name cannot be the same as any existing database on the BaseX server.  If it is, it will potentially overwrite the data already in that database.**  
 
-25\. The Github repo subpath will only have a value if you nested the constituents folder at a level below the root folder for the repo.  For example, if you placed the constituents directory within the test repo on the path test/exercises/constituents/, then "exercises/" should be put in the Github repo subpath.
+26\. The Github repo subpath will only have a value if you nested the constituents folder at a level below the root folder for the repo.  For example, if you placed the constituents directory within the test repo on the path test/exercises/constituents/, then "exercises/" should be put in the Github repo subpath.
 
-26\. Edit the BaseX API URI root so that it has the correct domain name for your server installation.  Enter the password in the BaseX database pwd box.
+27\. Edit the BaseX API URI root so that it has the correct domain name for your server installation.  Enter the password in the BaseX database pwd box.
 
-27\. To know whether your data are being loaded into the BaseX database correctly, you can log into the BaseX database administration GUI and watch what happens.  If your server REST API is "http://yourservername.com/gom/rest/", the URL of the GUI would be "http://yourservername.com/gom/dba".  Check the list of databases to make sure that there isn't one already that has the name of the database you intend to create.
+28\. To know whether your data are being loaded into the BaseX database correctly, you can log into the BaseX database administration GUI and watch what happens.  If your server REST API is "http://yourservername.com/gom/rest/", the URL of the GUI would be "http://yourservername.com/gom/dba".  Check the list of databases to make sure that there isn't one already that has the name of the database you intend to create.
 
-28\. On the rdf-mover GUI, click the Transfer from Github to BaseX button.  Watch the Action log to make sure that you get HTTP 201 codes for all of the data transfers.  If you encounter error messages (HTTP 4xx codes), you'll have to try to figure out what went wrong.  
+29\. On the rdf-mover GUI, click the Transfer from Github to BaseX button.  Watch the Action log to make sure that you get HTTP 201 codes for all of the data transfers.  If you encounter error messages (HTTP 4xx codes), you'll have to try to figure out what went wrong.  
 
-29\. If the transfers were successful, return to the BaseX database admin GUI and refresh the page.  You should see the database that you created.
+30\. If the transfers were successful, return to the BaseX database admin GUI and refresh the page.  You should see the database that you created.
 
-30\. The Guid-O-Matic server script has an RDF dump option.  To retrieve a dump of triples from an entire database, follow the root server URI with "dump/" followed by the name of the database.  In the example above, a dump of the RDF triples generated from the constituents database would be retrieved via HTTP GET from http://yourservername.com/gom/dump/constituents. Dereferencing this URI in a browser produces an RDF/Turtle serialization of the dump.  
+31\. The Guid-O-Matic server script has an RDF dump option.  To retrieve a dump of triples from an entire database, follow the root server URI with "dump/" followed by the name of the database.  In the example above, a dump of the RDF triples generated from the constituents database would be retrieved via HTTP GET from http://yourservername.com/gom/dump/constituents. Dereferencing this URI in a browser produces an RDF/Turtle serialization of the dump.  
 
 Other serializations (RDF/XML or JSON-LD) can be retrieved from the server using a client such as PostMan that can specify the appropriate Accept header (application/rdf+xml and application/json respectively).  
 
