@@ -48,14 +48,13 @@ One best practice of Linked Data is to identify resources using URIs.  PIC alrea
 
 Fig. 4. Example graph for the photographer Otto Alfred Wolfgang Schulze Wols
 
-Fig. 4 shows a Linked Data graph about a particular photographer.  The photographer and his birth, work, and death locations are identified by particular URIs. The photographer is linked to a location by the predicate foaf:based_near (http://xmlns.com/foaf/0.1/based_near).  Each of the relationships connecting two bubbles in the diagram can be represented by a single RDF triple.  For example the triple:
+Fig. 4 shows a Linked Data graph about a particular photographer.  The photographer and his birth, work, and death locations are identified by particular URIs. The location is linked to the photographer by the predicate ex:hasConstituent  (an abbreviation for the made-up linking property http://example.org/hasConstituent).  Each of the relationships connecting two bubbles in the diagram can be represented by a single RDF triple.  For example the triple:
 
 ```
-<http://pic.nypl.org/constituents/20>
- foaf:based_near <http://pic.nypl.org/address/83580>.
+<http://pic.nypl.org/address/83580> ex:hasConstituent <http://pic.nypl.org/constituents/20>.
 ```
 
-relates Otto Wols to his birthplace in Berlin, Germany.
+relates Berlin, Germany to Otto Wols who was born there.
 
 ## Getting started
 
@@ -87,7 +86,7 @@ You might have also noticed that "foaf:name" would be a possible property to map
 
 7\. When a column in the data table is used to make a link to a resource not described in that row of the table (e.g. the arrows shown in Fig. 3), and the linked resource is identified by a URI (as opposed to the column containing a plain literal value object), the "type" column has a value of "iri" rather than "plain".  If the value in the data table column contains the unabbreviated URI, nothing else need be done in that row of the mapping table.  If the value in the data table column contains a locally unique identifier, rather than a URI, placing a URI or CURIE prefix in the "value" column will prepend that prefix to the locally unique identifier, turning it into a URI.  
 
-There are no examples of this in the constituents.csv table, but in the address.csv table, the ConstituentID column contains a foreign key that refers to the constituent that the address is linked to.  To generate that link between address and constituent, put "iri" in the type column, and "http://pic.nypl.org/constituents/" in the value column.  This will append a foreign key like "20" to the value in the value column to form a URI like "http://pic.nypl.org/constituents/20". 
+There are no examples of this in the constituents.csv table, but in the address.csv table, the ConstituentID column contains a foreign key that refers to the constituent that the address is linked to.  To generate that link between address and constituent, put "iri" in the type column, and "http://pic.nypl.org/constituents/" in the value column.  This will append a foreign key like "20" to the value in the value column to form a URI like "http://pic.nypl.org/constituents/20".
 
 I don't know of any well-known predicate that can be used to make the link, so we will make one up.  We can use ex:hasConstituent (see Fig. 4) in the predicate column, where "ex" = "http://example.org/".
 
