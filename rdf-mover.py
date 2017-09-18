@@ -150,12 +150,18 @@ def buildGenericXml(rootElementName, csvData):
 		else: 
 			xmlData = xmlData + '<record>' + "\n"
 			for i in range(len(tags)):
-				xmlData = xmlData + '    ' + '<' + tags[i] + '>' + row[i] + '</' + tags[i] + '>' + "\n"
+				xmlData = xmlData + '    ' + '<' + tags[i] + '>' + escapeBadXmlCharacters(row[i]) + '</' + tags[i] + '>' + "\n"
 			xmlData = xmlData + '</record>' + "\n"
 		rowNum +=1
 	
 	xmlData = xmlData + '</' + rootElementName + '>' + "\n"
 	return xmlData
+	
+def escapeBadXmlCharacters(dirtyString):
+	ampString = dirtyString.replace('&','&amp;')
+	ltString = ampString.replace('<','&lt;')
+	cleanString = ltString.replace('>','&gt;')
+	return cleanString
 	
 def buildLinkedMetadataXml(httpPath, csvData, fieldDelimiter):
 	xmlData = '<?xml version="1.0" encoding="UTF-8" ?>' + '\n'
