@@ -403,7 +403,9 @@ declare function serialize:describe-document($baseIRI,$modified,$serialization,$
 {
   let $type := $constants//documentClass/text()
   let $suffix := propvalue:extension($serialization)
-  let $iri := concat($baseIRI,$suffix)
+  (: If the URI ends in a slash, e.g. http://example.org/ex/, then remove the trailing slash before appending the suffix. :)
+  (: I.e. http://example.org/ex.ttl, not http://example.org/ex/.ttl :)
+  let $iri := concat(serialize:remove-trailing-slash($baseIRI),$suffix)
   return concat(
     propvalue:subject($iri,$serialization),
     propvalue:plain-literal("dc:format",propvalue:media-type($serialization),$serialization),
@@ -424,6 +426,17 @@ declare function serialize:describe-document($baseIRI,$modified,$serialization,$
     else ""
 
   )  
+};
+
+(:--------------------------------------------------------------------------------------------------:)
+
+declare function serialize:remove-trailing-slash($temp)
+{
+  if (fn:ends-with($temp, '/'))
+  then
+    fn:substring($temp,1,fn:string-length($temp)-1)
+  else
+    $temp
 };
 
 (:--------------------------------------------------------------------------------------------------:)
