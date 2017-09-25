@@ -1,5 +1,7 @@
 [jump to a detailed explanation](use.md)
 
+[jump straight to a simple try-it-yourself-example](getting-started.md)
+
 [jump to the Darwin Core translator page](dwca-converter.md)
 
 # Guid-O-Matic
