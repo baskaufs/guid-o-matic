@@ -1,4 +1,4 @@
-[back to landing page](README.md)
+<!-- [back to landing page](README.md) -->
 
 ![](https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/squid.bmp)
 
@@ -136,12 +136,17 @@ The scripts that Guid-O-Matic use to turn CSV data into RDF can be invoked in se
 
 21\. If you followed the earlier instructions, you should already have been editing the relevant files in a directory called "constituents" located in your local GitHub repo.  Use the GitHub desktop application to push the files in the constituents folder to your online GitHub repo.  You can go to your GitHub site and check that they are actually there.
 
-22\. If your organization has the Guid-O-Matic scripts running on a server, then they also probably are using the rdf-mover.py Python script to load data from GitHub into the BaseX database that the server script operates on.  If that is the case and somebody from your organization is helping you with this, they can preform the following step for you.  If you want to do the transfer yourself, then you will need to have Python3 installed on your computer and have cloned the Guid-O-Matic repo to your local computer.  (If you don't have access to Guid-O-Matic scripts on a remote server, you can set up the scripts on a server operating locally on your computer and accessed through HTTP calls to a localhost: URI.  However, explaining how to make this work is beyond the scope of this tutorial.)
+22\. If your organization has the Guid-O-Matic scripts running on a server, then they also probably are using the rdf-mover.py Python script to load data from GitHub into the BaseX database that the server script operates on.  If that is the case and somebody from your organization is helping you with this, they can preform the following step for you.  If you want to do the transfer yourself, then you will need to have Python3 installed on your computer and have cloned the Guid-O-Matic repo to your local computer.  See the Appendix on Installing Python for details.  (If you don't have access to Guid-O-Matic scripts on a remote server, you can set up the scripts on a server operating locally on your computer and accessed through HTTP calls to a localhost: URI.  However, explaining how to make this work is beyond the scope of this tutorial.)
 
 23\. In a terminal window or command prompt window, navigate to the Guid-O-Matic folder in your local computer's GitHub repo.  Invoke the Python script using the command
 
 ```
 python rdf-mover.py
+```
+If you are using a Mac, you will specifically have to invoke Python 3 as follows:
+
+```
+python3 rdf-mover.py
 ```
 
 If you get an error message, then the Python application may not be in your system's PATH environmental variable (a Windows problem).  Get help from somebody who knows about this.  
@@ -168,6 +173,30 @@ If all goes well, you will see something like in Fig. 5.
 
 Other serializations (RDF/XML or JSON-LD) can be retrieved from the server using a client such as PostMan that can specify the appropriate Accept header (application/rdf+xml and application/json respectively).  
 
+# Appendix: Installing Python
 
+**If you are using a PC**, go to the Python Download page: https://www.python.org/downloads/.  Download the most recent version of Python 3 (e.g. Python 3.6.3).  **When performing the install, be sure to check the box that adds Python to your path environmental variable!**.  After you finish installing Python, you will need to install the Requests package.  Open a Command Prompt window (Search for "command prompt"), and enter:
+```
+pip install Requests
+```
+
+You should then be able to double-click on the rdf-mover.py icon to run the script.
+
+**If you are using a Mac**, Python 2 comes installed automatically as part of the operating system.  However, you must have Python 3 in order for the rdf-mover.py script to work.  The easiest way to install it is using Homebrew.  If you don't already have Homebrew on your computer, you can install it by going to a terminal window and entering
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Once you have installed Homebrew, or if you already had it installed, go to a command window and enter
+
+```
+brew install python3
+```
+
+After the install finishes, enter the following:
+```
+pip3 install requests
+```
+Note: Since a Mac will have both Python 2 and Python 3 installed, you will have to specifically invoke Python 3 by issuing the command "python3" rather than simply "python" as is the case with a PC.
 
 [back to landing page](README.md)
