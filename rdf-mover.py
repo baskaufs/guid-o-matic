@@ -197,7 +197,7 @@ def buildLinkedMetadataXml(httpPath, csvData, fieldDelimiter):
 			xmlData = xmlData + '    ' + '<suffix1>' + row[tags.index('suffix1')] + '</suffix1>' + "\n"
 			xmlData = xmlData + '    ' + '<link_characters>' + row[tags.index('link_characters')] + '</link_characters>' + "\n"
 			xmlData = xmlData + '    ' + '<suffix2>' + row[tags.index('suffix2')] + '</suffix2>' + "\n"
-			xmlData = xmlData + '    ' + '<class>' + row[tags.index('class')] + '</class>' + "\n"
+			xmlData = xmlData + '    ' + '<forward_link>' + row[tags.index('forward_link')] + '</forward_link>' + "\n"
 			fileName = row[tags.index('filename')]
 			fileNameRoot = fileName[0:fileName.find('.')]
 			csvSubData = getCsvObject(httpPath, fileNameRoot + '-classes.csv', ',')
