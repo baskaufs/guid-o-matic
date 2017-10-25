@@ -1,4 +1,5 @@
 # Steve Baskauf 2017-07-05 Freely available under a GNU GPLv3 license. 
+# Added individual file load 2017-10-24
 # By its nature, this software overwrites and deletes data, so use at your own risk. 
 # See https://github.com/baskaufs/guid-o-matic/blob/master/rdf-mover.md for usage notes.
 
