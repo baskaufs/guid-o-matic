@@ -306,7 +306,7 @@ let $linkedClassesDoc := file:read-text(concat($localFilesFolderUnix,'linked-cla
 let $xmlLinkedClasses := csv:parse($linkedClassesDoc, map { 'header' : true(),'separator' : "," })
 let $linkedClasses := $xmlLinkedClasses/csv/record
 
-let $metadataDoc := file:read-text($localFilesFolderUnix ||$coreDoc)
+let $metadataDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix ||$coreDoc}'/>)[2]
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
 
