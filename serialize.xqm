@@ -166,6 +166,102 @@ return
     (: simply output the string to the Result window :)
     serialize:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
 };
+
+(:--------------------------------------------------------------------------------------------------:)
+
+declare function serialize:main-github($id,$serialization,$repoName,$singleOrDump,$outputToFile)
+{
+    
+    (: Despite the variable name, this is hacked to be the HTTP URI of the github repo online. :)
+let $localFilesFolderUnix := concat("https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$repoName,"/")
+
+let $constantsDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||'constants.csv'}'/>)[2]
+let $xmlConstants := csv:parse($constantsDoc, map { 'header' : true(),'separator' : "," })
+let $constants := $xmlConstants/csv/record
+
+let $domainRoot := $constants//domainRoot/text()
+let $coreDoc := $constants//coreClassFile/text()
+let $coreClassPrefix := substring-before($coreDoc,".")
+let $outputDirectory := $constants//outputDirectory/text()
+let $metadataSeparator := $constants//separator/text()
+let $baseIriColumn := $constants//baseIriColumn/text()
+let $modifiedColumn := $constants//modifiedColumn/text()
+let $outFileNameAfter := $constants//outFileNameAfter/text()
+
+let $columnIndexDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||$coreClassPrefix||'-column-mappings.csv'}'/>)[2]
+let $xmlColumnIndex := csv:parse($columnIndexDoc, map { 'header' : true(),'separator' : "," })
+let $columnInfo := $xmlColumnIndex/csv/record
+
+let $namespaceDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||'namespace.csv'}'/>)[2]
+let $xmlNamespace := csv:parse($namespaceDoc, map { 'header' : true(),'separator' : "," })
+let $namespaces := $xmlNamespace/csv/record
+
+let $classesDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||$coreClassPrefix||'-classes.csv'}'/>)[2]
+let $xmlClasses := csv:parse($classesDoc, map { 'header' : true(),'separator' : "," })
+let $classes := $xmlClasses/csv/record
+
+let $linkedClassesDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||'linked-classes.csv'}'/>)[2]
+let $xmlLinkedClasses := csv:parse($linkedClassesDoc, map { 'header' : true(),'separator' : "," })
+let $linkedClasses := $xmlLinkedClasses/csv/record
+
+let $metadataDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix ||$coreDoc}'/>)[2]
+let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+let $metadata := $xmlMetadata/csv/record
+
+let $linkedMetadata :=
+      for $class in $linkedClasses
+      let $linkedDoc := $class/filename/text()
+      let $linkedClassPrefix := substring-before($linkedDoc,".")
+
+      let $classMappingDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix,$linkedClassPrefix||"-column-mappings.csv"}'/>)[2]
+      let $xmlClassMapping := csv:parse($classMappingDoc, map { 'header' : true(),'separator' : "," })
+      let $classClassesDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||$linkedClassPrefix,"-classes.csv"}'/>)[2]
+      let $xmlClassClasses := csv:parse($classClassesDoc, map { 'header' : true(),'separator' : "," })
+      let $classMetadataDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix,$linkedDoc}'/>)[2]
+      let $xmlClassMetadata := csv:parse($classMetadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+      return
+        ( 
+        <file>{
+          $class/link_column,
+          $class/link_property,
+          $class/suffix1,
+          $class/link_characters,
+          $class/suffix2,
+          $class/forward_link,
+          $class/class,
+          <classes>{
+            $xmlClassClasses/csv/record
+          }</classes>,
+          <mapping>{
+            $xmlClassMapping/csv/record
+          }</mapping>,
+          <metadata>{
+            $xmlClassMetadata/csv/record
+          }</metadata>
+       }</file>
+       )
+  
+(: The main function returns a single string formed by concatenating all of the assembled pieces of the document :)
+return 
+  if ($outputToFile="true")
+  then
+    (: Creates the output directory specified in the constants.csv file if it doesn't already exist.  Then writes into a file having the name passed via the $id parameter concatenated with an appropriate file extension. uses default UTF-8 encoding :)
+    (file:create-dir($outputDirectory),
+    
+    (: If the $id is a full IRI or long string, use only the part after the delimiter in $outFileNameAfter as the file name.  Otherwise, use the entire value of $id as the file name:) 
+    if ($outFileNameAfter) 
+    then file:write-text($outputDirectory||serialize:substring-after-last($id, $outFileNameAfter)||propvalue:extension($serialization),serialize:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
+    else file:write-text($outputDirectory||$id||propvalue:extension($serialization),serialize:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
+    ,
+    
+    (: put this in the Result window so that the user can tell that something happened :)
+    "Completed file write of "||$id||propvalue:extension($serialization)||" at "||fn:current-dateTime()
+    )
+  else
+    (: simply output the string to the Result window :)
+    serialize:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
+};
+
 (:--------------------------------------------------------------------------------------------------:)
 
 declare function serialize:find($id,$repoPath,$pcRepoLocation)
