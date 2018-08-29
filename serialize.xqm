@@ -172,7 +172,7 @@ return
 declare function serialize:main-github($id,$serialization,$repoName,$singleOrDump,$outputToFile)
 {
     
-    (: Despite the variable name, this is hacked to be the HTTP URI of the github repo online. :)
+(: Despite the variable name, this is hacked to be the HTTP URI of the github repo online. :)
 let $localFilesFolderUnix := concat("https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$repoName,"/")
 
 let $constantsDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||'constants.csv'}'/>)[2]
@@ -360,6 +360,87 @@ let $constants := fn:collection($db)//constants/record
 let $baseIriColumn := $constants//baseIriColumn/text()
 
 let $metadata := fn:collection($db)/metadata/record
+  
+return 
+      (: each record in the database must be checked for a match to the requested URI :)
+      for $record in $metadata
+      where $record/*[local-name()=$baseIriColumn]/text()=$id
+      return true()      
+};
+
+(:--------------------------------------------------------------------------------------------------:)
+
+declare function serialize:find-github($id,$repoName)
+{
+
+(: Despite the variable name, this is hacked to be the HTTP URI of the github repo online. :)
+let $localFilesFolderUnix := concat("https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$repoName,"/")
+
+let $constantsDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||'constants.csv'}'/>)[2]
+let $xmlConstants := csv:parse($constantsDoc, map { 'header' : true(),'separator' : "," })
+let $constants := $xmlConstants/csv/record
+
+let $domainRoot := $constants//domainRoot/text()
+let $coreDoc := $constants//coreClassFile/text()
+let $coreClassPrefix := substring-before($coreDoc,".")
+let $outputDirectory := $constants//outputDirectory/text()
+let $metadataSeparator := $constants//separator/text()
+let $baseIriColumn := $constants//baseIriColumn/text()
+let $modifiedColumn := $constants//modifiedColumn/text()
+let $outFileNameAfter := $constants//outFileNameAfter/text()
+
+let $columnIndexDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||$coreClassPrefix||'-column-mappings.csv'}'/>)[2]
+let $xmlColumnIndex := csv:parse($columnIndexDoc, map { 'header' : true(),'separator' : "," })
+let $columnInfo := $xmlColumnIndex/csv/record
+
+let $namespaceDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||'namespace.csv'}'/>)[2]
+let $xmlNamespace := csv:parse($namespaceDoc, map { 'header' : true(),'separator' : "," })
+let $namespaces := $xmlNamespace/csv/record
+
+let $classesDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||$coreClassPrefix||'-classes.csv'}'/>)[2]
+let $xmlClasses := csv:parse($classesDoc, map { 'header' : true(),'separator' : "," })
+let $classes := $xmlClasses/csv/record
+
+let $linkedClassesDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||'linked-classes.csv'}'/>)[2]
+let $xmlLinkedClasses := csv:parse($linkedClassesDoc, map { 'header' : true(),'separator' : "," })
+let $linkedClasses := $xmlLinkedClasses/csv/record
+
+let $metadataDoc := file:read-text($localFilesFolderUnix ||$coreDoc)
+let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+let $metadata := $xmlMetadata/csv/record
+
+let $linkedMetadata :=
+      for $class in $linkedClasses
+      let $linkedDoc := $class/filename/text()
+      let $linkedClassPrefix := substring-before($linkedDoc,".")
+
+      let $classMappingDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix,$linkedClassPrefix||"-column-mappings.csv"}'/>)[2]
+      let $xmlClassMapping := csv:parse($classMappingDoc, map { 'header' : true(),'separator' : "," })
+      let $classClassesDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||$coreClassPrefix||'-classes.csv'}'/>)[2]
+      let $xmlClassClasses := csv:parse($classClassesDoc, map { 'header' : true(),'separator' : "," })
+      let $classMetadataDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix,$linkedDoc}'/>)[2]
+      let $xmlClassMetadata := csv:parse($classMetadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+      return
+        ( 
+        <file>{
+          $class/link_column,
+          $class/link_property,
+          $class/suffix1,
+          $class/link_characters,
+          $class/suffix2,
+          $class/forward_link,
+          $class/class,
+          <classes>{
+            $xmlClassClasses/csv/record
+          }</classes>,
+          <mapping>{
+            $xmlClassMapping/csv/record
+          }</mapping>,
+          <metadata>{
+            $xmlClassMetadata/csv/record
+          }</metadata>
+       }</file>
+       )
   
 return 
       (: each record in the database must be checked for a match to the requested URI :)
