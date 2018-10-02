@@ -169,11 +169,11 @@ return
 
 (:--------------------------------------------------------------------------------------------------:)
 
-declare function serialize:main-github($id,$serialization,$repoName,$singleOrDump,$outputToFile)
+declare function serialize:main-github($id,$serialization,$baseURI,$repoName,$singleOrDump,$outputToFile)
 {
     
 (: Despite the variable name, this is hacked to be the HTTP URI of the github repo online. :)
-let $localFilesFolderUnix := concat("https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$repoName,"/")
+let $localFilesFolderUnix := concat($baseURI,$repoName,"/")
 
 let $constantsDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||'constants.csv'}'/>)[2]
 let $xmlConstants := csv:parse($constantsDoc, map { 'header' : true(),'separator' : "," })
@@ -213,11 +213,11 @@ let $linkedMetadata :=
       let $linkedDoc := $class/filename/text()
       let $linkedClassPrefix := substring-before($linkedDoc,".")
 
-      let $classMappingDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix,$linkedClassPrefix||"-column-mappings.csv"}'/>)[2]
+      let $classMappingDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||$linkedClassPrefix||"-column-mappings.csv"}'/>)[2]
       let $xmlClassMapping := csv:parse($classMappingDoc, map { 'header' : true(),'separator' : "," })
-      let $classClassesDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||$linkedClassPrefix,"-classes.csv"}'/>)[2]
+      let $classClassesDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||$linkedClassPrefix||"-classes.csv"}'/>)[2]
       let $xmlClassClasses := csv:parse($classClassesDoc, map { 'header' : true(),'separator' : "," })
-      let $classMetadataDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix,$linkedDoc}'/>)[2]
+      let $classMetadataDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||$linkedDoc}'/>)[2]
       let $xmlClassMetadata := csv:parse($classMetadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
       return
         ( 
@@ -370,11 +370,11 @@ return
 
 (:--------------------------------------------------------------------------------------------------:)
 
-declare function serialize:find-github($id,$repoName)
+declare function serialize:find-github($id,$baseURI,$repoName)
 {
 
 (: Despite the variable name, this is hacked to be the HTTP URI of the github repo online. :)
-let $localFilesFolderUnix := concat("https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$repoName,"/")
+let $localFilesFolderUnix := concat($baseURI,$repoName,"/")
 
 let $constantsDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||'constants.csv'}'/>)[2]
 let $xmlConstants := csv:parse($constantsDoc, map { 'header' : true(),'separator' : "," })
