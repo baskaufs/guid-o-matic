@@ -442,11 +442,11 @@ let $linkedMetadata :=
        }</file>
        )
   
-return 
+return
       (: each record in the database must be checked for a match to the requested URI :)
       for $record in $metadata
       where $record/*[local-name()=$baseIriColumn]/text()=$id
-      return true()      
+      return true()
 };
 
 (:--------------------------------------------------------------------------------------------------:)
